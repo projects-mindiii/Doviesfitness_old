@@ -547,8 +547,7 @@ class WorkoutLogActivity : BaseActivity(), ProgressPicAdapter.selectImage, View.
 
                         startActivity(Intent(getActivity(), MyWorkoutLogList::class.java))
                         finish()
-                        // Constant.showCustomToast(getActivity(), "Success..."+success)
-                    } catch (exce: Exception) {
+                     } catch (exce: Exception) {
                         binding.progressLayout.visibility = View.GONE
                         Constant.showCustomToast(getActivity(), getString(R.string.something_wrong))
                     }
@@ -784,6 +783,5 @@ class WorkoutLogActivity : BaseActivity(), ProgressPicAdapter.selectImage, View.
     override fun onYesClick() {
 
     }
-
 
 }

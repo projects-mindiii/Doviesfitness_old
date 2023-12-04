@@ -9,15 +9,12 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
-import android.provider.MediaStore
 import android.view.View
 import android.view.ViewTreeObserver
+import android.widget.Chronometer
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.androidnetworking.AndroidNetworking
-import com.androidnetworking.error.ANError
-import com.androidnetworking.interfaces.JSONObjectRequestListener
 import com.bumptech.glide.Glide
 import com.doviesfitness.Doviesfitness
 import com.doviesfitness.R
@@ -25,13 +22,11 @@ import com.doviesfitness.allDialogs.menu.EcerciseChngeDialogFragment
 import com.doviesfitness.allDialogs.menu.ExchangDialogMenu
 import com.doviesfitness.allDialogs.menu.ExerciseMarkAsDialogFragment
 import com.doviesfitness.data.local.AppPreferencesHelper
-import com.doviesfitness.data.remote.Webservice
 import com.doviesfitness.databinding.ActivityNewPlayerViewBinding
 import com.doviesfitness.ui.base.BaseActivity
 import com.doviesfitness.ui.bottom_tabbar.home_tab.model.WorkoutDetail
 import com.doviesfitness.ui.bottom_tabbar.home_tab.model.WorkoutDetailResponce
 import com.doviesfitness.ui.bottom_tabbar.rv_swap.OnStartDragListener
-import com.doviesfitness.ui.bottom_tabbar.workout_tab.activity.ActivityMyWorkoutList
 import com.doviesfitness.ui.bottom_tabbar.workout_tab.activity.AddExerciseActivity
 import com.doviesfitness.ui.bottom_tabbar.workout_tab.activity.AddNotesActivity
 import com.doviesfitness.ui.bottom_tabbar.workout_tab.activity.WorkoutCompleteActivity
@@ -42,7 +37,6 @@ import com.doviesfitness.ui.new_player.adapter.NewPlayerExerciseSetAndRepsAdapte
 import com.doviesfitness.ui.new_player.adapter.PlayerRoundAdapter
 import com.doviesfitness.utils.CommanUtils
 import com.doviesfitness.utils.Constant
-import com.doviesfitness.utils.StringConstant
 import com.google.android.exoplayer2.util.Log
 import kotlinx.android.synthetic.main.activity_new_player_view.forword_previous_play_pause
 import kotlinx.android.synthetic.main.activity_new_player_view.llTopBar
@@ -50,13 +44,11 @@ import kotlinx.android.synthetic.main.activity_new_player_view.ll_mark_as_ungrou
 import kotlinx.android.synthetic.main.activity_new_player_view.ll_selectAll
 import kotlinx.android.synthetic.main.activity_new_player_view.selected_count
 import net.khirr.library.foreground.Foreground
-import org.json.JSONArray
-import org.json.JSONObject
 import java.util.concurrent.TimeUnit
 
 class NewPlayerView : BaseActivity(), OnStartDragListener,
     EcerciseChngeDialogFragment.DialogEventListener {
-    private var program_plan_id=""
+    private var program_plan_id = ""
     private var positionForAddNotes = -1
     private lateinit var countDownTimer: CountDownTimer
     private var noteForExercise = ""
@@ -69,7 +61,9 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
     var repalceChildPosition = -1
 
     private val countdownhandler = Handler()
-
+    private var isTimerRunning = false
+    private var elapsedTime = 0L
+    private val handler = Handler()
     private val mInterval = 1000 // 1 second in this case
     private var mHandler: Handler? = null
     private var timeInSeconds = 0L
@@ -83,6 +77,7 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
     var mainViewTotalHeight = 0
     lateinit var complete_workoutDetail: WorkoutDetailResponce
     var isAdmin = "No"
+    private lateinit var chronometer: Chronometer
 
     val foregroundListener = object : Foreground.Listener {
         override fun background() {
@@ -118,8 +113,7 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
             }
         }
 
-        if (intent.getSerializableExtra("WDetail") != null)
-        {
+        if (intent.getSerializableExtra("WDetail") != null) {
             WDetail = intent.getSerializableExtra("WDetail") as WorkoutDetail
             if (intent.hasExtra("from_ProgramPlan")) {
                 if (intent.getStringExtra("from_ProgramPlan") != null) {
@@ -128,8 +122,8 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
             }
         }
 
-        if (intent.getSerializableExtra("complete_workoutDetail")!=null){
-            complete_workoutDetail=
+        if (intent.getSerializableExtra("complete_workoutDetail") != null) {
+            complete_workoutDetail =
                 (intent.getSerializableExtra("complete_workoutDetail") as WorkoutDetailResponce?)!!
         }
 
@@ -263,7 +257,7 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
         }
 
         binding.llEndWorkout.setOnClickListener {
-           // Constant.requestAudioFocusClose(this)
+            // Constant.requestAudioFocusClose(this)
             //countdownhandler.removeCallbacks(countdownRunnable!!)
             //  mCountDownTimer!!.cancel()
             // if (restTimeCountDownTimer != null)
@@ -272,17 +266,15 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
             startActivity(
                 Intent(getActivity(), WorkoutCompleteActivity::class.java)
                     .putExtra(
-                    "WDetail",
-                    WDetail
-                ) .putExtra(
-                    "complete_workoutDetail",
+                        "WDetail",
+                        WDetail
+                    ).putExtra(
+                        "complete_workoutDetail",
                         complete_workoutDetail
-                )
-                  //  .putExtra("duration", duration)
-                    .putParcelableArrayListExtra("RoundsList",roundList)
+                    )
+                     .putParcelableArrayListExtra("RoundsList", roundList)
                     .putExtra("from_ProgramPlan", program_plan_id)
-                   // .putExtra("from_which_frament", from_which_frament)
-            )
+             )
             finish()
         }
         binding.tvDeleteFromRounds.setOnClickListener {
@@ -338,17 +330,14 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
 
 
         binding.addExerciseBtn.setOnClickListener {
-            //  if (exerciseType.isNotEmpty()) {
-            var intent = Intent(getActivity(), AddExerciseActivity::class.java)
+             var intent = Intent(getActivity(), AddExerciseActivity::class.java)
             intent.putExtra("workout_Type", exerciseType)
             startActivityForResult(intent, 7)
-            // }
         }
         startTimer()
+     }
 
-    }
-
-    /**================================== mark as functionality=================================================*/
+    /**================================== mark as functionality =================================================*/
 
     private fun creatLeftAndRightAndSuperset(
         roundName: String, tempList: java.util.ArrayList<ExerciseListingResponse.Data>
@@ -428,12 +417,9 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
     /**=========================ungrouping selected device======================================================*/
     private fun unGroupSelectedExercise() {
         var tempList = java.util.ArrayList<ExerciseListingResponse.Data>()
-
         for (i in 0 until roundList.size) {
-            tempList.addAll(roundList[i].arrSets[0].exerciseList.filter { it.isSelectedExercise })
+          tempList.addAll(roundList[i].arrSets[0].exerciseList.filter { it.isSelectedExercise })
         }
-
-
         createNewRoundWithSelectedExercise(tempList)
     }
 
@@ -1125,7 +1111,7 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
                                             showLoader = replaceExercisesModal.showLoader,
                                             isClicked = replaceExercisesModal.isClicked,
                                             videoLength = replaceExercisesModal.videoLength,
-                                            isRoundSelectedForPlayer =roundList[ReplaceParentPsotion].isRoundSelectedForPlayer
+                                            isRoundSelectedForPlayer = roundList[ReplaceParentPsotion].isRoundSelectedForPlayer
                                         )
                                     )
                                 }
@@ -1139,11 +1125,10 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
                 }
             }
 
-            roundList[ReplaceParentPsotion].isRoundSelectedForPlayer=false
+            roundList[ReplaceParentPsotion].isRoundSelectedForPlayer = false
             playerRoundAdapter.notifyDataSetChanged()
 
-        }
-        else if (requestCode == 111 && resultCode == Activity.RESULT_OK) {// code for replace single exercise
+        } else if (requestCode == 111 && resultCode == Activity.RESULT_OK) {// code for replace single exercise
             var tempSelectedExerciseList =
                 data!!.getSerializableExtra("list") as java.util.ArrayList<ExerciseListingResponse.Data>
             try {
@@ -1219,7 +1204,7 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
         }
         /**adding exercise in round*/
         else if (requestCode == 11 && resultCode == Activity.RESULT_OK) {
-            var flag=roundList[roundPositionForAddExercise].isRoundSelectedForPlayer
+            var flag = roundList[roundPositionForAddExercise].isRoundSelectedForPlayer
             var tempSelectedExerciseList =
                 data!!.getSerializableExtra("list") as java.util.ArrayList<ExerciseListingResponse.Data>
 
@@ -1276,8 +1261,7 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
             roundPositionForAddExercise = -1
             /**blow old code is commented*/
 
-        }
-        else if (requestCode == 7 && resultCode == Activity.RESULT_OK) {
+        } else if (requestCode == 7 && resultCode == Activity.RESULT_OK) {
             //equipment=exercise_equipments
             //Good for=exercise_body_parts
 
@@ -1412,7 +1396,6 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
     }
 
 
-
     /*    private fun blink() {
             val duration = 60 * 60 * 1000L
             var timer = 1
@@ -1427,12 +1410,14 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
                     // Format the time and update the TextView
                     val time = String.format("%02d:%02d", minutes, seconds)
                     binding.timer.text = time
-                  *//*  val minutes = timer / 60000
+                  */
+    /*  val minutes = timer / 60000
                 val seconds = (timer % 60000) / 1000
 
                 // Format the time and update the TextView
                 val time = String.format("%02d:%02d", minutes, seconds)
-                binding.timer.text = time*//*
+                binding.timer.text = time*/
+    /*
             }
 
             override fun onFinish() {
@@ -1446,6 +1431,48 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
         super.onDestroy()
         stopTimer()
     }
+
+
+    private val runnable = object : Runnable {
+        override fun run() {
+            elapsedTime += 1000
+            val hours = (elapsedTime / 3600000).toInt()
+            val minutes = ((elapsedTime % 3600000) / 60000).toInt()
+            val seconds = ((elapsedTime % 60000) / 1000).toInt()
+
+            binding.timer.text = String.format("%02d:%02d:%02d", hours, minutes, seconds)
+
+            handler.postDelayed(this, 1000)
+        }
+    }
+
+    /*   private fun startTimerNew() {
+           if (!isTimerRunning) {
+               binding.timer.base = System.currentTimeMillis() - elapsedTime
+               binding.timer.start()
+              // binding.timer.text= (System.currentTimeMillis() - elapsedTime).toString()
+               handler.postDelayed(runnable, 1000)
+               isTimerRunning = true
+           }
+       }
+
+       private fun pauseTimer() {
+           if (isTimerRunning) {
+               binding.timer.stop()
+               handler.removeCallbacks(runnable)
+
+               isTimerRunning = false
+           }
+       }
+
+       private fun resumeTimer() {
+           if (!isTimerRunning) {
+            binding.timer.base = System.currentTimeMillis() - elapsedTime
+               binding.timer.start()
+               handler.postDelayed(runnable, 1000)
+               isTimerRunning = true
+           }
+       }*/
 
 
     private var mStatusChecker: Runnable = object : Runnable {
@@ -1466,7 +1493,7 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
         try {
             /*val intent = Intent(MediaStore.INTENT_ACTION_MUSIC_PLAYER)
             startActivity(intent)*/
-            if (isMusicPlayerInstalled()){
+            if (isMusicPlayerInstalled()) {
                 launchDefaultMusicPlayer()
             }
 
@@ -1475,6 +1502,7 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
             e.printStackTrace()
         }
     }
+
     private fun isMusicPlayerInstalled(): Boolean {
         val intent = Intent(Intent.ACTION_VIEW)
         intent.type = "audio/*"

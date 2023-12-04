@@ -22,11 +22,11 @@
 
         <ImageView
             android:id="@+id/play_paus_icon"
-            android:layout_width="@dimen/_18sdp"
-            android:layout_height="@dimen/_15sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_17sdp"
             android:layout_centerVertical="true"
             android:layout_marginBottom="@dimen/_2sdp"
-            android:padding="@dimen/_3sdp"
+            android:padding="@dimen/_4sdp"
             android:rotation="270"
             android:tint="@color/colorWhite"
             app:srcCompat="@drawable/down_arrow_ico_fill" />

@@ -1,2 +1,0 @@
-com/doviesfitness/debug/test/BuildConfig.java
- com.doviesfitness.debug.test.BuildConfig

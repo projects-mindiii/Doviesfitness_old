@@ -29,10 +29,7 @@ import com.google.android.exoplayer2.ui.PlayerView
 import com.google.android.exoplayer2.upstream.DataSource
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
 import com.google.android.exoplayer2.util.Util
-import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.rv_exercises
-import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.tv_roundName
-import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.tv_set_and_reps_count
-import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.tv_title_roundNumber
+import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.*
 import java.io.File
 
 class workoutDetailsSetRepsadapter(
@@ -102,7 +99,7 @@ class workoutDetailsSetRepsadapter(
             holder.tv_roundName.text = ""
             holder.tv_title_roundNumber.text = "Round ${position + 1}"
         } else if (roundData.iGroupType == "1") {
-            holder.tv_title_roundNumber.text = "Round $${position + 1} - "
+            holder.tv_title_roundNumber.text = "Round ${position + 1} - "
             holder.tv_roundName.text = "Superset"
         } else if (roundData.iGroupType == "2") {
             holder.tv_title_roundNumber.text = "Round ${position + 1} - "
@@ -113,6 +110,14 @@ class workoutDetailsSetRepsadapter(
             "${roundData.iTargetSets} Sets Of ${roundData.iTargetReps} Reps"
 
         var list = roundData.groupSetsData[0].exerciseTransData
+
+        if (roundData.groupSetsData[0].exerciseTransData.size==2){
+holder.iv_bottom_curv.visibility=View.VISIBLE
+holder.iv_right_curv_icon.visibility=View.VISIBLE
+        }else{
+            holder.iv_bottom_curv.visibility=View.GONE
+            holder.iv_right_curv_icon.visibility=View.GONE
+        }
         setExerciseAdapter(holder, list, position)
     }
 
@@ -300,6 +305,8 @@ class workoutDetailsSetRepsadapter(
         var tv_title_roundNumber = view.tv_title_roundNumber
         var tv_roundName = view.tv_roundName
         var tv_set_and_reps_count = view.tv_set_and_reps_count
+        var iv_right_curv_icon = view.iv_right_curv_icon
+        var iv_bottom_curv = view.iv_bottom_curv
 
 
     }

@@ -1,7 +1,0 @@
- <style>
- @font-face {
-           font-family: 'myface';
-           src: url('file:///android_asset/product_sans_regular.ttf');
- }
- html * {font-size: 11.0pt !important; font-family: myface !important;line-height:18.0pt;} p{color: #8C8C8C;} p strong,p b{color: #242424 !important;}
-</style>

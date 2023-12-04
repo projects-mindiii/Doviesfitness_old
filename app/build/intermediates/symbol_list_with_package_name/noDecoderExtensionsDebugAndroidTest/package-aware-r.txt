@@ -1,2 +1,0 @@
-com.doviesfitness.debug.test
-string my_app_name
