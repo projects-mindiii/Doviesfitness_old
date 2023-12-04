@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp">
+<!--        android:background="@drawable/wo_rounded_background"-->
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cus_round_all_edgeblack"
+                android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_cancle_dialog"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_2sdp"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:srcCompat="@drawable/cancel_ico"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                    android:id="@+id/txt_dialog_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="TOTAL WORKOUT TIME"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    android:fontFamily="@font/futura_bold_regular_tracing"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp"/>
+            <RelativeLayout
+                    android:id="@+id/no_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_30sdp"
+                    android:visibility="visible"
+                    android:layout_centerInParent="true">
+                <ImageView
+                        android:id="@+id/watch_icon"
+                        android:layout_width="@dimen/_58sdp"
+                        android:layout_height="@dimen/_58sdp"
+                        android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:tint="@color/colorWhite"
+                    android:layout_above="@+id/txt_overView_discritpion"
+                        app:srcCompat="@drawable/ic_exercise_time"/>
+                <TextView
+                        android:id="@+id/txt_overView_discritpion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:lineSpacingExtra="@dimen/_7sdp"
+                        android:fontFamily="@font/roboto_light_0"
+                        android:textColor="@color/colorGray12"
+                        android:textSize="@dimen/_12sdp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true">
+
+
+                <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="2"
+                        android:fontFamily="@font/futura_bold_regular_tracing"
+                        android:textSize="@dimen/_80sdp"
+                        android:textColor="@color/colorWhite"
+                        android:src="@drawable/watch_ico"/>
+                <TextView
+                        android:id="@+id/time_txt"
+                        android:layout_below="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Minutes"
+                        android:layout_marginTop="@dimen/_minus16sdp"
+                        android:gravity="center"
+                        android:fontFamily="@font/product_sans_regular"
+                        android:textSize="@dimen/_32sdp"
+                        android:textColor="@color/colorWhite"/>
+
+
+            </RelativeLayout>
+
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.2dp"
+                    android:layout_below="@+id/txt_dialog_heading"
+                    android:background="@color/line_seperator"/>
+
+        </RelativeLayout>
+
+        <!--
+            <RelativeLayout
+                    android:id="@+id/no_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:layout_centerInParent="true">
+                <ImageView
+                        android:id="@+id/watch_icon"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/watch_ico"/>
+                <TextView
+                        android:layout_below="@+id/watch_icon"
+                        android:id="@+id/txt_overView_discritpion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:lineSpacingExtra="@dimen/_6sdp"
+                        android:fontFamily="@font/roboto_light_0"
+                        android:textColor="@color/colorGray12"
+                        android:textSize="@dimen/_15sdp"/>
+            </RelativeLayout>
+        -->
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

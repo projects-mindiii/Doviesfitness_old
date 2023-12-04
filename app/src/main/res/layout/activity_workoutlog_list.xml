@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/container_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.doviesfitness.utils.CustomNestedScrollView
+                android:id="@+id/my_workout_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/my_workout_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_65sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </com.doviesfitness.utils.CustomNestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/no_Workout_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/topBlurView"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/dumble"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:padding="@dimen/_5sdp"
+                app:srcCompat="@drawable/ico_pr_log"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dumble"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:fontFamily="@font/product_sans_regular"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:text="@string/no_workout_log"
+                android:textColor="@color/colorGray13"
+                android:textSize="@dimen/_11sdp" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_trans_parancy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66000000"
+            android:visibility="gone" />
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/topBlurView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineProvider="bounds"
+            app:blurOverlayColor="#99030202">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:padding="@dimen/_2sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/ic_back_arrow_ico" />
+
+                    <TextView
+                        android:id="@+id/mW_title_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/_2sdp"
+                        android:fontFamily="@font/product_sans_bold"
+                        android:letterSpacing="0.04"
+                        android:text="MY WORKOUT LOG"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_add"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/add_icon_b" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/devider_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/toolbar_layout"
+                    android:background="#991d1d1d" />
+
+            </RelativeLayout>
+
+        </eightbitlab.com.blurview.BlurView>
+
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorGray12"
+            android:indeterminateTintMode="src_atop" />
+
+    </RelativeLayout>
+</layout>

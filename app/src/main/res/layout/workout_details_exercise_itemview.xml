@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlack"
+    android:padding="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:id="@+id/ll_upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title_roundNumber"
+            style="@style/AllHeadingsetandreps2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Round 1 - "
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            style="@style/AllDesciptionSetAndReps"
+            android:id="@+id/tv_roundName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_toEndOf="@id/tv_title_roundNumber"
+
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            style="@style/AllDesciptionSetAndReps"
+            android:id="@+id/tv_set_and_reps_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_12sdp"
+             android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_right_curv_icon"
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:layout_below="@+id/ll_upper_layout"
+        android:layout_marginStart="@dimen/_72sdp"
+        android:layout_marginBottom="-5dp"
+         android:src="@drawable/upper_half_circle_arrow" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_exercises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_right_curv_icon"
+         tools:listitem="@layout/workout_exercise_set_and_reps_iteview_ui" />
+
+    <ImageView
+        android:id="@+id/iv_bottom_curv"
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:layout_below="@+id/rv_exercises"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/bottom_half_circle_arrow" />
+
+
+    <View
+        android:id="@+id/divider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_below="@+id/iv_bottom_curv"
+        android:layout_gravity="center"
+        android:alpha=".5"
+        android:focusable="true"
+        android:background="@color/colorBlack4"
+        android:visibility="visible" />
+</RelativeLayout>

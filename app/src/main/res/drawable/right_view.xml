@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/col_input_bg"/>
+    <corners
+            android:radius="@dimen/_1sdp"
+            android:bottomRightRadius="@dimen/_400sdp"
+            android:topRightRadius="@dimen/_400sdp"/>
+    <stroke
+            android:width="@dimen/_1sdp"
+            android:color="@color/col_input_bg"/>
+</shape>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="WhiteStatusTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="WhiteStatusTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+    </style>
+
+    <style name="AppTheme.RegisterSliderActivityTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <!-- <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>-->
+
+    </style>
+
+</resources>

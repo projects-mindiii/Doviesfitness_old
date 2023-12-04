@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_145sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_featured"
+            android:background="@drawable/abc_bg_rounded"
+            app:riv_corner_radius="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:scaleType="centerCrop"/>
+
+    <TextView
+            android:id="@+id/tv_new"
+            style="@style/ExtraProductRegularStyle"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:text="New"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:background="@drawable/feed_new_bg"
+            />
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_black_opacity_bg">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                app:riv_corner_radius="@dimen/_10sdp"
+                android:src="@drawable/rounded_black_opacity_bg"/>
+        <TextView
+                style="@style/ExtraSmallProductBoldStyle"
+                android:id="@+id/tv_featured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dovies"
+                android:gravity="center"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_above="@+id/tv_level"
+                android:textColor="@color/colorWhite"
+                />
+        <TextView
+                style="@style/ExtraSmallFontProductBoldStyle"
+                android:id="@+id/tv_level"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dovies"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite4"
+                />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

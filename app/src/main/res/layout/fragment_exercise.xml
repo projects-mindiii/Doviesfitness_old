@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.doviesfitness.utils.CustomNestedScrollView
+            android:id="@+id/my_fav_exercies_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_fav_exercies_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.doviesfitness.utils.CustomNestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/no_exercies_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/devider_view"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/dumble"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_180sdp"
+                android:padding="@dimen/_5sdp"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/ic_starinactivie"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_add_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dumble"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/product_sans_bold"
+                android:letterSpacing="0.04"
+                android:text="Add Favorite"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_add_plan"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/product_sans_regular"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:text="Start saving your top exercise for quick access, any time"
+                android:textColor="@color/colorGray13"
+                android:textSize="@dimen/_11sdp" />
+
+            <Button
+                android:id="@+id/btn_add_exercise"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_120sdp"
+                android:background="@drawable/create_account_btn_bg_grey"
+                android:backgroundTint="@color/colorBlack3"
+                android:fontFamily="@font/product_sans_bold"
+                android:letterSpacing="0.04"
+                android:text="Explore Exercise"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorGray12"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</layout>

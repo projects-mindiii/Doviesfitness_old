@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="program"
+            type="com.doviesfitness.ui.bottom_tabbar.home_tab.model.GetCustomerProgramDetail" />
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/level_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:minHeight="@dimen/_65sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_level"
+                    style="@style/AllHeadingWorkoutDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:letterSpacing="0"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/tv_level_desc"
+                    style="@style/AllDesciptionWorkoutDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_level"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:text="@string/level" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                     android:background="@color/line_seperator" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/good_for_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:minHeight="@dimen/_65sdp"
+                android:orientation="vertical">
+                 <TextView
+                    android:id="@+id/tv_title_good_for"
+                    style="@style/AllHeadingWorkoutDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:letterSpacing="0"
+                    android:text="@string/good_for" />
+
+                <TextView
+                    android:id="@+id/tv_good_for"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/tv_title_good_for"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="center"
+                     style="@style/AllDesciptionWorkoutDetail"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:background="@color/line_seperator" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/equipment_layout"
+                android:layout_width="match_parent"
+                 android:minHeight="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title_equipment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/equipments"
+                    style="@style/AllHeadingWorkoutDetail"
+                    android:letterSpacing="0"/>
+
+                <TextView
+                    android:id="@+id/tv_equipment"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/tv_title_equipment"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="center"
+                    style="@style/AllDesciptionWorkoutDetail"
+                    />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                     android:background="@color/line_seperator" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/description_layout"
+                android:layout_width="match_parent"
+                 android:minHeight="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title_overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/overview"
+                    android:layout_centerHorizontal="true"
+                    android:letterSpacing="0"
+                    style="@style/AllHeadingWorkoutDetail"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_below="@+id/tv_title_overview"
+                    android:gravity="left"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    style="@style/AllDesciptionWorkoutDetail"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
+
+
+
+
+
+
+

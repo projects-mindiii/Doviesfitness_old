@@ -1,0 +1,132 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.bottom_tabbar.workout_tab.activity.AddNoteActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack">
+
+        <RelativeLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_alignParentTop="true"
+             >
+
+            <TextView
+                android:id="@+id/cancel_button_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:fontFamily="@font/netflix_sans_bold"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                style="@style/AllHeadingWorkoutDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/netflix_sans_bold"
+                android:text="Notes"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/iv_plus"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/add_icon_b"
+                android:tint="@color/colorWhite"
+               />
+
+            <TextView
+                android:id="@+id/tv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/netflix_sans_bold"
+                android:text="Done"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/divider"
+            android:layout_below="@id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/exo_gray_ripple"/>
+        <EditText
+            android:id="@+id/et_Note"
+            style="@style/AllHeadingWorkoutDetail"
+            android:layout_below="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/netflix_sans_regular"
+             android:layout_above="@+id/ll_saveButton"
+            android:textColorHint="@color/colorWhite4"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:gravity="top|start"
+            android:hint="Add note"
+            android:layout_marginTop="1dp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+             />
+
+        <LinearLayout
+            android:id="@+id/ll_saveButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:visibility="gone"
+            android:background="@drawable/create_account_btn_bg"
+            android:backgroundTint="@color/colorBlack3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:padding="@dimen/_1sdp"
+                android:src="@drawable/bookmark_ico"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto_regular_0"
+                android:text="Save Note"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

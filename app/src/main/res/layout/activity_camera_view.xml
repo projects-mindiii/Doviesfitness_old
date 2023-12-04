@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/colorBlack"
+    tools:context=".setting.CameraViewActivity">
+    <FrameLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="Photo"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/seperator_line"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/bottom_seperate_line_color"
+        android:layout_below="@+id/cancel_layout"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_below="@+id/seperator_line"
+      >
+        <com.otaliastudios.cameraview.CameraView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:keepScreenOn="true"
+            app:cameraExperimental="true"
+            app:cameraEngine="camera1"
+            app:cameraPreview="glSurface"
+            app:cameraPlaySounds="true"
+            app:cameraGrid="off"
+            app:cameraFlash="auto"
+            app:cameraFacing="back"
+            app:cameraGestureTap="none"
+            app:cameraMode="picture"
+            app:cameraAutoFocusMarker="@string/cameraview_default_autofocus_marker"
+           />
+
+        <ImageView
+            android:id="@+id/rotate_camera"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="@dimen/_20sdp"
+            android:src="@drawable/rotate_camera" />
+
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:layout_below="@+id/camera_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/button_capture"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:tint="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:src="@drawable/camera_click_img" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:background="@color/colorBlack1"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Photo"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+

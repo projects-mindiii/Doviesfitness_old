@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/containerId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nested_sv"
+                android:background="@color/colorBlack"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_pinned"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_435sdp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_pined"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_435sdp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_img_weight" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:background="@drawable/top_black_gradient_bg" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/bottom_black_gradient_bg" />
+
+
+                        <TextView
+                            android:id="@+id/workout_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/workout_description"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/netflix_sans_bold"
+                            android:gravity="center"
+                            android:text="Workout Name"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:lineSpacingExtra="@dimen/_minus10sdp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_22sdp" />
+
+                        <TextView
+                            android:id="@+id/workout_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/play_video_layout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:gravity="center"
+                            android:text="description"
+                            android:fontFamily="@font/netflix_sans_regular"
+                            android:textAllCaps="false"
+                            android:letterSpacing="0.04"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_11sdp" />
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/play_video_layout"
+                            android:layout_width="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_18sdp">
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_55sdp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/iv_share"
+                                    android:layout_width="@dimen/_24sdp"
+                                    android:layout_height="@dimen/_24sdp"
+                                    android:padding="@dimen/_5sdp"
+                                    android:layout_centerHorizontal="true"
+                                    android:tint="@color/colorWhite"
+                                    app:srcCompat="@drawable/ic_new_share_ico" />
+                                <TextView
+                                    android:id="@+id/share_txt"
+                                    android:fontFamily="@font/netflix_sans_light"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Share"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:layout_centerHorizontal="true"
+                                    android:textColor="@color/description_color"
+                                    android:layout_below="@+id/iv_share"
+                                    android:textSize="@dimen/_7sdp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+
+
+                            <ImageView
+                                android:id="@+id/play_video"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_centerHorizontal="true"
+                                android:visibility="visible"
+                                android:padding="@dimen/_2sdp"
+                                app:srcCompat="@drawable/stream_video_play_ico" />
+
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/iv_overview"
+                                    android:layout_width="@dimen/_25sdp"
+                                    android:layout_height="@dimen/_25sdp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginEnd="@dimen/_30sdp"
+                                    android:padding="@dimen/_4sdp"
+                                    android:tint="@color/colorWhite"
+                                    app:srcCompat="@drawable/ic_eyes_ico" />
+                                <TextView
+                                    android:text="Overview"
+                                    android:layout_centerHorizontal="true"
+                                    android:id="@+id/overview_txt"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:fontFamily="@font/netflix_sans_light"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/description_color"
+                                    android:layout_below="@+id/iv_overview"
+                                    android:textSize="@dimen/_7sdp"
+                                    android:visibility="visible" />
+                            </RelativeLayout>
+
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/stream_list_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_pinned"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_70sdp">
+
+                        <View
+                            android:id="@+id/top_hidden_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.8dp"
+                            android:background="@color/line_seperator"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_8sdp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_mostRecent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:fontFamily="@font/netflix_sans_bold"
+                                android:text="@string/new_release"
+                                android:textColor="@color/title_color"
+                                android:textSize="@dimen/_11sdp"
+                                android:visibility="gone" />
+
+
+                            <ImageView
+                                android:id="@+id/next_icon1"
+                                android:layout_width="@dimen/_18sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_1sdp"
+                                android:padding="@dimen/_3sdp"
+                                android:tint="@color/colorWhite"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/ic_next_arrow" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_recent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_recent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:overScrollMode="never" />
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/first_collection_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_7sdp"
+                                android:fontFamily="@font/netflix_sans_bold"
+                                android:textColor="@color/title_color"
+                                android:textSize="@dimen/_13sdp" />
+
+
+                            <ImageView
+                                android:id="@+id/next_icon2"
+                                android:layout_width="@dimen/_19sdp"
+                                android:layout_height="@dimen/_19sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:padding="@dimen/_3sdp"
+                                android:tint="@color/colorWhite"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/ic_next_arrow" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/level_name"
+                            style="@style/SmallProductRegularStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:text=""
+                            android:textColor="@color/description_color"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_featured"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_featured"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:overScrollMode="never" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/right_arrow"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_50sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_4sdp"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/ic_right_chevron" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/txt_all_workout_collection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_1sdp"
+                            android:fontFamily="@font/netflix_sans_bold"
+                            android:text="@string/more_collection"
+                            android:textColor="@color/title_color"
+                            android:textSize="@dimen/_13sdp"
+                            android:visibility="gone" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_workout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/rl_featured"
+                            android:layout_marginBottom="@dimen/_80sdp"
+                            android:visibility="visible" />
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/action_bar_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/action_bar1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginTop="@dimen/_17sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/log_icon"
+                                android:layout_width="@dimen/_28sdp"
+                                android:layout_height="@dimen/_28sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_13sdp"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_clipboard" />
+                            <TextView
+                                android:id="@+id/favorite"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Favorites"
+                                android:layout_toRightOf="@+id/log_icon"
+                                android:visibility="visible"
+                                android:textSize="@dimen/_10sdp"
+                                android:textColor="@color/colorWhite"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:fontFamily="@font/netflix_sans_regular"
+                                android:layout_centerVertical="true">
+                            </TextView>
+                            <ImageView
+                                android:id="@+id/chrome_cast"
+                                android:layout_width="@dimen/_28sdp"
+                                android:layout_height="@dimen/_28sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:layout_centerHorizontal="true"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/mr_button_connected_light" />
+
+
+                            <TextView
+                                android:id="@+id/download"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_toLeftOf="@+id/iv_search"
+                                android:fontFamily="@font/netflix_sans_regular"
+                                android:text="Downloads"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_10sdp"
+                                android:visibility="visible"/>
+                            <ImageView
+                                android:id="@+id/iv_search"
+                                android:layout_alignParentEnd="true"
+                                android:layout_width="@dimen/_28sdp"
+                                android:layout_height="@dimen/_28sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_marginStart="@dimen/_13sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_search_ico" />
+
+
+                            <ImageView
+                                android:id="@+id/iv_fav"
+                                android:layout_width="@dimen/_28sdp"
+                                android:layout_height="@dimen/_28sdp"
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/_5sdp"
+                                android:visibility="gone"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_star" />
+
+
+                            <ImageView
+                                android:id="@+id/iv_download"
+                                android:layout_width="@dimen/_28sdp"
+                                android:layout_height="@dimen/_28sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:visibility="gone"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_stream_download" />
+
+
+                        </RelativeLayout>
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/action_bar1"
+                            android:background="#991d1d1d"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/txt_no_data_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No data found"
+            android:visibility="gone"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/colorGray2"
+            android:fontFamily="@font/netflix_sans_regular"
+            android:layout_centerInParent="true">
+        </TextView>
+
+
+    </RelativeLayout>
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/transparentBlurView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineProvider="bounds"
+        android:visibility="gone"
+        app:blurOverlayColor="#59000000">
+        <RelativeLayout
+            android:id="@+id/transparent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/transparent_view_color">
+        </RelativeLayout>
+    </eightbitlab.com.blurview.BlurView>
+
+</RelativeLayout>
+</layout>

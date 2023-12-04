@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cus_round_all_edgeblack_white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:fontFamily="@font/product_sans_regular"
+            android:gravity="center"
+            android:text="Choose image"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/colorLightBlack" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp">
+            <TextView
+                android:id="@+id/tv_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/product_sans_regular"
+                android:gravity="left|center_vertical"
+                android:text="Use Camera"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="1"
+                android:textSize="@dimen/_12sdp" />
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/colorWhite"
+                android:src="@drawable/ic_photo_camera_white"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLightBlack" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/tv_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:fontFamily="@font/product_sans_regular"
+                android:gravity="left|center_vertical"
+                android:text="Choose existing"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_10sdp"
+
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/colorWhite"
+                android:src="@drawable/ic_photo_gallery_white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        style="@style/largeProductBoldtyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/cus_round_all_edgeblack"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="true"
+        android:text="@string/cancel"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp" />
+
+
+</LinearLayout>

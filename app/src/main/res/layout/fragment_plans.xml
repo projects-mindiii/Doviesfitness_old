@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.bottom_tabbar.workout_tab.WorkoutFragment">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_below="@+id/top_layout"
+                android:id="@+id/rl_tab"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:paddingBottom="0.7dp"
+                android:background="@color/line_seperator">
+
+            <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlack"
+                    app:tabTextAppearance="@style/CustomTextAppearanceTab"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                app:tabIndicatorHeight="@dimen/tab_selecter_size_1dp"
+                    app:tabTextColor="@color/col_hint"
+                    app:tabIndicatorColor="@color/colorWhite"
+                    app:tabSelectedTextColor="@color/colorWhite"
+                    />
+        </RelativeLayout>
+
+        <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_tab"/>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rltv_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="15.5dp"
+    android:gravity="center">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/dp_sub_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/_5sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/diet_grident_new" />
+    <!--  feed_view_item_gradient -->
+    <TextView
+        android:id="@+id/dp_subcat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="@font/futura_bold_regular_tracing"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="5dp"
+        android:text="MOrning Snakes"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_9sdp" />
+
+    <ImageView
+        android:id="@+id/setting_img"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/new_dots_ico" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/delet_diet_new"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/lock_img"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_toStartOf="@+id/setting_img"
+        android:src="@drawable/lock_ico_bg"
+        android:visibility="gone" />
+</RelativeLayout><!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/rltv_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_gravity="center" android:layout_marginTop="15.5dp" android:gravity="center">
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/dp_sub_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:riv_corner_radius="@dimen/_10sdp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_300sdp" android:layout_alignParentBottom="true" android:background="@drawable/diet_grident"/>
+    &lt;!&ndash;  feed_view_item_gradient &ndash;&gt;
+    <TextView android:id="@+id/dp_subcat_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_8sdp" android:fontFamily="@font/futura_bold_regular_tracing" android:gravity="center" android:letterSpacing="0.04" android:lineSpacingExtra="5dp" android:text="MOrning Snakes" android:textAllCaps="true" android:textColor="@color/colorWhite" android:textSize="@dimen/_9sdp"/>
+    <ImageView android:id="@+id/setting_img" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_alignParentEnd="true" android:layout_alignParentRight="true" android:layout_marginTop="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp" android:visibility="gone" app:srcCompat="@drawable/new_dots_ico"/>
+    <ImageView android:id="@+id/iv_delete" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" android:layout_alignParentEnd="true" android:layout_alignParentRight="true" android:layout_marginTop="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp" android:visibility="gone" app:srcCompat="@drawable/delet_diet_new" tools:ignore="RtlHardcoded"/>
+    <ImageView android:id="@+id/lock_img" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_alignParentEnd="true" android:layout_marginTop="@dimen/_8sdp" android:layout_marginEnd="@dimen/_5sdp" android:layout_toStartOf="@+id/setting_img" android:src="@drawable/lock_ico_bg" android:visibility="gone"/>
+</RelativeLayout>-->

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.doviesfitness.debug",
+  "variantName": "noDecoderExtensionsDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 38,
+      "versionName": "38",
+      "enabled": true,
+      "outputFile": "app-noDecoderExtensions-debug.apk"
+    }
+  ]
+}

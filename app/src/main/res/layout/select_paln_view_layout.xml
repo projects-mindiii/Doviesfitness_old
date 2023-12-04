@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@android:color/transparent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cus_round_all_edgeblack_white"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/ll_diet_plan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <TextView
+                    style="@style/SmallProductRegularStyle"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Create a Plan"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"/>
+
+            <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    app:srcCompat="@drawable/ico_pr_plan"
+                    android:gravity="center"
+                android:tint="@color/colorWhite"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_marginRight="@dimen/_18sdp"/>
+
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:background="@color/line_seperator"
+                android:layout_height="0.7dp"/>
+
+        <LinearLayout
+                android:id="@+id/ll_workout_plan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            <TextView
+                    style="@style/SmallProductRegularStyle"
+                    android:id="@+id/tv_status"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Create a Workout"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"/>
+
+
+            <ImageView
+                    android:id="@+id/iv_common"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    app:srcCompat="@drawable/ico_pr_workout"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp"
+                android:tint="@color/colorWhite"
+                    android:layout_marginRight="@dimen/_18sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/largeProductBoldtyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/cus_round_all_edgeblack_white"
+            android:gravity="center"
+            android:text="CANCEL"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15sdp"
+            />
+
+
+</LinearLayout>

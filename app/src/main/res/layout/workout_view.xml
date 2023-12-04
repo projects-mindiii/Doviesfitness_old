@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlack"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/fl_vv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_exercise"
+        android:background="@color/colorBlack"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/loader_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_below="@+id/rl_exercise"
+        android:background="@color/colorBlack"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/colorGray12"
+            android:indeterminateTintMode="src_atop" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_95sdp"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_exercise"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_exercise"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_95sdp"
+                android:scaleType="centerCrop"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_exercise_time"
+                style="@style/ExtraProductRegularStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="@dimen/_4sdp"
+                android:background="@drawable/rounded_corner_gray_bg"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="15 secs"
+                android:textColor="@color/colorWhite" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_exercise"
+            style="@style/ProductRegularStyleSmallFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_toLeftOf="@+id/ll_action"
+            android:layout_toRightOf="@id/fl_exercise"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/title_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/iv_fav"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:padding="@dimen/_7sdp"
+                android:tint="@color/description_color"
+                android:visibility="visible"
+                app:srcCompat='@drawable/ic_star' />
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_7sdp"
+                android:tint="@color/description_color"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_share" />
+
+            <ImageView
+                android:id="@+id/hide_view"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_7sdp"
+                android:tint="@color/description_color"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/select_exercise_icon"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_7sdp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/abc_radio_uncheck" />
+
+            <ImageView
+                android:id="@+id/iv_lock"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_7sdp"
+                android:tint="@color/description_color"
+                app:srcCompat="@drawable/ic_lock_balck" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exercise_type_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_exercise"
+            android:layout_toLeftOf="@+id/ll_action"
+            android:layout_toRightOf="@id/fl_exercise"
+            android:orientation="vertical"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_exercise_level"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:tint="@color/exercies_libeary"
+                    app:srcCompat="@drawable/ic_level"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_level"
+                    style="@style/ExtraProductRegularStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@id/iv_exercise_level"
+                    android:maxLines="1"
+                    android:text="Basic"
+                    android:textColor="@color/exercies_libeary"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_exercise_equipment"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:padding="@dimen/_4sdp"
+                    android:tint="@color/exercies_libeary"
+                    app:srcCompat="@drawable/ic_inactive_workout" />
+
+                <TextView
+                    android:id="@+id/tv_equipment"
+                    style="@style/ExtraProductRegularStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@id/iv_exercise_equipment"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Abdominal"
+                    android:textColor="@color/exercies_libeary" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp">
+
+                <ImageView
+                    android:id="@+id/iv_goal"
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_14sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:padding="@dimen/_1sdp"
+                    android:tint="@color/exercies_libeary"
+                    app:srcCompat="@drawable/ic_target"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_goal"
+                    style="@style/ExtraProductRegularStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@id/iv_goal"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Basic"
+                    android:textColor="@color/exercies_libeary"
+
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_below="@+id/fl_vv"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/restTime_layout"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_restTime"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:padding="@dimen/_2sdp"
+                android:tint="@color/colorGray12"
+                app:srcCompat="@drawable/breaktime" />
+
+            <TextView
+                style="@style/ExtraSmallProductBoldStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/rest_time"
+                android:textColor="@color/colorGray12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/restTime_layout"
+            android:layout_toRightOf="@+id/restTime_layout"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/rest_time_tv"
+                style="@style/ExtraProductRegularStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#979797" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_below="@+id/time_layout"
+        android:layout_gravity="center"
+        android:alpha=".5"
+        android:focusable="true"
+        android:background="@color/colorBlack4"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_below="@+id/time_layout"
+        android:layout_gravity="center"
+        android:background="@color/divider_color"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

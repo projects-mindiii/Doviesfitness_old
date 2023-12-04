@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorBlack"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_height="@dimen/_40sdp">
+
+
+    <TextView android:layout_width="wrap_content"
+              android:id="@+id/exercise_name"
+              android:layout_height="wrap_content"
+              android:text="Exercise"
+              android:gravity="left"
+              android:layout_centerVertical="true"
+              android:singleLine="true"
+              android:layout_gravity="center_vertical"
+              style="@style/ExtraProductRegularStyle"
+              android:textColor="@color/colorWhite"
+            />
+    <ImageView
+            android:id="@+id/checkbox"
+            android:visibility="visible"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/_24sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_inactiv_check_box"/>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height=".3dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_seperator"/>
+</RelativeLayout>

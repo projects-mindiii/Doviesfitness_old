@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:id="@+id/main_layout"
+        android:padding="@dimen/_4sdp">
+
+        <RelativeLayout
+            android:layout_marginStart="@dimen/_4sdp"
+            android:id="@+id/top_layout"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/video_thumb_layout"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_56sdp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/video_thumb"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_56sdp"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:id="@+id/play_video"
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_27sdp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/stream_video_play_icon_new" />
+
+                <TextView
+                    android:id="@+id/time_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/time_duration_bg"
+                    android:paddingStart="@dimen/_7sdp"
+                    android:fontFamily="@font/product_sans_regular"
+                    android:paddingEnd="@dimen/_7sdp"
+                    android:text=""
+                    android:textColor="@color/inactive_txt_clr"
+                    android:textSize="@dimen/_7sdp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_60sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/video_thumb_layout"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:text="Mega Lower body "
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_11sdp" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/episode"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/product_sans_regular"-->
+<!--                    android:text="Episode 1"-->
+<!--                    android:layout_marginEnd="@dimen/_3sdp"-->
+<!--                    android:layout_marginTop="@dimen/_2sdp"-->
+<!--                    android:letterSpacing="0.02"-->
+<!--                    android:textColor="@color/description_color"-->
+<!--                    android:textSize="@dimen/_10sdp" />-->
+                <TextView
+                    android:id="@+id/episode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+
+                android:lineSpacingExtra="2dp"
+                android:fontFamily="@font/netflix_sans_regular"
+                style="@style/ExtraProductRegularStyle"
+                android:textColor="@color/description_color"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/progress_layout"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+
+                android:visibility="visible">
+
+                <ProgressBar
+                    android:id="@+id/loader"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/_64sdp"
+                    android:layout_height="@dimen/_64sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:indeterminate="false"
+                    android:indeterminateTint="@color/colorGray12"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/custom_circular_progressbar"
+                    android:secondaryProgress="100" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/download_layout"
+                android:layout_width="@dimen/_60sdp"
+                android:visibility="visible"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/download_icon"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/icon_download_new" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/lock_img"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:tint="@color/description_color"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_lock_balck" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_layout"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:letterSpacing="0.02"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:lineSpacingExtra="@dimen/_1sdp"
+            android:fontFamily="@font/product_sans_regular"
+            android:textColor="@color/stream_description"
+            android:textSize="@dimen/_10sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".7dp"
+            android:layout_below="@+id/description"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/line_seperator" />
+
+    </RelativeLayout>
+</layout>

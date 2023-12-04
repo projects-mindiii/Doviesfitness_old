@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:background="@color/colorBlack"
+        tools:context=".ui.profile.MyProfileFragment">
+
+        <RelativeLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_350sdp">
+
+            <ImageView
+                android:id="@+id/iv_user_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/black_bg" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/above_grd"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:id="@+id/iv_context_menu"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:tint="@color/colorWhite"
+                    app:srcCompat="@drawable/ico_pr_setting" />
+
+
+                <ImageView
+                    android:id="@+id/iv_setting_profile"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:tint="@color/colorWhite"
+                    app:srcCompat="@drawable/ico_pr_view_more" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottom_grad"
+                android:scaleType="centerCrop" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bottom_grad"
+                android:scaleType="centerCrop" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_user_name"
+                    style="@style/ExtralargeProductBoldtyle"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/tv_nickName"
+                    style="@style/ExtraProductRegularStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_user_name"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:letterSpacing="0.04"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_view"
+            android:layout_marginBottom="@dimen/_55sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/sixtab_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/iv_add_btn"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/top_tabbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlack"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/my_workout_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_my_workout"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:padding="@dimen/_2sdp"
+                            android:tint="@color/colorWhite"
+                            app:srcCompat="@drawable/ico_pr_workout" />
+
+                        <TextView
+                            android:id="@+id/tv_my_workout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/product_sans_regular"
+                            android:letterSpacing="0.04"
+                            android:text="My Workouts"
+                            android:textColor="@color/color_edit_profile_icon"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/diet_plan_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_diet_plan"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:padding="@dimen/_2sdp"
+                            android:tint="@color/colorWhite"
+                            app:srcCompat="@drawable/ico_pr_diet" />
+
+                        <TextView
+                            android:id="@+id/tv_diet_plan"
+                            style="@style/ExtraProductRegularStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/product_sans_regular"
+                            android:letterSpacing="0.04"
+                            android:text="My Diet"
+                            android:textColor="@color/color_edit_profile_icon"
+                            android:textSize="@dimen/_8sdp"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/workout_log_lnr"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_workout_log"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:padding="@dimen/_2sdp"
+                            android:tint="@color/colorWhite"
+                            app:srcCompat="@drawable/ico_pr_log" />
+
+                        <TextView
+                            android:id="@+id/tv_workout_log"
+                            style="@style/ExtraProductRegularStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/product_sans_regular"
+                            android:letterSpacing="0.04"
+                            android:text="Workout log"
+                            android:textColor="@color/color_edit_profile_icon"
+                            android:textSize="@dimen/_8sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorBlack"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:id="@+id/my_workout_plan_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_workout_plan"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:padding="@dimen/_2sdp"
+                            android:tint="@color/colorWhite"
+                            app:srcCompat="@drawable/ico_pr_plan" />
+
+                        <TextView
+                            android:id="@+id/tv_workout_plan"
+                            style="@style/ExtraProductRegularStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/product_sans_regular"
+                            android:gravity="center"
+                            android:letterSpacing="0.04"
+                            android:text="My Plan"
+                            android:textColor="@color/color_edit_profile_icon"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/favourite_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_my_profile"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:padding="@dimen/_2sdp"
+                            android:tint="@color/colorWhite"
+                            app:srcCompat="@drawable/ico_pr_favourit" />
+
+                        <TextView
+                            android:id="@+id/tv_my_profile"
+                            style="@style/ExtraProductRegularStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/product_sans_regular"
+                            android:gravity="center"
+                            android:letterSpacing="0.04"
+                            android:text="Favorites"
+                            android:textColor="@color/color_edit_profile_icon"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/inbox_lnr"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp">
+
+                            <ImageView
+                                android:id="@+id/iv_inbox"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:padding="@dimen/_2sdp"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ico_pr_notification" />
+
+
+                            <TextView
+                                android:id="@+id/txt_notification_count"
+                                android:layout_width="@dimen/_8sdp"
+                                android:layout_height="@dimen/_8sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:layout_marginEnd="@dimen/_3sdp"
+                                android:background="@drawable/notification_view"
+                                android:fontFamily="@font/product_sans_regular"
+                                android:gravity="center"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/tv_inbox"
+                            style="@style/ExtraProductRegularStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/product_sans_regular"
+                            android:gravity="center"
+                            android:letterSpacing="0.04"
+                            android:text="Inbox"
+                            android:textColor="@color/color_edit_profile_icon"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_add_btn"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:padding="@dimen/_1sdp"
+                app:srcCompat="@drawable/ico_pr_plus" />
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/profile_container_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</layout>

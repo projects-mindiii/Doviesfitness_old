@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/diet_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/dietPlan_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="@dimen/_10sdp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_gredient"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/black_wokout_collection_img" />
+
+        <TextView
+            style="@style/ExtraProductRegularStyle"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:background="@drawable/feed_new_bg"
+            android:gravity="center"
+            android:text="New"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_new_stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_workout_bg"
+            android:fontFamily="@font/netflix_sans_bold"
+            android:gravity="center"
+            android:letterSpacing="0"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingTop=".5dp"
+            android:paddingEnd="@dimen/_2sdp"
+            android:paddingBottom="1dp"
+            android:text="New Workout"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_6sdp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/diet_plan_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txt_week_count"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:fontFamily="@font/futura_bold_regular_tracing"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:paddingLeft="@dimen/_14sdp"
+                android:paddingRight="@dimen/_14sdp"
+                android:text="MIX MAX ULITMATE FAT ASSAULT 2"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/txt_week_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_11sdp"
+                android:fontFamily="@font/product_sans_bold"
+                android:gravity="center"
+                android:letterSpacing="0.02"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/description_color"
+                android:textSize="@dimen/_9sdp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/lock_img"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:padding="@dimen/_6sdp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/lock_ico_bg" />
+
+        <ImageView
+            android:id="@+id/dollor_img"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/dollar_ico"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>

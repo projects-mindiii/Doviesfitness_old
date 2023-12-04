@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_55sdp"
+    android:layout_centerVertical="true"
+    android:elevation="0.5dp"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+
+    <RelativeLayout
+        android:id="@+id/Mcdelete_post"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="end"
+        android:background="@drawable/delete_bg"
+        android:elevation="0.5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/iv_for_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F30E00"
+            android:text="Delete"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_workOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_workout"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_55sdp">
+
+                <ImageView
+                    android:id="@+id/iv_workout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tuts_1" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_img_cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/publish_icon"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:tint="@color/colorWhite"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/dot_icon_wb" />
+
+                    <ImageView
+                        android:id="@+id/iv_redirect"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:visibility="visible"
+                        android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/black_arrow_ico" />
+
+                    <ImageView
+                        android:id="@+id/iv_lock"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_2sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/lock_ico_bg" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/black_arrow_ico" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_time"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/fl_workout"
+                android:layout_toRightOf="@+id/fl_workout"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColor="@color/colorGray13"
+                    android:textSize="@dimen/_10sdp" />
+
+                <View
+                    android:layout_width="0.8dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/colorGray13" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/workOut_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@+id/ll_img_cont"
+                android:layout_toLeftOf="@+id/ll_img_cont"
+                android:layout_toEndOf="@id/ll_time"
+                android:layout_toRightOf="@id/fl_workout"
+                android:gravity="center|start"
+                android:orientation="vertical"
+                tools:ignore="RtlHardcoded">
+
+                <TextView
+                    android:id="@+id/tv_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tv_categoury"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:lineSpacingExtra="1dp"
+                    android:maxLines="2"
+                    android:textColor="@color/description_color"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line_seperator"/>
+
+    </RelativeLayout>
+
+
+</com.daimajia.swipe.SwipeLayout>

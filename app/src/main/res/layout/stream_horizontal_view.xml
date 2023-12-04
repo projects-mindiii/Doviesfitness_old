@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_1sdp">
+
+
+    <FrameLayout
+        android:id="@+id/item_layout"
+        android:layout_width="@dimen/_84sdp"
+        android:layout_height="@dimen/_123sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="@dimen/_4sdp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_featured"
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="@dimen/_112sdp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/_4sdp" />
+
+
+        <TextView
+            android:id="@+id/tv_new"
+            style="@style/ExtraProductRegularStyle"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:background="@drawable/feed_new_bg"
+            android:gravity="center"
+            android:text="New"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_new_stream"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/netflix_sans_bold"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_workout_bg"
+            android:gravity="center"
+            android:textSize="@dimen/_6sdp"
+            android:paddingStart="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_2sdp"
+            android:paddingTop=".5dp"
+            android:letterSpacing="0"
+            android:paddingBottom="1dp"
+            android:text="New Workout"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="bottom"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_featured"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_level"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:lineSpacingExtra="@dimen/_minus3sdp"
+                android:fontFamily="@font/netflix_sans_medium"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_17sdp"
+                android:fontFamily="@font/netflix_sans_regular"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/description_color"
+                android:textSize="@dimen/_8sdp"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/lock_icon"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:background="@drawable/circle_orange_bg"
+            android:padding="@dimen/_3sdp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/lock_ico" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

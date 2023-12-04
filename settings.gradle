@@ -1,0 +1,12 @@
+gradle.ext.exoplayerRoot = settingsDir
+
+def modulePrefix = ':'
+if (gradle.ext.has('exoplayerModulePrefix')) {
+    modulePrefix += gradle.ext.exoplayerModulePrefix
+}
+
+
+
+include ':app' , ':appbarspring',':core',':common',':extractor',':dash',':hls',':ui' ,':cronet',':ima' ,':smoothstreaming'
+
+apply from: 'core_settings.gradle'

@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_270sdp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:background="@drawable/cus_round_all_edgeblack"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_cancle_dialog"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:padding="@dimen/_2sdp"
+            app:srcCompat="@drawable/cancel_ico" />
+
+        <ImageView
+            android:id="@+id/watch_icon"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/dollorpopup" />
+
+        <RelativeLayout
+            android:id="@+id/no_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txt_overView_discritpion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:fontFamily="@font/tamil_sangam"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/_7sdp"
+                android:text="@string/exclusive_workout_dialog"
+                android:textColor="@color/exo_white"
+                android:textSize="@dimen/_15sdp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_add_dietPlan"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/create_account_btn_bg"
+            android:backgroundTint="@color/parchase_now"
+            android:fontFamily="@font/product_sans_bold"
+            android:letterSpacing="0.04"
+            android:text="@string/purchase_now"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

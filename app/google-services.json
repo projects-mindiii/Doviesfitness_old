@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "971897138475",
+    "firebase_url": "https://dovies-c37ef.firebaseio.com",
+    "project_id": "dovies-c37ef",
+    "storage_bucket": "dovies-c37ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971897138475:android:267ff95585fe62ab90e96e",
+        "android_client_info": {
+          "package_name": "com.doviesfitness.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "971897138475-71l4avqmh1mujr7ps8563t68td40kl9f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.doviesfitness.debug",
+            "certificate_hash": "46550d2779332ef58b0c2e9117cda3403f0ad575"
+          }
+        },
+        {
+          "client_id": "971897138475-4ceaov1s6b7dkjggjs2j6bkljqusc1ks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU4zL8w-Ce19gf_cJ8600qMk9K9yQfzB8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "971897138475-4ceaov1s6b7dkjggjs2j6bkljqusc1ks.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "971897138475-67k9qcdgtn2ks549gncgo1v2u65k3td1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dovies.doviesapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

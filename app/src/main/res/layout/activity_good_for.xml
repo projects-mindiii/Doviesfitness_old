@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorBlack"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/colorBlack"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_8sdp"
+                android:tint="@color/colorWhite"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_ico_back_login"/>
+
+            <TextView
+                    android:id="@+id/exercise_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorWhite"
+                    style="@style/SmallProductBoldStyle"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textAllCaps="true"
+                    android:text="@string/filter"
+                    />
+
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height=".7dp"
+                android:id="@+id/devider_view"
+                android:layout_below="@+id/toolbar_layout"
+                android:background="@color/line_seperator"/>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:id="@+id/search_layout"
+                android:layout_below="@+id/devider_view"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/edit_text_bg_gray"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/cancel_action"
+                    android:padding="@dimen/_2sdp">
+                <ImageView
+                        android:layout_width="@dimen/_13sdp"
+                        android:layout_height="@dimen/_13sdp"
+                        app:srcCompat="@drawable/ic_search_ico"
+                        android:id="@+id/search_icon"
+                        android:tint="#8E8E92"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_1sdp"
+                        android:layout_margin="@dimen/_5sdp"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_search"
+                        android:hint="@string/search"
+                        android:textColor="@color/colorWhite"
+                        style="@style/SmallProductRegularStyle"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:textColorHint="@color/col_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="text|textNoSuggestions"
+                        android:layout_toRightOf="@+id/search_icon"
+                        android:textCursorDrawable="@drawable/blue_cursor"
+                        android:background="@null"/>
+
+                <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        app:srcCompat="@drawable/close"
+                        android:id="@+id/clear_txt"
+                        android:padding="@dimen/_4sdp"
+                        android:tint="#dddddd"
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/cancel_bg"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="@dimen/_4sdp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/cancel_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:visibility="gone"
+                    style="@style/SmallProductRegularStyle"
+                    android:textColor="@color/description_color"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+
+        <com.doviesfitness.utils.MyRecycleView
+                android:layout_below="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/exercise_rv"
+                android:layout_marginBottom="@dimen/_60sdp"
+                >
+        </com.doviesfitness.utils.MyRecycleView>
+
+        <TextView
+                android:id="@+id/no_record_found"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="@string/no_record_found"/>
+
+        <Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/done_btn"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/create_account_btn_bg_grey"
+                android:text="@string/done"
+                android:visibility="gone"
+                android:fontFamily="@font/product_sans_bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                />
+        <RelativeLayout
+                android:id="@+id/progress_layout"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+
+            <ProgressBar
+                    android:id="@+id/loader"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:indeterminate="true"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/colorGray12"
+            />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/col_input_bg">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/mediumProductRegularStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorpickerRed"
+            android:fontFamily="@font/product_sans_regular"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/weight"
+            style="@style/mediumProductRegularStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/_6sdp"
+            android:text="Weight"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_done"
+            style="@style/mediumProductRegularStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/done"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp"
+            android:fontFamily="@font/product_sans_regular"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/line_seperator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_background_dark"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:background="@color/select_picker_item"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_seperator" />
+
+                <TextView
+                    android:id="@+id/tv_minutes"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:text="Min"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_seperator" />
+
+            </RelativeLayout>
+            <com.doviesfitness.utils.number_picker.NumberPicker
+                android:id="@+id/no_picker"
+                style="@style/NPWidget.Holo.Light.NumberPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="false" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:background="@color/select_picker_item"
+
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_seperator" />
+
+                <TextView
+                    android:id="@+id/tv_seconds"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:text="Sec"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_seperator" />
+
+            </RelativeLayout>
+            <com.doviesfitness.utils.number_picker.NumberPicker
+                android:id="@+id/no_picker1"
+                style="@style/NPWidget.Holo.Light.NumberPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="false" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

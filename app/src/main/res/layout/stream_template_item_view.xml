@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text1"
+        android:id="@+id/search_txt"
+        android:background="@drawable/rounded_corner_gray_bg"
+        android:textSize="@dimen/_10sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:paddingEnd="@dimen/_7sdp"
+        android:paddingStart="@dimen/_7sdp"
+        android:layout_margin="@dimen/_2sdp"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/netflix_sans_medium"/>
+
+</LinearLayout>

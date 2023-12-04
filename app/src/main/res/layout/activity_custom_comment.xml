@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        tools:context="com.doviesfitness.ui.profile.inbox.activity.CustomCommentActivity">
+
+    <RelativeLayout
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp">
+
+        <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:srcCompat="@drawable/ic_ico_back_login"
+                android:padding="@dimen/_8sdp"
+            android:tint="@color/colorWhite"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_centerVertical="true"
+        />
+
+        <TextView
+                style="@style/SmallProductBoldStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+        />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/line_seperator"
+                android:layout_alignParentBottom="true"
+        />
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/action_bar"
+            android:layout_above="@+id/ll_message"
+            android:fillViewport="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/action_bar"
+                android:layout_above="@+id/ll_message"
+                tools:listitem="@layout/comments_view"
+        />
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+            android:id="@+id/ll_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/edit_text_bg_gray"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_8sdp">
+
+        <EditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="left|center"
+                android:layout_gravity="center"
+                android:maxHeight="@dimen/_60sdp"
+                android:hint="@string/write_a_comment"
+                android:minHeight="@dimen/_30sdp"
+                android:textSize="@dimen/_11sdp"
+                android:textColorHint="@color/col_hint"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="1"/>
+
+
+        <ImageView
+                android:id="@+id/send_msg_button"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="bottom|center_vertical"
+                app:srcCompat="@drawable/ic_send_gray"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

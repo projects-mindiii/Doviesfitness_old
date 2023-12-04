@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.bottom_tabbar.diet_plan.activity.MyDietPlanActivity">
+
+        <RelativeLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:padding="@dimen/_2sdp"
+                android:background="@color/colorWhite"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_ico_back_login"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+            <TextView
+                    android:id="@+id/dp_title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:textAllCaps="true"
+                    android:text="MY DIET PLAN"/>
+
+
+            <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:srcCompat="@drawable/add_icon_b"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/devider_view"
+                android:layout_below="@+id/toolbar_layout"
+                android:background="@color/colorGray1"/>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/devider_view"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <com.doviesfitness.utils.CustomNestedScrollView
+                    android:background="@color/colorWhite"
+                    android:id="@+id/my_dp_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/my_dp_rv">
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </com.doviesfitness.utils.CustomNestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <TextView
+                android:id="@+id/no_record_found"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="@string/no_record_found"/>
+
+
+    </RelativeLayout>
+</layout>

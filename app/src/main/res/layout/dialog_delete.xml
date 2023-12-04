@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.bottom_tabbar.home_tab.dialog.LogoutDialog">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cus_round_all_edgeblack_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_20sdp"
+            android:gravity="center"
+            android:fontFamily="@font/product_sans_bold"
+            android:textSize="@dimen/_10sdp"
+            android:text="@string/are_you_sure_you_want_to_delete_this_workout_log"
+            android:textColor="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha=".5"
+            android:background="@color/line_seperator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/_4sdp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/product_sans_bold"
+                android:gravity="center"
+                android:text="@string/No"
+                android:textColor="#2C84DD" />
+<!--            android:textColor="#2C84DD"-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:alpha=".5"
+                android:background="@color/line_seperator" />
+
+            <TextView
+
+                android:id="@+id/tv_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/_4sdp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_14sdp"
+                android:gravity="center"
+                android:text="@string/delete"
+                android:fontFamily="@font/product_sans_bold"
+                android:textColor="@color/colorRed"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

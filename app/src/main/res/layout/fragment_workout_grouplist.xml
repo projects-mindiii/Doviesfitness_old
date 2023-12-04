@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.doviesfitness.utils.CustomNestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rltv_loader"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:layout_marginTop="@dimen/_600sdp"
+                    android:background="@color/colorBlack"
+                    android:gravity="center"
+
+                    android:visibility="visible">
+
+                    <ProgressBar
+                        android:id="@+id/loader"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:indeterminate="true"
+                        android:indeterminateTint="@color/colorGray10"
+                        android:indeterminateTintMode="src_atop" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/llparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlack"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_300sdp">
+
+                        <ImageView
+                            android:id="@+id/workout_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_300sdp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdp"
+                            android:layout_alignParentBottom="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/black_transparent_drawable"></ImageView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_70sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/black_transparent_top_drawable"></ImageView>
+
+                        <TextView
+                            android:id="@+id/workout_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/level_name"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_1sdp"
+                            android:fontFamily="@font/netflix_sans_bold"
+                            android:gravity="left"
+                            android:lineSpacingExtra="@dimen/_minus10sdp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_22sdp" />
+
+                        <TextView
+                            android:id="@+id/level_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:fontFamily="@font/netflix_sans_regular"
+                            android:gravity="left"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_back"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_6sdp"
+                            android:layout_marginTop="@dimen/_26sdp"
+                            android:padding="@dimen/_8sdp"
+                            android:tint="@color/colorWhite"
+                            app:srcCompat="@drawable/ic_left_arrow1" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/description"
+                        style="@style/ExtraProductRegularStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+
+                        android:fontFamily="@font/netflix_sans_regular"
+                        android:gravity="left"
+
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="visible" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/workout_group_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:paddingBottom="@dimen/_55sdp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </com.doviesfitness.utils.CustomNestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</layout>

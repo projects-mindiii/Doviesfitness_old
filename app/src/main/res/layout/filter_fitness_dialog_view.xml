@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cus_round_all_edgeblack"
+    android:paddingBottom="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/cus_round_all_edgeblack"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_dialog_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/cus_round_all_edgeblack"
+                    android:fontFamily="@font/futura_bold_regular_tracing"
+                    android:gravity="center"
+                    android:text="FILTER WORKOUT"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_17sdp" />
+
+                <ImageView
+                    android:id="@+id/iv_cancle_dialog"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/cus_round_all_edgeblack"
+                    app:srcCompat="@drawable/cancel_ico" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+               android:background="@color/line_seperator"/>
+
+            <View
+                android:id="@+id/txt_hideView"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:background="@color/line_seperator"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_overView_discritpion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:fontFamily="@font/roboto_light_0"
+                android:gravity="start"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:textColor="@color/colorWhite4"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_290sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:background="@color/ios_dialog"
+
+                android:visibility="gone">
+
+                <WebView
+                    android:id="@+id/mWebView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:background="@color/col_input_bg"
+                    android:scrollbars="none" />
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

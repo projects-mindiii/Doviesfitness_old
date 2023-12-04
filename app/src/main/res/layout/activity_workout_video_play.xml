@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/colorBlack">
+
+        <FrameLayout
+            android:id="@+id/uper_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--full screen view-->
+                <com.doviesfitness.utils.MutedVideoView
+                    android:id="@+id/video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_185sdp"
+                    android:layout_alignParentTop="true"
+                    android:visibility="visible" />
+
+                <!--preview full screen-->
+                <RelativeLayout
+                    android:id="@+id/restTime_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_185sdp"
+                    android:background="@color/colorBlack"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/rest_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/restTime_tv"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/futura_bold_regular_tracing"
+                        android:text="REST"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_25sdp" />
+
+                    <TextView
+                        android:id="@+id/restTime_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:fontFamily="@font/futura_bold_regular_tracing"
+                        android:text="00:20"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_40sdp" />
+
+                </RelativeLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/rl_preview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_185sdp"
+                    android:elevation="@dimen/_5sdp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom">
+
+                        <TextView
+                            android:id="@+id/txt_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/futura_bold_regular_tracing"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            android:text="Next"
+                            android:visibility="gone"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_25sdp" />
+
+                        <FrameLayout
+                            android:id="@+id/boundry_frame"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:elevation="@dimen/_5sdp"
+                                android:translationZ="@dimen/_10sdp">
+
+                                <com.doviesfitness.utils.MutedVideoView
+                                    android:id="@+id/preview_video_view"
+                                    android:layout_width="@dimen/_120sdp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"/>
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+
+                        <!--rest time black preview only-->
+                        <FrameLayout
+                            android:id="@+id/rlTxtNext"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorBlack"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/preview_rest_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/futura_bold_regular_tracing"
+                                    android:gravity="center"
+                                    android:text="Rest"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/_16sdp" />
+
+                                <TextView
+                                    android:id="@+id/preview_restTime_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:layout_marginBottom="@dimen/_5sdp"
+                                    android:fontFamily="@font/futura_bold_regular_tracing"
+                                    android:gravity="center"
+                                    android:text="00:20"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/_22sdp" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <!--bottom text of rest timer-->
+                <FrameLayout
+                    android:id="@+id/landscape_exercise_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animateLayoutChanges="true"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|bottom">
+
+                        <TextView
+                            android:id="@+id/landscape_exercise_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/futura_bold_regular_tracing"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:shadowColor="@color/colorBlack"
+                            android:shadowDx="2"
+                            android:shadowDy="2"
+                            android:shadowRadius="3"
+                            android:text="Next"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_25sdp" />
+
+                        <FrameLayout
+                            android:id="@+id/landscape_exercise_time_spacer"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:visibility="visible">
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+               <!-- shadow of gradient-->
+                <RelativeLayout
+                    android:id="@+id/shadow_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_185sdp"
+                    android:animateLayoutChanges="true">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        />
+                    <!--android:background="@drawable/video_gradient_top_bg"-->
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_95sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"/>
+
+                    <!--android:background="@drawable/video_gradient_bg"-->
+
+                </RelativeLayout>
+
+                <!--counter timer on top-->
+                <TextView
+                    android:id="@+id/countDownTime"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/futura_bold_regular_tracing"
+                    android:shadowColor="@color/colorBlack"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="3"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_25sdp" />
+
+                <!--resp count of right corner-->
+                <TextView
+                    android:id="@+id/repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/transparent_reps_bg"
+                    android:fontFamily="@font/futura_bold_regular_tracing"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_4sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="10 Reps"
+                    android:textColor="#F0F0F0"
+                    android:textSize="@dimen/_25sdp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/video_Rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/uper_view"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:background="@color/colorBlack">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/play_controler_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/splash_screen_color"
+            android:padding="@dimen/_2sdp"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/music_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_music"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/music_ico" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/previous_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/previous_icon"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_gray_left_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pause_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_pause_ico" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/next_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/next_icon"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_gray_right_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/orientation_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/orientation_icon"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    app:srcCompat="@drawable/newic_crop_ico" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/pause_workout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/uper_view"
+            android:background="@color/colorBlack"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/totaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/futura_bold_regular_tracing"
+                android:letterSpacing="0"
+                android:shadowColor="@color/colorBlack"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"
+                android:text="00:20"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_32sdp" />
+
+            <TextView
+                android:id="@+id/EName"
+                style="@style/SmallProductRegularStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totaltime"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:letterSpacing="0"
+                android:text="1 Demo"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:id="@+id/play_video"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_video_play_circle_icon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/end_layout"
+                android:background="@color/colorWhite3"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/end_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/splash_screen_color"
+                android:padding="@dimen/_2sdp"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:id="@+id/music_layout1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:padding="@dimen/_3sdp"
+                        app:srcCompat="@drawable/music_ico" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/end_workout_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/largeProductRegularStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/end_workout"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/orientation_layout1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_4sdp"
+                        app:srcCompat="@drawable/newic_crop_ico" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pause_workout_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:background="#1A000000"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/totaltime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/futura_bold_regular_tracing"
+                android:shadowColor="@color/colorBlack"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="3"
+                android:text="00:20"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_30sdp" />
+
+            <TextView
+                android:id="@+id/EName1"
+                style="@style/SmallProductRegularStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totaltime1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:letterSpacing="0"
+                android:text="1 Demo"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:id="@+id/play_video1"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_video_play_circle_icon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/end_layout1"
+                android:background="@color/colorWhite3"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/end_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentBottom="true"
+                android:animateLayoutChanges="true"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/_2sdp"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:id="@+id/music_layout11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_3sdp"
+                        app:srcCompat="@drawable/music_ico" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/end_workout_layout1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/largeProductRegularStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/end_workout"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/landscape_orientation_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_4sdp"
+                        app:srcCompat="@drawable/shadowfull_screen_ico" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

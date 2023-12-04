@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00574B</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#222222</color>
+    <color name="new_seperator">#39353a</color>
+    <color name="line_seperator">#2b2b2d</color>
+    <color name="new_username">#E7E6EB</color>
+    <color name="colorGray">#222222</color>
+    <color name="colorGray1">#d5d5d5</color>
+    <color name="colorGray2">#939393</color>
+    <color name="colorGray3">#888888</color>
+    <color name="colorGray4">#d4d4d4</color>
+    <color name="colorGray5">#8f8e93</color>
+    <color name="colorGray6">#828282</color>
+    <color name="colorGray7">#c7c7c7</color>
+    <color name="colorGray8">#b5b5b5</color>
+    <color name="deselect_color">#666666</color>
+    <color name="colorGray9">#ededed</color>
+    <color name="colorGray10">#8a8a8a</color>
+    <color name="colorGray11">#777777</color>
+    <color name="colorGray12">#a2a2a2</color>
+    <color name="colorGray13">#999999</color>
+    <color name="colorGray14">#EFEFF4</color>
+    <color name="amount_bg">#f8f8f8</color>
+    <color name="day">#bbbbbb</color>
+    <color name="min">#646464</color>
+    <color name="lineColor">#1d1d1d</color>
+    <color name="discription">#e1e1e1</color>
+    <color name="fav_line">#d2d2d2</color>
+    <color name="week_ago_color">#686868</color>
+    <color name="coment_line">#353535</color>
+<!--    <color name="new_background_dark">#181818</color>-->
+    <color name="new_background_dark">#202020</color>
+    <color name="navi_line">#323234</color>
+    <color name="profile_broder">#333333</color>
+    <color name="dialog_line">#353538</color>
+
+
+    <color name="inboxTheme">#99030202</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorheading">#222222</color>
+    <color name="colordata">#212121</color>
+    <color name="colorBlack1">#131313</color>
+    <color name="colorBlack2">#242424</color>
+    <color name="colorBlack3">#2d2d2d</color>
+    <color name="colorBlack4">#3d3d3d</color>
+    <color name="colorBlack5">#4d4d4d</color>
+    <color name="colorBlack6">#5d5d5d</color>
+    <color name="colorBlack7">#c0000000</color>
+    <color name="colorBlack8">#20000000</color>
+    <color name="colorBlack9">#00000000</color>
+    <color name="colorBlack10">#7d7d7d</color>
+    <color name="colorBlack11">#181818</color>
+    <color name="colorBlack12">#1a1a1a</color>
+    <color name="colorBlack13">#80000000</color>
+    <color name="col_input_bg">#121212</color>
+    <color name="col_hint">#868686</color>
+
+    <color name="colorLightBlack">#1b1b1b</color>
+    <color name="text_color">#E4E4E4</color>
+    <color name="transparent_blck">#4D000000</color>
+    <color name="exercies_libeary">#c7c7c7</color>
+    <color name="select_picker_item">#2C2C2D</color>
+    <color name="ios_dialog">#222222</color>
+
+
+    <color name="color_edit_profile_icon">#c5c5c6</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite1">#fafafa</color>
+    <color name="colorWhite4">#b3fafafa</color>
+    <color name="colorWhite2">#f2f2f4</color>
+    <color name="colorWhite3">#cfcfcf</color>
+
+    <color name="colorOrange">#fc5932</color>
+    <color name="colorOrange1">#F15530</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorpickerRed">#E74C38</color>
+    <color name="colorGreen">#00C471</color>
+    <color name="colorGreen1">#5bac50</color>
+    <color name="iconColor">#c6c6c6</color>
+    <color name="colorGreen2">#43e817</color>
+    <color name="done_blue_color">#0195F6</color>
+
+    <!-- dots inactive colors -->
+    <color name="intro_bullet_inactive">#59FFFFFF</color>
+    <!-- dots active colors -->
+    <color name="intro_bullet_active">#FFFFFF</color>
+
+    <array name="array_intro_bullet_inactive">
+        <item>@color/intro_bullet_inactive</item>
+        <item>@color/intro_bullet_inactive</item>
+        <item>@color/intro_bullet_inactive</item>
+        <item>@color/intro_bullet_inactive</item>
+    </array>
+    <array name="array_intro_bullet_active">
+        <item>@color/intro_bullet_active</item>
+        <item>@color/intro_bullet_active</item>
+        <item>@color/intro_bullet_active</item>
+        <item>@color/intro_bullet_active</item>
+    </array>
+
+    <color name="title_color">#ffffff</color>
+    <color name="view_all_text_color">#8db600</color>
+    <color name="collection_title_color">#D74121</color>
+    <color name="workout_heading_color">#7F7F7F</color>
+    <color name="workout_desc_color">#c8c8c8</color>
+    <color name="description_color">#909090</color>
+    <color name="subtitle_workkout_collections">#DDA7A7A8</color>
+    <color name="item_bg_color">#191919</color>
+    <color name="divider_color">#000000</color>
+    <color name="splash_screen_color">#121212</color>
+    <color name="inactive_txt_clr">#cccccc</color>
+    <color name="tab_bg">#343434</color>
+    <color name="workout_seperator_color">#1F1F1F</color>
+    <color name="vertical_seperator">#2F2F2F</color>
+    <color name="created_by_color">#C7C7C7</color>
+    <color name="create_seperator_color">#ECECEC</color>
+
+    <color name="stream_description">#b9b9b9</color>
+    <color name="stream_item_bg_color">#171717</color>
+    <color name="download_bg_color">#363636</color>
+    <color name="line_color">#626262</color>
+    <color name="seperate_line_color">#dbdada</color>
+    <color name="top_seperate_line_color">#292929</color>
+    <color name="bottom_seperate_line_color">#3a393e</color>
+    <color name="transparent_view_color">#80000000</color>
+    <color name="deselected_sets_color">#555555</color>
+    <color name="parchase_now">#7AC0C2</color>
+
+
+    <color name="colorLightBlack1">#1D1D1D</color>
+</resources>

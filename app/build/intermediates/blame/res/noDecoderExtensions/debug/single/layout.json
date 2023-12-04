@@ -1,0 +1,442 @@
+[
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_edit_profile.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_edit_profile.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_favorite_exercise.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_favorite_exercise.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/download_workout_video.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/download_workout_video.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_stream_video_play.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_stream_video_play.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_exercise.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_exercise.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fav_fragment_feeds.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fav_fragment_feeds.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/custom_notification.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/custom_notification.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_my_workout_select_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_my_workout_select_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/stream_overview_fragment.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/stream_overview_fragment.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_cretat__diet_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_cretat__diet_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_diet_pcategory_detail.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_diet_pcategory_detail.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_stream_video_play_landscape_temp.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_stream_video_play_landscape_temp.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_add_exercise.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_add_exercise.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/watch_or_download_video_layout.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/watch_or_download_video_layout.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_my_workout.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_my_workout.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_my_diet_plan_new.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_my_diet_plan_new.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_stream_video_play_landscape.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_stream_video_play_landscape.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_create_work_out_plan_activty.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_create_work_out_plan_activty.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_exercise_listing.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_exercise_listing.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fav_fragment_work_out.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fav_fragment_work_out.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_temp_down_work_outs_video_actvity.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_temp_down_work_outs_video_actvity.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_my_new_workoutlog.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_my_new_workoutlog.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_pager_diet_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_pager_diet_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_video_detail.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_video_detail.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_diet_plan_web_view.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_diet_plan_web_view.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_pager_work_out_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_pager_work_out_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/example.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/example.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_diet_detail.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_diet_detail.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_stream_workout_complete.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_stream_workout_complete.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/collection_download_group_item_view.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/collection_download_group_item_view.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_diet_p_category_new_detail.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_diet_p_category_new_detail.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_week_four2.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_week_four2.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fav_fragment_work_out_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fav_fragment_work_out_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_add_to_work_out_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_add_to_work_out_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_setting_fragmanet.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_setting_fragmanet.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_faq.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_faq.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_exercise_library.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_exercise_library.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_home_tab.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_home_tab.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_search_layout.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_search_layout.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_show_week_three.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_show_week_three.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_my_favourite.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_my_favourite.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/stream_trailer_fragment.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/stream_trailer_fragment.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_workout.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_workout.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_stream_video_play_landscape_from_down_load.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_stream_video_play_landscape_from_down_load.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_inbox.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_inbox.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_workout_log.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_workout_log.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_new_player_view.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_new_player_view.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_show_webview.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_show_webview.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_create_workout.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_create_workout.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_week_one.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_week_one.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_workout_plan_detail.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_workout_plan_detail.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_diet_plan_detail.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_diet_plan_detail.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_show_week_one.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_show_week_one.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_select_work_out_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_select_work_out_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_workout_collection_select_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_workout_collection_select_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/player_activity.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/player_activity.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/feed_view.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/feed_view.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_show_diet_plan_detail.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_show_diet_plan_detail.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_subscription.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_subscription.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_workout_collection.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_workout_collection.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_my_diet_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_my_diet_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_temp_download_stream.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_temp_download_stream.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_good_for.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_good_for.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_create__diet_pcategory_detail_actvity.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_create__diet_pcategory_detail_actvity.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_workout_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_workout_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_stream_log_history.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_stream_log_history.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_week_two.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_week_two.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_filter_exercise.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_filter_exercise.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_other_media_stream.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_other_media_stream.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_show_pager_work_out_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_show_pager_work_out_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_diet_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_diet_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_workout_grouplist.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_workout_grouplist.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_add_notes_new.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_add_notes_new.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_stream_log.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_stream_log.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_exercise_detaillist.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_exercise_detaillist.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_my_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_my_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_work_out_detail.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_work_out_detail.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_pager_plan_over_view.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_pager_plan_over_view.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_contact_us.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_contact_us.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_show_pager_diet_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_show_pager_diet_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_create__diet_detail_actvity.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_create__diet_detail_actvity.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_my_workout.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_my_workout.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_stream_collection_new.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_stream_collection_new.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_show_pager_plan_over_view.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_show_pager_plan_over_view.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_show_week_two.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_show_week_two.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_exercise_library_create.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_exercise_library_create.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_plans.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_plans.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_invite_friend.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_invite_friend.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_create__diet_plan_web_view.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_create__diet_plan_web_view.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_workout_complete.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_workout_complete.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_feed_details.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_feed_details.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_workout_video_play.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_workout_video_play.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_my_profile.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_my_profile.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_change_password_actvity.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_change_password_actvity.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_notification_exercies.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_notification_exercies.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_view_log_images.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_view_log_images.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_work_out_plan_detail.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_work_out_plan_detail.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_week_three.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_week_three.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_select_work_out_categury.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_select_work_out_categury.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_workoutlog_list.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_workoutlog_list.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_week_four.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_week_four.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_expanded_controls_chromecast.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_expanded_controls_chromecast.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_my_plan_from_profile.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_my_plan_from_profile.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_my_diet_plan.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_my_diet_plan.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_splash_screen.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/fragment_stream_video.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/fragment_stream_video.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_setting.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_setting.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_stream_detail_new.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_stream_detail_new.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_custom_notification.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_custom_notification.xml"
+    },
+    {
+        "merged": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/stripped.dir/layout/activity_diet_plan_web_view.xml",
+        "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/layout/activity_diet_plan_web_view.xml"
+    }
+]

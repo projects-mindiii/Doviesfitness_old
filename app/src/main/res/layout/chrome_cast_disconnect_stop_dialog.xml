@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    >
+    <RelativeLayout
+        android:id="@+id/data_layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:orientation="vertical"
+        android:background="@drawable/chrome_cast_top_rounded_bg">
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/connected_icon"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:tint="@color/colorOrange1"
+            android:src="@drawable/ic_mr_button_connected_30_dark"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textColor="@color/colorOrange1"
+            android:fontFamily="@font/netflix_sans_bold"
+            android:textSize="@dimen/_16sdp"
+            android:text="Cast to"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".7dp"
+            android:layout_below="@+id/top_layout"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/line_seperator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stop_casting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/netflix_sans_bold"
+            android:textSize="@dimen/_14sdp"
+            android:text="@string/stop_casting"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_white_corner_bg"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:layout_margin="@dimen/_8sdp"
+
+            />
+        <TextView
+            android:id="@+id/disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/netflix_sans_bold"
+            android:textSize="@dimen/_14sdp"
+            android:text="Disconnect"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_white_corner_bg"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:layout_margin="@dimen/_8sdp"
+
+            />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_cancle_dialog"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_10sdp"
+        app:srcCompat="@drawable/cancel_ico"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

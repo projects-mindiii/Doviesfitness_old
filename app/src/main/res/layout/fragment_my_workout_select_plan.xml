@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+            tools:context=".ui.createAndEditDietPlan.selectWeekPlan.fragments.MyWorkoutSelectPlanFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_workout_rv"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+                android:id="@+id/txt_no_data_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No data found"
+                android:visibility="gone"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorGray2"
+                android:fontFamily="@font/product_sans_regular"
+                android:layout_centerInParent="true">
+        </TextView>
+
+
+        <ProgressBar
+                android:id="@+id/loader_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/colorGray12"/>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/container_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context=".ui.showDietPlanDetail.ShowDietPlanDetailActivity">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.createAndEditDietPlan.activity.CreateWorkOutPlanActivty">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_bg"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <RelativeLayout
+                        android:id="@+id/top_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="@dimen/_435sdp"
+                        app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                        <ImageView
+                            android:id="@+id/iv_user_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+
+                            android:src="@drawable/black_bg" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:background="@drawable/top_black_gradient_bg"
+                            android:scaleType="centerCrop" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:padding="@dimen/_2sdp">
+
+                            <ImageView
+                                android:id="@+id/iv_back"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/ic_ico_back_login" />
+
+                            <ImageView
+                                android:id="@+id/iv_setting_profile"
+                                android:layout_width="@dimen/_28sdp"
+                                android:layout_height="@dimen/_28sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:tint="@color/colorWhite"
+                                app:srcCompat="@drawable/dot_icon_wb" />
+
+                        </RelativeLayout>
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_130sdp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/bottom_black_gradient_bg"
+                            android:scaleType="centerCrop" />
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/bottom_black_gradient_bg"
+                            android:scaleType="centerCrop" />
+
+               <!--         <TextView
+                            android:id="@+id/txt_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_16sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:fontFamily="@font/futura_bold_regular_tracing"
+                            android:gravity="center"
+                            android:lineSpacingExtra="@dimen/_5sdp"
+                            android:textAllCaps="true"
+                            android:letterSpacing="0.04"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_20sdp" />-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_25sdp"
+                            android:gravity="bottom"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_user_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/futura_bold_regular_tracing"
+                                android:gravity="center"
+                                android:lineSpacingExtra="@dimen/_5sdp"
+                                android:textAllCaps="true"
+
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_22sdp" />
+
+                            <TextView
+                                android:id="@+id/tv_sub_header"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txt_user_name"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/netflix_sans_regular"
+                                android:gravity="center"
+                                android:lineSpacingExtra="@dimen/_5sdp"
+                                android:text=""
+                                android:textColor="@color/col_hint"
+                                android:textSize="@dimen/_10sdp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/plan_category_tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@color/colorBlack"
+                    android:elevation="@dimen/_2sdp"
+                    app:tabIndicatorHeight="@dimen/tab_selecter_size_1dp"
+                    android:textSize="@dimen/_10sdp"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/colorBlack"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/colorWhite"
+                    app:tabTextAppearance="@style/blackTabTheam" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+
+
+                    android:background="@color/line_seperator"
+
+                    />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/plan_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlack"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltv_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@color/colorBlack"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/loader"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorGray12"
+                android:indeterminateTintMode="src_atop"/>
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/container_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+
+</layout>
+
+
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_60sdp"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/select_pic_layout"
+        android:layout_width="match_parent"
+        android:background="@drawable/camera_border_bg"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/select_pic"
+        android:layout_width="@dimen/_17sdp"
+        android:layout_height="@dimen/_17sdp"
+        android:tint="@color/colorGray13"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/ic_photo_camera_stream" />
+    </RelativeLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/progress_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuts_1"
+        android:visibility="gone"
+        app:riv_corner_radius="@dimen/_5sdp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/delete_img"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cancel_ico"
+        android:visibility="gone"
+        app:riv_corner_radius="@dimen/_6sdp"
+        app:riv_border_color="@color/colorWhite2"
+        app:riv_border_width=".1dp">
+
+    </com.makeramen.roundedimageview.RoundedImageView>
+
+
+</RelativeLayout>

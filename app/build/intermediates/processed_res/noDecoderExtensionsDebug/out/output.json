@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.doviesfitness.debug",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "PROCESSED_RES"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 38,
+        "versionName": "1.27",
+        "outputFile": "app-noDecoderExtensions-debug.apk",
+        "fullName": "noDecoderExtensionsDebug",
+        "baseName": "noDecoderExtensions-debug",
+        "dirName": ""
+      },
+      "path": "resources-noDecoderExtensionsDebug.ap_",
+      "properties": {
+        "packageId": "com.doviesfitness.debug",
+        "split": "",
+        "minSdkVersion": "21"
+      }
+    }
+  ]
+}

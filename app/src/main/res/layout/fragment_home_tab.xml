@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout android:id="@+id/container_id" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.core.widget.NestedScrollView android:id="@+id/nested_sv" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/colorBlack" android:fillViewport="true">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorBlack" android:paddingTop="@dimen/_80sdp" tools:context=".ui.bottom_tabbar.home_tab.HomeTabFragment">
+                    <RelativeLayout android:id="@+id/rl_featured" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorBlack" android:visibility="visible">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_featured" android:layout_width="match_parent" android:layout_height="wrap_content" tools:listitem="@layout/featured_view"/>
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/right_arrow" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_50sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginRight="@dimen/_4sdp" android:visibility="gone" app:srcCompat="@drawable/ic_right_chevron"/>
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_feed" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_featured"></androidx.recyclerview.widget.RecyclerView>
+                    <TextView style="@style/mediumProductRegularStyle" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/colorOrange" android:gravity="center" android:text="@string/under_devlopment_mode" android:textColor="@color/colorBlack" android:visibility="gone"/>
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <eightbitlab.com.blurview.BlurView android:id="@+id/topBlurView" android:layout_width="match_parent" android:layout_height="wrap_content" android:outlineProvider="bounds" app:blurOverlayColor="@color/colorBlack">
+            <RelativeLayout android:id="@+id/action_bar_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <!--
+                 <com.github.mmin18.widget.RealtimeBlurView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_80sdp"
+                                app:realtimeBlurRadius="20dp"
+                                app:realtimeOverlayColor="#99030202" />
+                -->
+                <RelativeLayout android:id="@+id/action_bar1" android:layout_width="match_parent" android:layout_height="@dimen/_50sdp" android:layout_marginTop="@dimen/_30sdp" android:orientation="horizontal">
+                    <ImageView android:id="@+id/iv_navigation" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_15sdp" android:layout_marginLeft="@dimen/_15sdp" android:padding="@dimen/_5sdp" android:tint="@color/colorWhite" app:srcCompat="@drawable/ico_left_menu"/>
+                    <TextView style="@style/SmallRobotoRegularStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:text="@string/feed" android:textColor="@color/colorWhite"/>
+                    <FrameLayout android:id="@+id/inbox_icon" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <ImageView android:layout_width="40dp" android:layout_height="31dp" android:layout_gravity="center" android:layout_marginRight="@dimen/_8sdp" android:padding="@dimen/_2sdp" android:tint="@color/colorWhite" app:srcCompat="@drawable/ico_notification"/>
+                        <TextView android:id="@+id/msg_count" android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" android:layout_gravity="top|end" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_10sdp" android:background="@drawable/circlr_red_bg" android:gravity="center" android:text="0" android:textColor="@color/colorWhite" android:textSize="@dimen/_7sdp"/>
+                    </FrameLayout>
+                </RelativeLayout>
+                <View android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_below="@+id/action_bar1" android:background="@color/line_seperator"/>
+            </RelativeLayout>
+        </eightbitlab.com.blurview.BlurView>
+        <RelativeLayout android:id="@+id/rltv_loader" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/colorBlack" android:layout_below="@+id/topBlurView" android:visibility="gone">
+            <ProgressBar android:id="@+id/loader" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_centerInParent="true" android:indeterminate="true" android:indeterminateTint="@color/colorGray12" android:indeterminateTintMode="src_atop"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
+
+<!--
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/container_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nested_sv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlack"
+                    android:paddingTop="@dimen/_80sdp"
+                    tools:context=".ui.bottom_tabbar.home_tab.HomeTabFragment">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_featured"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlack"
+                        android:visibility="gone">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_featured"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdp"
+                            tools:listitem="@layout/featured_view" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/right_arrow"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_4sdp"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_right_chevron" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_feed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/rl_featured">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <TextView
+                        style="@style/mediumProductRegularStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorOrange"
+                        android:gravity="center"
+                        android:text="@string/under_devlopment_mode"
+                        android:textColor="@color/colorBlack"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/topBlurView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineProvider="bounds"
+            app:blurOverlayColor="@color/colorBlack">
+
+
+        <RelativeLayout
+            android:id="@+id/action_bar_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           &lt;!&ndash; <com.github.mmin18.widget.RealtimeBlurView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:realtimeBlurRadius="20dp"
+                app:realtimeOverlayColor="#99030202" />&ndash;&gt;
+
+
+            <RelativeLayout
+                android:id="@+id/action_bar1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_navigation"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:tint="@color/colorWhite"
+                    app:srcCompat="@drawable/ico_left_menu" />
+
+                <TextView
+                    style="@style/SmallRobotoRegularStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/feed"
+                    android:textColor="@color/colorWhite" />
+
+                <FrameLayout
+                    android:id="@+id/inbox_icon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="31dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:padding="@dimen/_2sdp"
+                        android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/ico_notification" />
+
+                    <TextView
+                        android:id="@+id/msg_count"
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_gravity="top|end"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/circlr_red_bg"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_7sdp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_below="@+id/action_bar1"
+                android:background="@color/line_seperator" />
+
+        </RelativeLayout>
+
+        </eightbitlab.com.blurview.BlurView>
+        <RelativeLayout
+            android:id="@+id/rltv_loader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"
+            android:layout_below="@+id/topBlurView"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/loader"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorGray12"
+                android:indeterminateTintMode="src_atop" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>
+-->

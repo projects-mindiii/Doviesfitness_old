@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_290sdp"
+    android:background="@color/colorBlack">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/exercise_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_290sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/_6sdp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:layout_marginRight="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/black_wokout_collection_img"
+        android:visibility="visible"
+        app:riv_corner_radius="@dimen/_6sdp"/>
+
+    <TextView
+        android:id="@+id/exercise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/level_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:fontFamily="@font/netflix_sans_bold"
+        android:gravity="center"
+        android:text=""
+        android:lineSpacingExtra="@dimen/_minus10sdp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_22sdp" />
+
+    <TextView
+        android:id="@+id/level_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_28sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_11sdp"
+        android:fontFamily="@font/netflix_sans_regular"
+        android:textColor="@color/colorGray6" />
+
+    <TextView
+        android:id="@+id/tv_new_stream"
+        style="@style/ExtraProductRegularStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_14sdp"
+        android:background="@drawable/feed_new_bg"
+        android:gravity="center"
+        android:textSize="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_3sdp"
+        android:paddingEnd="@dimen/_3sdp"
+        android:text="New Season"
+        android:textColor="@color/colorWhite"
+        android:visibility="gone" />
+
+</RelativeLayout>

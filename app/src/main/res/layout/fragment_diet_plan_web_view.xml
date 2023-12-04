@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:focusable="true"
+        android:clickable="true"
+        android:id="@+id/containerId"
+        android:focusableInTouchMode="true"
+        tools:context=".ui.bottom_tabbar.diet_plan.fragment.DietPlanWebViewFragment">
+
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/colorBlack"
+            android:visibility="gone"
+            android:layout_below="@+id/topBlurView"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:indeterminateTint="@color/colorGray12"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/topBlurView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineProvider="bounds"
+            app:blurOverlayColor="@color/colorBlack">
+
+            <RelativeLayout
+                android:id="@+id/action_bar_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:padding="@dimen/_2sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/ic_ico_back_login" />
+
+                    <TextView
+                        android:id="@+id/dp_title_name"
+                        style="@style/ForHeadingText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_55sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Webview"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/devider_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_below="@+id/toolbar_layout"
+                    android:background="@color/line_seperator" />
+
+            </RelativeLayout>
+
+        </eightbitlab.com.blurview.BlurView>
+
+
+    </RelativeLayout>
+</layout>

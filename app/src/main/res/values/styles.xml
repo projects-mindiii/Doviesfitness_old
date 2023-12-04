@@ -1,0 +1,656 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+
+    <style name="AppTheme.SliderActivityTheme">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+    <style name="streamTabTheme">
+        <item name="android:textSize">@dimen/_9sdp</item>
+        <item name="android:fontFamily">@font/netflix_sans_bold</item>
+        <item name="android:textColor">@color/colorGray13</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+
+    <style name="AppTheme.RegisterSliderActivityTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+
+       <!-- <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>-->
+
+    </style>
+<!--
+  <style name="RegisterSliderActivityTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+      <item name="colorAccent">@color/colorWhite</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+      <item name="colorPrimaryDark">@color/colorWhite</item>
+      <item name="android:statusBarColor">@color/colorWhite</item>
+
+      <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+-->
+    <style name="BlackTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorGray1</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+    </style>
+    <style name="BlackTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/splash_screen_color</item>
+        <item name="colorAccent">@color/colorGray1</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+
+    <style name="IntroSliderTheme" parent="@android:style/Theme.Holo">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <style name="WhiteStatusTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+    </style>
+    <style name="blackStatusTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+    </style>
+
+
+    <style name="WhiteStatusTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+
+    <style name="BlackTheam" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <style name="InboxTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/inboxTheme</item>
+        <item name="colorAccent">@color/inboxTheme</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+
+    <style name="BlackStatusTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorGray1</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+    <style name="BlackStatusExpandedControlsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorGray1</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+    <style name="BlackStatusTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+
+
+    <style name="BaseTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorBlack</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+    </style>
+
+
+
+    <style name="SliderTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+    <style name="DefaultNumberPickerTheme" parent="AppTheme">
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+
+    </style>
+
+    <!--Futura style-->
+    <style name="SmallFutureStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/futura</item>
+    </style>
+
+    <style name="mediumFutureStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/futura</item>
+    </style>
+
+    <style name="largeFutureStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/futura</item>
+    </style>
+
+
+    <!--Futura BOLD style-->
+    <style name="SmallFutureBoldStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/futura_bold</item>
+    </style>
+
+    <style name="mediumFutureBoldStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/futura_bold</item>
+    </style>
+
+    <style name="largeFutureBoldStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/futura_bold</item>
+    </style>
+
+
+    <!--ROBOTO style-->
+    <style name="SmallRobotoStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/roboto_black_0</item>
+    </style>
+
+    <style name="mediumRobotoStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/roboto_black_0</item>
+    </style>
+
+    <style name="largeRobotoStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/roboto_black_0</item>
+    </style>
+
+
+    <!--ROBOTO BOLD style-->
+    <style name="SmallRobotoBoldStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/roboto_bold_0</item>
+    </style>
+
+    <style name="mediumRobotoBoldStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/roboto_bold_0</item>
+    </style>
+
+    <style name="largeRobotoBoldStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/roboto_bold_0</item>
+    </style>
+
+    <!--ROBOTO Italic style-->
+    <style name="SmallRobotoItalicStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/roboto_italic_0</item>
+    </style>
+
+    <style name="mediumRobotoItalicStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/roboto_italic_0</item>
+    </style>
+
+    <style name="largeRobotoItalicStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/roboto_italic_0</item>
+    </style>
+
+    <!--ROBOTO Light Style-->
+    <style name="SmallRobotoLightStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/roboto_light_0</item>
+    </style>
+
+    <style name="mediumRobotoLightStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/roboto_light_0</item>
+    </style>
+
+    <style name="largeRobotoLightStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/roboto_light_0</item>
+    </style>
+
+    <!--ROBOTO Medium Style-->
+    <style name="SmallRobotoMediumStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/roboto_medium_0</item>
+    </style>
+
+    <style name="mediumRobotoMediumStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/roboto_medium_0</item>
+    </style>
+
+    <style name="largeRobotoMediumStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/roboto_medium_0</item>
+    </style>
+
+    <!--ROBOTO Regular Style-->
+    <style name="SmallRobotoRegularStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/roboto_regular_0</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="SmallRobotoRegularStyleText">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:fontFamily">@font/roboto_regular_0</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="mediumRobotoRegularStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/roboto_regular_0</item>
+    </style>
+
+    <style name="largeRobotoRegularStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/roboto_regular_0</item>
+    </style>
+
+    <!--TamilSangam Style-->
+    <style name="ExtraSmallTamilSangamStyle">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:fontFamily">@font/tamil_sangam</item>
+    </style>
+    <style name="SmallTamilSangamStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/tamil_sangam</item>
+    </style>
+
+    <style name="mediumTamilSangamStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/tamil_sangam</item>
+    </style>
+
+    <style name="largeTamilSangamStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/tamil_sangam</item>
+    </style>
+
+
+
+    <style name="AllFragment_Tabs_Changes">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <!--ProductBold Style-->
+    <!--roboto_regular_0-->
+    <!--product_sans_bold-->
+
+    <style name="ExtraSmallProductBoldStyle">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:letterSpacing">0.04</item>
+
+    </style>
+
+    <style name="DialogAnimationBottTop" parent="AppTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_from_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_in_left</item>
+    </style>
+
+    <style name="ExtraSmallFontProductBoldStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:letterSpacing">0.04</item>
+
+    </style>
+    <style name="SmallProductBoldStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:letterSpacing">0.04</item>
+
+    </style>
+
+    <style name="mediumProductBoldStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:letterSpacing">0.04</item>
+
+    </style>
+
+    <style name="largeProductBoldtyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="ExtralargeProductBoldtyle">
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:letterSpacing">0.04</item>
+
+    </style>
+
+
+    <style name="ForHeadingText">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:letterSpacing">0.04</item>
+
+    </style>
+
+
+    <style name="blackTabTheam">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:textColor">@color/colorGray13</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+
+
+
+
+    <style name="AuthTabBarStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:textColor">@color/colorGray13</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+    <style name="weekTextBArStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:textColor">@color/colorGray1</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="fav_talb_style">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:textColor">@color/colorGray1</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+
+    <style name="weekTextBlackStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:textColor">@color/colorGray1</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+
+    <!--ProductRegular Style-->
+    <style name="ExtraSmallProductRegularStyle">
+        <item name="android:textSize">@dimen/_9sdp</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+    <style name="ExtraSmallProductRegularStyle1">
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+    <style name="ExtraProductRegularStyle">
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+    <style name="ProductRegularStyleSmallFont">
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="SmallProductRegularStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:letterSpacing">0.04</item>
+
+    </style>
+
+    <style name="mediumProductRegularStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:letterSpacing">0.04</item>
+
+    </style>
+
+    <style name="largeProductRegularStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/product_sans_regular</item>
+        <item name="android:letterSpacing">0.04</item>
+    </style>
+<!--tab text-->
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:fontFamily">@font/product_sans_bold</item>
+        <item name="android:textColor">@color/inactive_txt_clr</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+///////////////
+
+
+    <style name="MyTheme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="shadoweffect">
+        <item name="android:paddingLeft">4px</item>
+        <item name="android:paddingBottom">4px</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+
+
+
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MenuBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+
+<!--all title and desciption style for  AllHeadingWorkoutDetail  ,AllDesciptionWorkoutDetail     -->
+ <!--   <style name="AllHeadingWorkoutDetail">
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:fontFamily">@font/futura_bold_regular_tracing</item>
+        <item name="android:textColor">@color/colorWhite</item>
+         <item name="android:layout_marginTop">@dimen/_15sdp</item>
+    </style>
+    <style name="AllDesciptionWorkoutDetail">
+         <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/workout_desc_color</item>
+         <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/tamil_sangam_regular</item>
+        <item name="gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_15sdp</item>
+     </style>-->
+
+    <style name="AllHeadingWorkoutDetail">
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/futura_bold_new_downloaded</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_marginTop">@dimen/_15sdp</item>
+    </style>
+    <style name="AllDesciptionWorkoutDetail">
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/workout_heading_color</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/netflix_sans_regular</item>
+        <item name="gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_15sdp</item>
+    </style>
+<!--for set and reps bottom styles-->
+    <style name="AllHeadingsetandreps">
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:fontFamily">@font/netflix_sans_bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+     </style>
+    <style name="AllHeadingsetandreps2">
+        <item name="android:letterSpacing">0</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:fontFamily">@font/netflix_sans_medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+     </style>
+    <style name="AllDesciptionSetAndReps">
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/workout_desc_color</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/tamil_sangam_regular</item>
+        <item name="gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+      </style>
+
+
+
+    <style name="BlurredDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">#111111</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+</resources>

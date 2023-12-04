@@ -1,0 +1,537 @@
+com/doviesfitness/databinding/FragmentOtherMediaStreamBinding.java
+ com.doviesfitness.databinding.FragmentOtherMediaStreamBinding
+com/doviesfitness/databinding/FragmentExerciseLibraryCreateBinding.java
+ com.doviesfitness.databinding.FragmentExerciseLibraryCreateBinding
+com/doviesfitness/databinding/ActivityAddNotesNewBinding.java
+ com.doviesfitness.databinding.ActivityAddNotesNewBinding
+com/doviesfitness/ui/room_db/GithubTypeConverters.java
+ com.doviesfitness.ui.room_db.GithubTypeConverters
+ com.doviesfitness.ui.room_db.GithubTypeConverters$1
+ com.doviesfitness.ui.room_db.GithubTypeConverters$2
+ com.doviesfitness.ui.room_db.GithubTypeConverters$3
+com/doviesfitness/databinding/CollectionDownloadGroupItemViewBinding.java
+ com.doviesfitness.databinding.CollectionDownloadGroupItemViewBinding
+com/doviesfitness/databinding/FragmentShowPagerPlanOverViewBinding.java
+ com.doviesfitness.databinding.FragmentShowPagerPlanOverViewBinding
+com/doviesfitness/ui/bottom_tabbar/exercise_listing/CustomLinearLayoutManager.java
+ com.doviesfitness.ui.bottom_tabbar.exercise_listing.CustomLinearLayoutManager
+com/doviesfitness/databinding/FragmentSettingFragmanetBinding.java
+ com.doviesfitness.databinding.FragmentSettingFragmanetBinding
+com/doviesfitness/databinding/ActivityDietPlanWebViewBinding.java
+ com.doviesfitness.databinding.ActivityDietPlanWebViewBinding
+com/doviesfitness/databinding/FragmentShowWeekTwoBinding.java
+ com.doviesfitness.databinding.FragmentShowWeekTwoBinding
+com/doviesfitness/ui/multipleQuality/SampleChooserActivity.java
+ com.doviesfitness.ui.multipleQuality.SampleChooserActivity
+ com.doviesfitness.ui.multipleQuality.SampleChooserActivity$1
+ com.doviesfitness.ui.multipleQuality.SampleChooserActivity$PlaylistHolder
+ com.doviesfitness.ui.multipleQuality.SampleChooserActivity$SampleListLoader
+com/doviesfitness/ui/bottom_tabbar/workout_tab/swipe_items/OnStartDragListener.java
+ com.doviesfitness.ui.bottom_tabbar.workout_tab.swipe_items.OnStartDragListener
+com/doviesfitness/databinding/FragmentDietPlanBinding.java
+ com.doviesfitness.databinding.FragmentDietPlanBinding
+com/doviesfitness/ui/multipleQuality/IntentUtil.java
+ com.doviesfitness.ui.multipleQuality.IntentUtil
+com/doviesfitness/databinding/ActivityCreateWorkoutBinding.java
+ com.doviesfitness.databinding.ActivityCreateWorkoutBinding
+com/doviesfitness/databinding/FragmentWeekThreeBinding.java
+ com.doviesfitness.databinding.FragmentWeekThreeBinding
+com/doviesfitness/databinding/FragmentShowWebviewBinding.java
+ com.doviesfitness.databinding.FragmentShowWebviewBinding
+com/doviesfitness/databinding/FragmentStreamVideoBinding.java
+ com.doviesfitness.databinding.FragmentStreamVideoBinding
+com/doviesfitness/utils/number_picker/Scroller.java
+ com.doviesfitness.utils.number_picker.Scroller
+com/doviesfitness/utils/MutedVideoView.java
+ com.doviesfitness.utils.MutedVideoView
+ com.doviesfitness.utils.MutedVideoView$1
+ com.doviesfitness.utils.MutedVideoView$2
+ com.doviesfitness.utils.MutedVideoView$3
+ com.doviesfitness.utils.MutedVideoView$4
+ com.doviesfitness.utils.MutedVideoView$5
+ com.doviesfitness.utils.MutedVideoView$6
+ com.doviesfitness.utils.MutedVideoView$7
+com/doviesfitness/ui/multipleQuality/DemoUtil.java
+ com.doviesfitness.ui.multipleQuality.DemoUtil
+com/doviesfitness/databinding/FragmentStreamCollectionNewBinding.java
+ com.doviesfitness.databinding.FragmentStreamCollectionNewBinding
+com/doviesfitness/databinding/FragmentDietPlanDetailBinding.java
+ com.doviesfitness.databinding.FragmentDietPlanDetailBinding
+com/doviesfitness/ui/multipleQuality/PlayerActivity.java
+ com.doviesfitness.ui.multipleQuality.PlayerActivity
+ com.doviesfitness.ui.multipleQuality.PlayerActivity$1
+ com.doviesfitness.ui.multipleQuality.PlayerActivity$PlayerErrorMessageProvider
+ com.doviesfitness.ui.multipleQuality.PlayerActivity$PlayerEventListener
+com/doviesfitness/databinding/FragmentShowPagerWorkOutPlanBinding.java
+ com.doviesfitness.databinding.FragmentShowPagerWorkOutPlanBinding
+com/doviesfitness/ui/date_picker/DatePickerPopWin.java
+ com.doviesfitness.ui.date_picker.DatePickerPopWin
+ com.doviesfitness.ui.date_picker.DatePickerPopWin$1
+ com.doviesfitness.ui.date_picker.DatePickerPopWin$2
+ com.doviesfitness.ui.date_picker.DatePickerPopWin$3
+ com.doviesfitness.ui.date_picker.DatePickerPopWin$4
+ com.doviesfitness.ui.date_picker.DatePickerPopWin$Builder
+ com.doviesfitness.ui.date_picker.DatePickerPopWin$OnDatePickedListener
+com/doviesfitness/chromecast/utils/CustomVolleyRequest.java
+ com.doviesfitness.chromecast.utils.CustomVolleyRequest
+ com.doviesfitness.chromecast.utils.CustomVolleyRequest$1
+com/doviesfitness/databinding/FragmentShowWeekOneBinding.java
+ com.doviesfitness.databinding.FragmentShowWeekOneBinding
+com/doviesfitness/databinding/FeedViewBinding.java
+ com.doviesfitness.databinding.FeedViewBinding
+com/doviesfitness/ui/multipleQuality/package-info.java
+ com.doviesfitness.ui.multipleQuality.package-info
+com/doviesfitness/databinding/FragmentDietPCategoryNewDetailBinding.java
+ com.doviesfitness.databinding.FragmentDietPCategoryNewDetailBinding
+com/doviesfitness/ui/customview/MyNestedScrollView.java
+ com.doviesfitness.ui.customview.MyNestedScrollView
+com/doviesfitness/ui/date_picker/MTimer.java
+ com.doviesfitness.ui.date_picker.MTimer
+com/doviesfitness/databinding/FragmentWeekFour2Binding.java
+ com.doviesfitness.databinding.FragmentWeekFour2Binding
+com/doviesfitness/databinding/ActivityExerciseDetaillistBinding.java
+ com.doviesfitness.databinding.ActivityExerciseDetaillistBinding
+com/doviesfitness/databinding/ActivityStreamLogHistoryBinding.java
+ com.doviesfitness.databinding.ActivityStreamLogHistoryBinding
+com/doviesfitness/databinding/FragmentMyWorkoutSelectPlanBinding.java
+ com.doviesfitness.databinding.FragmentMyWorkoutSelectPlanBinding
+com/doviesfitness/databinding/ActivityStreamWorkoutCompleteBinding.java
+ com.doviesfitness.databinding.ActivityStreamWorkoutCompleteBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/HlsVideo.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.HlsVideo
+com/doviesfitness/databinding/FragmentMyDietPlanNewBinding.java
+ com.doviesfitness.databinding.FragmentMyDietPlanNewBinding
+com/doviesfitness/databinding/ActivityWorkoutLogBinding.java
+ com.doviesfitness.databinding.ActivityWorkoutLogBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/download_background/CustomDownloadManager.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.CustomDownloadManager
+com/doviesfitness/ui/spotify/MainActivity2.java
+ com.doviesfitness.ui.spotify.MainActivity2
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/CollectionListItem.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.CollectionListItem
+com/doviesfitness/databinding/FragmentShowPagerDietPlanBinding.java
+ com.doviesfitness.databinding.FragmentShowPagerDietPlanBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/WorkoutListItem.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.WorkoutListItem
+com/doviesfitness/utils/Pop_Up_Option.java
+ com.doviesfitness.utils.Pop_Up_Option
+com/doviesfitness/databinding/StreamOverviewFragmentBinding.java
+ com.doviesfitness.databinding.StreamOverviewFragmentBinding
+com/doviesfitness/databinding/FragmentDietPcategoryDetailBinding.java
+ com.doviesfitness.databinding.FragmentDietPcategoryDetailBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/glide/GlideThumbnailTransformation.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.glide.GlideThumbnailTransformation
+com/doviesfitness/chromecast/queue/ui/QueueListViewActivity.java
+ com.doviesfitness.chromecast.queue.ui.QueueListViewActivity
+ com.doviesfitness.chromecast.queue.ui.QueueListViewActivity$1
+ com.doviesfitness.chromecast.queue.ui.QueueListViewActivity$MyRemoteMediaClientCallback
+ com.doviesfitness.chromecast.queue.ui.QueueListViewActivity$MySessionManagerListener
+com/doviesfitness/databinding/ActivityFaqBinding.java
+ com.doviesfitness.databinding.ActivityFaqBinding
+com/doviesfitness/databinding/FragmentWorkoutCollectionSelectPlanBinding.java
+ com.doviesfitness.databinding.FragmentWorkoutCollectionSelectPlanBinding
+com/doviesfitness/databinding/ActivityCreateDietPlanWebViewBinding.java
+ com.doviesfitness.databinding.ActivityCreateDietPlanWebViewBinding
+com/doviesfitness/databinding/ActivityMyDietPlanBinding.java
+ com.doviesfitness.databinding.ActivityMyDietPlanBinding
+com/doviesfitness/chromecast/queue/ui/QueueListViewFragment.java
+ com.doviesfitness.chromecast.queue.ui.QueueListViewFragment
+ com.doviesfitness.chromecast.queue.ui.QueueListViewFragment$1
+com/doviesfitness/databinding/FragmentWorkoutPlanBinding.java
+ com.doviesfitness.databinding.FragmentWorkoutPlanBinding
+com/doviesfitness/databinding/ActivityStreamVideoPlayBinding.java
+ com.doviesfitness.databinding.ActivityStreamVideoPlayBinding
+com/doviesfitness/ui/spotify/VolleyCallBack.java
+ com.doviesfitness.ui.spotify.VolleyCallBack
+com/doviesfitness/databinding/FragmentMyWorkoutBinding.java
+ com.doviesfitness.databinding.FragmentMyWorkoutBinding
+com/doviesfitness/utils/AppConstants.java
+ com.doviesfitness.utils.AppConstants
+com/doviesfitness/ui/profile/inbox/activity/OverScrollBounceBehavior.java
+ com.doviesfitness.ui.profile.inbox.activity.OverScrollBounceBehavior
+com/doviesfitness/chromecast/queue/ui/QueueListAdapter.java
+ com.doviesfitness.chromecast.queue.ui.QueueListAdapter
+ com.doviesfitness.chromecast.queue.ui.QueueListAdapter$1
+ com.doviesfitness.chromecast.queue.ui.QueueListAdapter$2
+ com.doviesfitness.chromecast.queue.ui.QueueListAdapter$3
+ com.doviesfitness.chromecast.queue.ui.QueueListAdapter$EventListener
+ com.doviesfitness.chromecast.queue.ui.QueueListAdapter$ItemTouchHelperViewHolder
+ com.doviesfitness.chromecast.queue.ui.QueueListAdapter$OnStartDragListener
+ com.doviesfitness.chromecast.queue.ui.QueueListAdapter$QueueItemViewHolder
+ com.doviesfitness.chromecast.queue.ui.QueueListAdapter$QueueItemViewHolder$ControlStatus
+com/doviesfitness/chromecast/expandedcontrols/ExpandedControlsActivity.java
+ com.doviesfitness.chromecast.expandedcontrols.ExpandedControlsActivity
+com/doviesfitness/chromecast/browser/VideoProvider.java
+ com.doviesfitness.chromecast.browser.VideoProvider
+com/doviesfitness/utils/helloworld.java
+ com.doviesfitness.utils.helloworld
+com/doviesfitness/ui/spotify/Connectors/UserService.java
+ com.doviesfitness.ui.spotify.Connectors.UserService
+ com.doviesfitness.ui.spotify.Connectors.UserService$1
+com/doviesfitness/chromecast/queue/ui/QueueItemTouchHelperCallback.java
+ com.doviesfitness.chromecast.queue.ui.QueueItemTouchHelperCallback
+ com.doviesfitness.chromecast.queue.ui.QueueItemTouchHelperCallback$ItemTouchHelperAdapter
+com/doviesfitness/ui/room_db/AppDatabase.java
+ com.doviesfitness.ui.room_db.AppDatabase
+com/doviesfitness/databinding/PlayerActivityBinding.java
+ com.doviesfitness.databinding.PlayerActivityBinding
+com/doviesfitness/ui/date_picker/LoopView.java
+ com.doviesfitness.ui.date_picker.LoopView
+com/doviesfitness/databinding/ActivityCreateDietDetailActvityBinding.java
+ com.doviesfitness.databinding.ActivityCreateDietDetailActvityBinding
+com/doviesfitness/ui/customview/Cheeses.java
+ com.doviesfitness.ui.customview.Cheeses
+com/doviesfitness/databinding/ActivityNewPlayerViewBinding.java
+ com.doviesfitness.databinding.ActivityNewPlayerViewBinding
+com/doviesfitness/databinding/ActivityWorkoutCompleteBinding.java
+ com.doviesfitness.databinding.ActivityWorkoutCompleteBinding
+com/doviesfitness/databinding/FavFragmentFeedsBinding.java
+ com.doviesfitness.databinding.FavFragmentFeedsBinding
+com/doviesfitness/databinding/FragmentWorkoutBinding.java
+ com.doviesfitness.databinding.FragmentWorkoutBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/PopularCollectionWorkouts.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.PopularCollectionWorkouts
+com/doviesfitness/ui/date_picker/LoopViewGestureListener.java
+ com.doviesfitness.ui.date_picker.LoopViewGestureListener
+com/doviesfitness/databinding/ActivityExerciseListingBinding.java
+ com.doviesfitness.databinding.ActivityExerciseListingBinding
+com/doviesfitness/databinding/FragmentExerciseLibraryBinding.java
+ com.doviesfitness.databinding.FragmentExerciseLibraryBinding
+com/doviesfitness/databinding/FragmentPlansBinding.java
+ com.doviesfitness.databinding.FragmentPlansBinding
+com/doviesfitness/databinding/FragmentDietDetailBinding.java
+ com.doviesfitness.databinding.FragmentDietDetailBinding
+com/doviesfitness/databinding/ActivityFilterExerciseBinding.java
+ com.doviesfitness.databinding.ActivityFilterExerciseBinding
+com/doviesfitness/ui/spotify/SplashActivity1.java
+ com.doviesfitness.ui.spotify.SplashActivity1
+ com.doviesfitness.ui.spotify.SplashActivity1$1
+com/doviesfitness/databinding/ActivityNotificationExerciesBinding.java
+ com.doviesfitness.databinding.ActivityNotificationExerciesBinding
+com/doviesfitness/databinding/ActivityMyWorkoutBinding.java
+ com.doviesfitness.databinding.ActivityMyWorkoutBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/TvHlsVideo.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.TvHlsVideo
+com/doviesfitness/databinding/FragmentPagerPlanOverViewBinding.java
+ com.doviesfitness.databinding.FragmentPagerPlanOverViewBinding
+com/doviesfitness/databinding/ActivityAddToWorkOutPlanBinding.java
+ com.doviesfitness.databinding.ActivityAddToWorkOutPlanBinding
+com/doviesfitness/ui/multipleQuality/DemoDownloadService.java
+ com.doviesfitness.ui.multipleQuality.DemoDownloadService
+ com.doviesfitness.ui.multipleQuality.DemoDownloadService$TerminalStateNotificationHelper
+com/doviesfitness/chromecast/mediaplayer/LocalPlayerActivity.java
+ com.doviesfitness.chromecast.mediaplayer.LocalPlayerActivity
+ com.doviesfitness.chromecast.mediaplayer.LocalPlayerActivity$1
+ com.doviesfitness.chromecast.mediaplayer.LocalPlayerActivity$2
+ com.doviesfitness.chromecast.mediaplayer.LocalPlayerActivity$3
+ com.doviesfitness.chromecast.mediaplayer.LocalPlayerActivity$4
+ com.doviesfitness.chromecast.mediaplayer.LocalPlayerActivity$5
+ com.doviesfitness.chromecast.mediaplayer.LocalPlayerActivity$PlaybackLocation
+ com.doviesfitness.chromecast.mediaplayer.LocalPlayerActivity$PlaybackState
+com/doviesfitness/chromecast/settings/CastPreference.java
+ com.doviesfitness.chromecast.settings.CastPreference
+com/doviesfitness/ui/spotify/Model/Song.java
+ com.doviesfitness.ui.spotify.Model.Song
+com/doviesfitness/chromecast/browser/VideoListAdapter.java
+ com.doviesfitness.chromecast.browser.VideoListAdapter
+ com.doviesfitness.chromecast.browser.VideoListAdapter$1
+ com.doviesfitness.chromecast.browser.VideoListAdapter$2
+ com.doviesfitness.chromecast.browser.VideoListAdapter$3
+ com.doviesfitness.chromecast.browser.VideoListAdapter$ItemClickListener
+ com.doviesfitness.chromecast.browser.VideoListAdapter$ViewHolder
+com/doviesfitness/chromecast/VideoBrowserActivity.java
+ com.doviesfitness.chromecast.VideoBrowserActivity
+ com.doviesfitness.chromecast.VideoBrowserActivity$1
+ com.doviesfitness.chromecast.VideoBrowserActivity$2
+ com.doviesfitness.chromecast.VideoBrowserActivity$2$1
+ com.doviesfitness.chromecast.VideoBrowserActivity$MySessionManagerListener
+com/doviesfitness/databinding/ActivityViewLogImagesBinding.java
+ com.doviesfitness.databinding.ActivityViewLogImagesBinding
+com/doviesfitness/databinding/FragmentSearchLayoutBinding.java
+ com.doviesfitness.databinding.FragmentSearchLayoutBinding
+com/doviesfitness/databinding/ActivityContactUsBinding.java
+ com.doviesfitness.databinding.ActivityContactUsBinding
+com/doviesfitness/ui/spotify/MainActivity1.java
+ com.doviesfitness.ui.spotify.MainActivity1
+ com.doviesfitness.ui.spotify.MainActivity1$1
+ com.doviesfitness.ui.spotify.MainActivity1$2
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/DModel.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.DModel
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.DModel$ProgressModal
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/WorkoutListItem.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.WorkoutListItem
+com/doviesfitness/ui/spotify/Connectors/SongService.java
+ com.doviesfitness.ui.spotify.Connectors.SongService
+ com.doviesfitness.ui.spotify.Connectors.SongService$1
+ com.doviesfitness.ui.spotify.Connectors.SongService$2
+ com.doviesfitness.ui.spotify.Connectors.SongService$3
+com/doviesfitness/chromecast/browser/VideoItemLoader.java
+ com.doviesfitness.chromecast.browser.VideoItemLoader
+com/doviesfitness/databinding/ActivityAddExerciseBinding.java
+ com.doviesfitness.databinding.ActivityAddExerciseBinding
+com/doviesfitness/databinding/ActivityWorkoutlogListBinding.java
+ com.doviesfitness.databinding.ActivityWorkoutlogListBinding
+com/doviesfitness/databinding/ActivityStreamVideoPlayLandscapeFromDownLoadBinding.java
+ com.doviesfitness.databinding.ActivityStreamVideoPlayLandscapeFromDownLoadBinding
+com/doviesfitness/ui/multipleQuality/DownloadTracker.java
+ com.doviesfitness.ui.multipleQuality.DownloadTracker
+ com.doviesfitness.ui.multipleQuality.DownloadTracker$1
+ com.doviesfitness.ui.multipleQuality.DownloadTracker$DownloadManagerListener
+ com.doviesfitness.ui.multipleQuality.DownloadTracker$Listener
+ com.doviesfitness.ui.multipleQuality.DownloadTracker$StartDownloadDialogHelper
+ com.doviesfitness.ui.multipleQuality.DownloadTracker$WidevineOfflineLicenseFetchTask
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/PinnedWorkout.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.PinnedWorkout
+com/doviesfitness/databinding/FragmentFavoriteExerciseBinding.java
+ com.doviesfitness.databinding.FragmentFavoriteExerciseBinding
+com/doviesfitness/ui/date_picker/LoopListener.java
+ com.doviesfitness.ui.date_picker.LoopListener
+com/doviesfitness/databinding/ActivityCretatDietPlanBinding.java
+ com.doviesfitness.databinding.ActivityCretatDietPlanBinding
+com/doviesfitness/databinding/FragmentWorkoutCollectionBinding.java
+ com.doviesfitness.databinding.FragmentWorkoutCollectionBinding
+com/doviesfitness/databinding/ActivityExpandedControlsChromecastBinding.java
+ com.doviesfitness.databinding.ActivityExpandedControlsChromecastBinding
+com/doviesfitness/databinding/FragmentMyPlanBinding.java
+ com.doviesfitness.databinding.FragmentMyPlanBinding
+com/doviesfitness/chromecast/utils/Utils.java
+ com.doviesfitness.chromecast.utils.Utils
+ com.doviesfitness.chromecast.utils.Utils$1
+ com.doviesfitness.chromecast.utils.Utils$2
+ com.doviesfitness.chromecast.utils.Utils$3
+com/doviesfitness/chromecast/utils/MediaRouteChooserDialogFragment.java
+ com.doviesfitness.chromecast.utils.MediaRouteChooserDialogFragment
+com/doviesfitness/ui/bottom_tabbar/stream_tab/download_background/DownloadBinder.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadBinder
+com/doviesfitness/ui/spotify/Model/User.java
+ com.doviesfitness.ui.spotify.Model.User
+com/doviesfitness/databinding/DownloadWorkoutVideoBinding.java
+ com.doviesfitness.databinding.DownloadWorkoutVideoBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/glide/GlideCustomModule.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.glide.GlideCustomModule
+com/doviesfitness/databinding/ExampleBinding.java
+ com.doviesfitness.databinding.ExampleBinding
+com/doviesfitness/databinding/ActivitySelectWorkOutPlanBinding.java
+ com.doviesfitness.databinding.ActivitySelectWorkOutPlanBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/RecentWorkoutsItem.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.RecentWorkoutsItem
+com/doviesfitness/databinding/FavFragmentWorkOutBinding.java
+ com.doviesfitness.databinding.FavFragmentWorkOutBinding
+com/doviesfitness/databinding/FragmentWeekFourBinding.java
+ com.doviesfitness.databinding.FragmentWeekFourBinding
+com/doviesfitness/databinding/FragmentMyFavouriteBinding.java
+ com.doviesfitness.databinding.FragmentMyFavouriteBinding
+com/doviesfitness/ui/multipleQuality/TrackSelectionView.java
+ com.doviesfitness.ui.multipleQuality.TrackSelectionView
+ com.doviesfitness.ui.multipleQuality.TrackSelectionView$FragmentAdapter
+ com.doviesfitness.ui.multipleQuality.TrackSelectionView$TrackSelectionViewFragment
+com/doviesfitness/setting/SpringAppBarLayoutActivity.java
+ com.doviesfitness.setting.SpringAppBarLayoutActivity
+com/doviesfitness/databinding/FragmentHomeTabBinding.java
+ com.doviesfitness.databinding.FragmentHomeTabBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/Mp4Video.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.Mp4Video
+com/doviesfitness/chromecast/utils/MediaRouterThemeHelper.java
+ com.doviesfitness.chromecast.utils.MediaRouterThemeHelper
+com/doviesfitness/ui/bottom_tabbar/workout_tab/activity/FullscreenVideoView.java
+ com.doviesfitness.ui.bottom_tabbar.workout_tab.activity.FullscreenVideoView
+com/doviesfitness/setting/CameraPreview.java
+ com.doviesfitness.setting.CameraPreview
+ com.doviesfitness.setting.CameraPreview$1
+ com.doviesfitness.setting.CameraPreview$GetBitmap
+com/doviesfitness/ui/room_db/DatabaseClient.java
+ com.doviesfitness.ui.room_db.DatabaseClient
+com/doviesfitness/chromecast/browser/VideoBrowserFragment.java
+ com.doviesfitness.chromecast.browser.VideoBrowserFragment
+ com.doviesfitness.chromecast.browser.VideoBrowserFragment$1
+ com.doviesfitness.chromecast.browser.VideoBrowserFragment$MySessionManagerListener
+com/doviesfitness/databinding/FragmentDietPlanWebViewBinding.java
+ com.doviesfitness.databinding.FragmentDietPlanWebViewBinding
+com/doviesfitness/databinding/FragmentStreamLogBinding.java
+ com.doviesfitness.databinding.FragmentStreamLogBinding
+com/doviesfitness/databinding/WatchOrDownloadVideoLayoutBinding.java
+ com.doviesfitness.databinding.WatchOrDownloadVideoLayoutBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/download_background/DownloadUtil.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadUtil
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadUtil$1
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadUtil$2
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadUtil$3
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadUtil$4
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadUtil$5
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadUtil$5$1
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadUtil$6
+com/doviesfitness/utils/number_picker/NumberPicker.java
+ com.doviesfitness.utils.number_picker.NumberPicker
+ com.doviesfitness.utils.number_picker.NumberPicker$1
+ com.doviesfitness.utils.number_picker.NumberPicker$2
+ com.doviesfitness.utils.number_picker.NumberPicker$3
+ com.doviesfitness.utils.number_picker.NumberPicker$AccessibilityNodeProviderImpl
+ com.doviesfitness.utils.number_picker.NumberPicker$BeginSoftInputOnLongPressCommand
+ com.doviesfitness.utils.number_picker.NumberPicker$ChangeCurrentByOneFromLongPressCommand
+ com.doviesfitness.utils.number_picker.NumberPicker$CustomEditText
+ com.doviesfitness.utils.number_picker.NumberPicker$Formatter
+ com.doviesfitness.utils.number_picker.NumberPicker$InputTextFilter
+ com.doviesfitness.utils.number_picker.NumberPicker$OnScrollListener
+ com.doviesfitness.utils.number_picker.NumberPicker$OnValueChangeListener
+ com.doviesfitness.utils.number_picker.NumberPicker$PressedStateHelper
+ com.doviesfitness.utils.number_picker.NumberPicker$SetSelectionCommand
+ com.doviesfitness.utils.number_picker.NumberPicker$SupportAccessibilityNodeProvider
+ com.doviesfitness.utils.number_picker.NumberPicker$TwoDigitFormatter
+com/doviesfitness/databinding/ActivityFeedDetailsBinding.java
+ com.doviesfitness.databinding.ActivityFeedDetailsBinding
+com/doviesfitness/ui/multipleQuality/TrackSelectionDialog.java
+ com.doviesfitness.ui.multipleQuality.TrackSelectionDialog
+ com.doviesfitness.ui.multipleQuality.TrackSelectionDialog$FragmentAdapter
+ com.doviesfitness.ui.multipleQuality.TrackSelectionDialog$TrackSelectionViewFragment
+com/doviesfitness/databinding/StreamTrailerFragmentBinding.java
+ com.doviesfitness.databinding.StreamTrailerFragmentBinding
+com/doviesfitness/databinding/ActivityInboxBinding.java
+ com.doviesfitness.databinding.ActivityInboxBinding
+com/doviesfitness/databinding/ActivityShowDietPlanDetailBinding.java
+ com.doviesfitness.databinding.ActivityShowDietPlanDetailBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/VideoListItem.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.VideoListItem
+com/doviesfitness/ui/room_db/LocalStream.java
+ com.doviesfitness.ui.room_db.LocalStream
+com/doviesfitness/databinding/ActivityCustomNotificationBinding.java
+ com.doviesfitness.databinding.ActivityCustomNotificationBinding
+com/doviesfitness/databinding/ActivityTempDownWorkOutsVideoActvityBinding.java
+ com.doviesfitness.databinding.ActivityTempDownWorkOutsVideoActvityBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/Settings.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.Settings
+com/doviesfitness/ui/customview/CustomMainActivity.java
+ com.doviesfitness.ui.customview.CustomMainActivity
+ com.doviesfitness.ui.customview.CustomMainActivity$1
+ com.doviesfitness.ui.customview.CustomMainActivity$ArrayListFragment
+ com.doviesfitness.ui.customview.CustomMainActivity$MyAdapter
+com/doviesfitness/databinding/FragmentMyProfileBinding.java
+ com.doviesfitness.databinding.FragmentMyProfileBinding
+com/doviesfitness/chromecast/queue/QueueDataProvider.java
+ com.doviesfitness.chromecast.queue.QueueDataProvider
+ com.doviesfitness.chromecast.queue.QueueDataProvider$1
+ com.doviesfitness.chromecast.queue.QueueDataProvider$MyRemoteMediaClientCallback
+ com.doviesfitness.chromecast.queue.QueueDataProvider$MySessionManagerListener
+ com.doviesfitness.chromecast.queue.QueueDataProvider$OnQueueDataChangedListener
+com/doviesfitness/utils/PermissionAll.java
+ com.doviesfitness.utils.PermissionAll
+com/doviesfitness/BuildConfig.java
+ com.doviesfitness.BuildConfig
+com/doviesfitness/ui/customview/WrapContentHeightViewPager.java
+ com.doviesfitness.ui.customview.WrapContentHeightViewPager
+com/doviesfitness/databinding/ActivityCreateWorkOutPlanActivtyBinding.java
+ com.doviesfitness.databinding.ActivityCreateWorkOutPlanActivtyBinding
+com/doviesfitness/utils/BlurDrawable.java
+ com.doviesfitness.utils.BlurDrawable
+com/doviesfitness/databinding/FragmentMyDietPlanBinding.java
+ com.doviesfitness.databinding.FragmentMyDietPlanBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/download_background/DownloadListener.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadListener
+com/doviesfitness/ui/room_db/TaskDao.java
+ com.doviesfitness.ui.room_db.TaskDao
+com/doviesfitness/databinding/FragmentWorkoutGrouplistBinding.java
+ com.doviesfitness.databinding.FragmentWorkoutGrouplistBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/CollectionListItem.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.CollectionListItem
+com/doviesfitness/ui/date_picker/MessageHandler.java
+ com.doviesfitness.ui.date_picker.MessageHandler
+com/doviesfitness/ui/customview/NestedListView.java
+ com.doviesfitness.ui.customview.NestedListView
+com/doviesfitness/databinding/ActivityChangePasswordActvityBinding.java
+ com.doviesfitness.databinding.ActivityChangePasswordActvityBinding
+com/doviesfitness/chromecast/CastOptionsProvider.java
+ com.doviesfitness.chromecast.CastOptionsProvider
+ com.doviesfitness.chromecast.CastOptionsProvider$1
+ com.doviesfitness.chromecast.CastOptionsProvider$ImagePickerImpl
+com/doviesfitness/ui/date_picker/LoopRunnable.java
+ com.doviesfitness.ui.date_picker.LoopRunnable
+com/doviesfitness/databinding/ActivitySplashScreenBinding.java
+ com.doviesfitness.databinding.ActivitySplashScreenBinding
+com/doviesfitness/databinding/ActivityGoodForBinding.java
+ com.doviesfitness.databinding.ActivityGoodForBinding
+com/doviesfitness/databinding/FavFragmentWorkOutPlanBinding.java
+ com.doviesfitness.databinding.FavFragmentWorkOutPlanBinding
+com/doviesfitness/chromecast/utils/CustomMediaRouteButton.java
+ com.doviesfitness.chromecast.utils.CustomMediaRouteButton
+ com.doviesfitness.chromecast.utils.CustomMediaRouteButton$1
+ com.doviesfitness.chromecast.utils.CustomMediaRouteButton$AttachCallback
+ com.doviesfitness.chromecast.utils.CustomMediaRouteButton$MediaRouterCallback
+com/doviesfitness/databinding/FragmentEditProfileBinding.java
+ com.doviesfitness.databinding.FragmentEditProfileBinding
+com/doviesfitness/databinding/FragmentExerciseBinding.java
+ com.doviesfitness.databinding.FragmentExerciseBinding
+com/doviesfitness/databinding/ActivityInviteFriendBinding.java
+ com.doviesfitness.databinding.ActivityInviteFriendBinding
+com/doviesfitness/databinding/FragmentShowWeekThreeBinding.java
+ com.doviesfitness.databinding.FragmentShowWeekThreeBinding
+com/doviesfitness/databinding/FragmentMyPlanFromProfileBinding.java
+ com.doviesfitness.databinding.FragmentMyPlanFromProfileBinding
+com/doviesfitness/databinding/FragmentPagerWorkOutPlanBinding.java
+ com.doviesfitness.databinding.FragmentPagerWorkOutPlanBinding
+com/doviesfitness/databinding/ActivitySelectWorkOutCateguryBinding.java
+ com.doviesfitness.databinding.ActivitySelectWorkOutCateguryBinding
+com/doviesfitness/databinding/ActivityVideoDetailBinding.java
+ com.doviesfitness.databinding.ActivityVideoDetailBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/PopularCollectionWorkouts.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.PopularCollectionWorkouts
+com/doviesfitness/databinding/FragmentWorkoutPlanDetailBinding.java
+ com.doviesfitness.databinding.FragmentWorkoutPlanDetailBinding
+com/doviesfitness/databinding/FragmentPagerDietPlanBinding.java
+ com.doviesfitness.databinding.FragmentPagerDietPlanBinding
+com/doviesfitness/databinding/ActivitySettingBinding.java
+ com.doviesfitness.databinding.ActivitySettingBinding
+com/doviesfitness/databinding/ActivityWorkOutPlanDetailBinding.java
+ com.doviesfitness.databinding.ActivityWorkOutPlanDetailBinding
+com/doviesfitness/databinding/ActivityWorkOutDetailBinding.java
+ com.doviesfitness.databinding.ActivityWorkOutDetailBinding
+com/doviesfitness/databinding/ActivityStreamVideoPlayLandscapeTempBinding.java
+ com.doviesfitness.databinding.ActivityStreamVideoPlayLandscapeTempBinding
+com/doviesfitness/ui/multipleQuality/TrackSelectionDialogNew.java
+ com.doviesfitness.ui.multipleQuality.TrackSelectionDialogNew
+ com.doviesfitness.ui.multipleQuality.TrackSelectionDialogNew$FragmentAdapter
+ com.doviesfitness.ui.multipleQuality.TrackSelectionDialogNew$TrackSelectionViewFragment
+ com.doviesfitness.ui.multipleQuality.TrackSelectionDialogNew$TrackSelectionViewFragment$1
+ com.doviesfitness.ui.multipleQuality.TrackSelectionDialogNew$TrackSelectionViewFragment$2
+com/doviesfitness/chromecast/utils/MediaRouteChooserDialog.java
+ com.doviesfitness.chromecast.utils.MediaRouteChooserDialog
+ com.doviesfitness.chromecast.utils.MediaRouteChooserDialog$1
+ com.doviesfitness.chromecast.utils.MediaRouteChooserDialog$MediaRouterCallback
+ com.doviesfitness.chromecast.utils.MediaRouteChooserDialog$RouteAdapter
+ com.doviesfitness.chromecast.utils.MediaRouteChooserDialog$RouteAdapter$1
+ com.doviesfitness.chromecast.utils.MediaRouteChooserDialog$RouteComparator
+com/doviesfitness/DataBindingInfo.java
+ com.doviesfitness.DataBindingInfo
+com/doviesfitness/ui/bottom_tabbar/workout_tab/swipe_items/ItemTouchHelperViewHolder.java
+ com.doviesfitness.ui.bottom_tabbar.workout_tab.swipe_items.ItemTouchHelperViewHolder
+com/doviesfitness/databinding/CustomNotificationBinding.java
+ com.doviesfitness.databinding.CustomNotificationBinding
+com/doviesfitness/databinding/FragmentWeekTwoBinding.java
+ com.doviesfitness.databinding.FragmentWeekTwoBinding
+com/doviesfitness/databinding/ActivityWorkoutVideoPlayBinding.java
+ com.doviesfitness.databinding.ActivityWorkoutVideoPlayBinding
+com/doviesfitness/databinding/ActivityStreamVideoPlayLandscapeBinding.java
+ com.doviesfitness.databinding.ActivityStreamVideoPlayLandscapeBinding
+com/doviesfitness/ui/bottom_tabbar/workout_tab/swipe_items/ItemTouchHelperAdapter.java
+ com.doviesfitness.ui.bottom_tabbar.workout_tab.swipe_items.ItemTouchHelperAdapter
+com/doviesfitness/ui/bottom_tabbar/stream_tab/download_background/BoundService.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.BoundService
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.BoundService$MyBinder
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/tv/Data.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.tv.Data
+com/doviesfitness/databinding/FragmentMyNewWorkoutlogBinding.java
+ com.doviesfitness.databinding.FragmentMyNewWorkoutlogBinding
+com/doviesfitness/databinding/ActivityStreamDetailNewBinding.java
+ com.doviesfitness.databinding.ActivityStreamDetailNewBinding
+com/doviesfitness/ui/bottom_tabbar/stream_tab/model/RecentWorkoutsItem.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.model.RecentWorkoutsItem
+com/doviesfitness/databinding/ActivitySubscriptionBinding.java
+ com.doviesfitness.databinding.ActivitySubscriptionBinding
+com/doviesfitness/ui/date_picker/LoopTimerTask.java
+ com.doviesfitness.ui.date_picker.LoopTimerTask
+com/doviesfitness/ui/bottom_tabbar/stream_tab/download_background/DownloadService.java
+ com.doviesfitness.ui.bottom_tabbar.stream_tab.download_background.DownloadService
+com/doviesfitness/databinding/ActivityTempDownloadStreamBinding.java
+ com.doviesfitness.databinding.ActivityTempDownloadStreamBinding
+com/doviesfitness/databinding/ActivityCreateDietPcategoryDetailActvityBinding.java
+ com.doviesfitness.databinding.ActivityCreateDietPcategoryDetailActvityBinding
+com/doviesfitness/databinding/FragmentWeekOneBinding.java
+ com.doviesfitness.databinding.FragmentWeekOneBinding

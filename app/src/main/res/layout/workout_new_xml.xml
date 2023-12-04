@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="10.5dp"
+    android:gravity="center">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/exercise_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/_5sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/diet_grident_new" />
+    <!--  feed_view_item_gradient -->
+    <TextView
+        android:id="@+id/exercise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/level_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/futura_bold_regular_tracing"
+        android:gravity="center"
+        android:text="Exercise"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/level_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/product_sans_regular"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:text="Exercise"
+        android:textColor="@color/colorWhite1"
+        android:textSize="@dimen/_9sdp" />
+
+    <ImageView
+        android:id="@+id/lock_img"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_toStartOf="@+id/setting_img"
+        android:src="@drawable/lock_ico_bg"
+        android:visibility="gone" />
+</RelativeLayout><!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/exercise_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/_10sdp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/diet_grident" />
+
+    &lt;!&ndash; feed_view_item_gradient&ndash;&gt;
+
+    <TextView
+        android:id="@+id/exercise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/level_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/futura_bold_regular_tracing"
+        android:gravity="center"
+        android:text="Exercise"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/level_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/product_sans_regular"
+        android:gravity="center"
+        android:letterSpacing="0.04"
+        android:text="Exercise"
+        android:textColor="@color/colorWhite1"
+        android:textSize="@dimen/_9sdp" />
+
+    <ImageView
+        android:id="@+id/lock_img"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_toStartOf="@+id/setting_img"
+        android:src="@drawable/lock_ico_bg"
+        android:visibility="gone" />
+
+</RelativeLayout>
+-->

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                tools:context=".ui.authentication.signup.activity.CreateUserActivity">
+
+
+    <com.doviesfitness.utils.BounceScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:layout_gravity="center"
+                    android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/ic_ico_welcome_img"/>
+
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:fontFamily="@font/futura_bold_regular_tracing"
+                        android:text="@string/welcome_to_doviesfitness"
+                        android:lineSpacingExtra="@dimen/_10sdp"
+                    android:letterSpacing="0.01"
+                        android:textColor="@color/colorWhite"/>
+
+
+
+                <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_15sdp"
+                        android:fontFamily="@font/futura_bold_regular_tracing"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorGray1"/>
+
+                <TextView
+                        style="@style/SmallProductRegularStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center"
+                    android:textSize="@dimen/_10sdp"
+
+                        android:text="@string/time_to_create_and_share_your"
+                        android:textColor="@color/colorGray1"/>
+
+
+                <TextView
+                        style="@style/SmallProductRegularStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:gravity="center"
+                    android:textSize="@dimen/_10sdp"
+                        android:text="@string/workout_with_friends_and_family"
+                        android:textColor="@color/colorGray1"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/ExtraSmallProductBoldStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_7sdp"
+                        android:text="@string/always_remenber_we"
+                        android:textColor="@color/colorGray8"/>
+
+                <TextView
+                        style="@style/ExtraSmallProductBoldStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/_7sdp"
+                        android:text="@string/are_here_to_inspire"
+                        android:textColor="@color/colorGray8"/>
+
+                <TextView
+                        style="@style/ExtraSmallProductBoldStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        android:textSize="@dimen/_7sdp"
+                        android:text="@string/help_and_motivate_you"
+                        android:textColor="@color/colorGray8"/>
+
+            </LinearLayout>
+
+            <ImageView
+                    android:id="@+id/iv_next_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:scaleType="center"
+                    android:textAllCaps="false"
+                    android:background="@drawable/white_next_btn_selector"
+                    />
+
+        </RelativeLayout>e
+    </com.doviesfitness.utils.BounceScrollView>
+
+
+</RelativeLayout>

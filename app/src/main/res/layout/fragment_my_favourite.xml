@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/container_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/col_input_bg"
+        android:orientation="vertical">
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/topBlurView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineProvider="bounds"
+            app:blurOverlayColor="#99030202">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:padding="@dimen/_2sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/ic_back_arrow_ico"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/dp_title_name"
+                        style="@style/ForHeadingText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_55sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Favorite"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/devider_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_below="@+id/toolbar_layout"
+                    android:background="@color/line_seperator" />
+
+            </RelativeLayout>
+
+        </eightbitlab.com.blurview.BlurView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/fav_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_below="@+id/topBlurView"
+            android:background="@color/colorBlack"
+            android:elevation="@dimen/_1sdp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorWhite"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/col_hint"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabTextAppearance="@style/fav_talb_style" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/fav_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fav_tablayout"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorBlack"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </RelativeLayout>
+
+</layout>

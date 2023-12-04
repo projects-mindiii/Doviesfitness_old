@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:minHeight="@dimen/_65sdp"
+                >
+                <TextView
+                    android:id="@+id/title_gdfr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    style="@style/AllHeadingWorkoutDetail"
+                    android:text="@string/good_for"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_good_for"
+                    style="@style/AllDesciptionWorkoutDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/title_gdfr"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="center"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:alpha=".5"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorGray1" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:minHeight="@dimen/_65sdp"
+                >
+                <TextView
+                    android:id="@+id/title_eqpmnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    style="@style/AllHeadingWorkoutDetail"
+                    android:text="@string/equipments"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_equipment"
+                    android:layout_below="@+id/title_eqpmnt"
+                    style="@style/AllDesciptionWorkoutDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:alpha=".5"
+                    android:background="@color/colorGray1"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:minHeight="@dimen/_65sdp"
+                >
+
+                <TextView
+                    android:id="@+id/overview_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/overview"
+                    style="@style/AllHeadingWorkoutDetail"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tv_overview"
+                    style="@style/AllDesciptionWorkoutDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/overview_title"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="left"
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
+
+
+
+
+
+
+

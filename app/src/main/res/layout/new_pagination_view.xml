@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:padding="@dimen/_3sdp">
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorGray12"
+        />
+    <View
+        android:id="@+id/vw_trans"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:visibility="gone"
+        android:background="#00000000" />
+</FrameLayout>

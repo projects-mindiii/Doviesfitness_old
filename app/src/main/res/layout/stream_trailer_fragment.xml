@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:padding="@dimen/_4sdp">
+    <RelativeLayout
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/top_layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/video_thumb_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_190sdp">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/video_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/stream_video_play_icon" />
+
+            <TextView
+                android:id="@+id/time_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="02:50"
+                android:visibility="gone"
+                android:background="@drawable/time_duration_bg"
+                android:textSize="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_3sdp"
+                android:paddingStart="@dimen/_3sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:visibility="visible"
+            android:layout_below="@+id/video_thumb_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:fontFamily="@font/netflix_sans_bold"
+                android:text=""
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:layout_margin="@dimen/_4sdp"
+        android:textSize="@dimen/_8sdp"
+        android:visibility="gone"
+        android:text="Mega Lower body Mega Lower body"
+        android:textColor="@color/colorWhite" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:id="@+id/seperator_line"
+        android:visibility="gone"
+        android:layout_below="@+id/description"
+        android:background="@color/stream_item_bg_color" />
+
+    <TextView
+        android:id="@+id/txt_no_data_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data found"
+        android:visibility="gone"
+        android:textSize="@dimen/_16sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:textColor="@color/colorGray2"
+        android:fontFamily="@font/netflix_sans_regular"
+        >
+    </TextView>
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

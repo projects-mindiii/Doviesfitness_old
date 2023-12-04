@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/devider_view"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_34sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="0.1"
+            android:padding="@dimen/_2sdp"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_ico_back_login" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/clear_txt"
+            android:layout_weight="0.8"
+            android:background="@drawable/search_stream_bg"
+            android:gravity="center"
+            android:padding="@dimen/_2sdp">
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_1sdp"
+                android:tint="#8E8E92"
+                app:srcCompat="@drawable/ic_search_ico" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/search_icon"
+                android:background="@null"
+                android:fontFamily="@font/netflix_sans_regular"
+                android:hint="@string/search"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:letterSpacing="0.04"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/description_color"
+                android:textCursorDrawable="@drawable/blue_cursor"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_4sdp"
+                android:layout_weight="0.1"
+                android:padding="@dimen/_3sdp"
+                android:tint="@color/description_color"
+                android:visibility="gone"
+                app:srcCompat="@drawable/close" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/clear_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:fontFamily="@font/product_sans_regular"
+            android:gravity="center"
+            android:padding="@dimen/_1sdp"
+            android:text="Clear"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"></TextView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontal_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_15sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".7dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/line_seperator"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fav_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/txt_no_data_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:fontFamily="@font/netflix_sans_regular"
+            android:text="@string/your_search_has_no_result"
+            android:textColor="@color/colorGray2"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone"></TextView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

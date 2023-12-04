@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <!--   <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                android:orientation="vertical">
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/devider_view"
+                android:visibility="gone"
+                    android:layout_below="@+id/toolbar_layout"
+                    android:background="@color/line_seperator"/>
+
+            <com.doviesfitness.utils.CustomNestedScrollView
+                    android:background="@color/colorBlack"
+                    android:id="@+id/sv_main"
+                    android:layout_below="@+id/devider_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:id="@+id/txt_filter"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorGray8"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:visibility="gone"
+                            android:fontFamily="@font/product_sans_bold"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="Filter Applied"
+                            android:layout_marginStart="@dimen/_10sdp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/exercise_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorBlack"
+                            android:layout_below="@+id/txt_filter"
+                            android:nestedScrollingEnabled="false"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+                </RelativeLayout>
+
+            </com.doviesfitness.utils.CustomNestedScrollView>
+
+            <ImageView
+                    android:id="@+id/no_record_icon"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_4sdp"
+                    android:visibility="gone"
+                    android:tint="@color/colorWhite"
+                    android:layout_centerInParent="true"
+                    android:layout_above="@+id/no_record_found"
+                    app:srcCompat="@drawable/ico_pr_favourit"/>
+
+
+            <TextView
+                    android:id="@+id/no_record_found"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    style="@style/ExtraProductRegularStyle"
+                    android:visibility="gone"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_fav_exercise_found"/>
+            <TextView
+                    android:id="@+id/start_saving_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/no_record_found"
+                    android:lines="2"
+                    android:gravity="center"
+                    style="@style/ExtraProductRegularStyle"
+                    android:visibility="gone"
+                    android:textColor="@color/colorWhite2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_saving_fav"/>
+
+
+            <Button
+                    android:id="@+id/btn_clear_filter"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/create_account_btn_bg"
+                    android:fontFamily="@font/product_sans_bold"
+                    android:text="@string/clear_filter"
+                    android:visibility="gone"
+                    android:letterSpacing="0.04"
+                    android:backgroundTint="@color/colorBlack3"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"/>
+
+            <RelativeLayout
+                    android:id="@+id/progress_layout"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_height="match_parent">
+
+                <ProgressBar
+                        android:id="@+id/loader"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:indeterminate="true"
+                        android:layout_centerHorizontal="true"
+                        android:indeterminateTintMode="src_atop"
+                        android:indeterminateTint="@color/colorGray12"
+                        />
+
+                <TextView
+                        android:id="@+id/tv_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/video_loading"
+                        android:layout_below="@id/loader"
+                        android:textColor="@color/colorGray12"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+
+
+                        />
+            </RelativeLayout>
+
+        </RelativeLayout>
+   <!-- </android.support.v4.widget.SwipeRefreshLayout>-->
+</layout>

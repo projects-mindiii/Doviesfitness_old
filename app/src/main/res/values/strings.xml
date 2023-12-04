@@ -1,0 +1,568 @@
+<resources>
+    <!--<string name="app_name">Doviesfitness</string>-->
+    <string name="facebook_app_id">1879342772122734</string>
+    <string name="fb_login_protocol_scheme">fb1879342772122734</string>
+    <!--
+    <string name="my_app_name">Dovies Fitness</string>
+-->
+
+    <!--Intro slider-->
+    <string name="login">LOGIN</string>
+    <string name="signin">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="app_Name">Dovies Fitness</string>
+
+    <!--SIGN UP UI-->
+    <string name="create_your_doviesfitness_account">CREATE YOUR DOVIESFITNESS ACCOUNT</string>
+    <string name="sign_up_with_facebook">Sign up with Facebook</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="or">Or</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="country">Country (Optional)</string>
+    <string name="mm_dd_yyyy">Date of birth (Optional)</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up_for_emails_to_hear_from_all_latest_from_doviesfitness">Sign up for emails to hear from all
+        latest from Doviesfitness
+    </string>
+    <string name="create_account">create account</string>
+    <string name="login_txt">Sign In with Username Or Email</string>
+
+
+    <!--signup Validation-->
+    <string name="please_enter_your_full_name">Please enter your full name.</string>
+    <string name="please_enter_your_user_name">Please enter your username.</string>
+    <string name="please_enter_email_address">Please enter your email address.</string>
+    <string name="please_enter_valid_email_address">Please enter a valid email address.</string>
+
+    <string name="please_enter_a_password">Please enter a password.</string>
+    <string name="something_wrong">Something went wrong please try again later</string>
+    <string name="no_internate">No internate connection</string>
+    <string name="re_enter_password">Re-enter password.</string>
+    <string name="pass_does_not_match_the_confirm_pass">Password does not match the confirm password.</string>
+    <string name="please_select_your_country">Please select your country.</string>
+    <string name="search_country">Search Country</string>
+    <string name="countries">Countries</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Gender selection-->
+    <string name="what_s_your_gender">WHAT\'S YOUR GENDER?</string>
+    <string name="female">FEMALE</string>
+    <string name="male">MALE</string>
+    <string name="done">Done</string>
+
+    <!--Height and Weight-->
+    <string name="skip">skip</string>
+    <string name="how_tall_are_you">HOW TALL ARE YOU?</string>
+    <string name="ft">FT</string>
+    <string name="todo">TODO</string>
+    <string name="_0">0</string>
+    <string name="in">IN</string>
+    <string name="cm">CM</string>
+    <string name="kg">KG</string>
+    <string name="lbs">LBS</string>
+    <string name="what_s_your_weight">WHAT\'S YOUR WEIGHT</string>
+
+
+    <string name="create_username">CREATE USERNAME</string>
+    <string name="pick_a_username_for_your_account_you_can_always_change_it_later">Pick a username for your account, You
+        can always change it later.
+    </string>
+    <string name="username">Username</string>
+    <string name="add_profile_photo">ADD PROFILE PHOTO</string>
+    <string name="add_a_profile_photo_so_that_your_friend_know_it_s_your">Add a profile photo so that your friend know
+        it\'s you.
+    </string>
+    <string name="welcome_to_doviesfitness">WELCOME TO DOVIESFITNESS,</string>
+    <string name="yasha">YASHA</string>
+    <string name="time_to_create_and_share_your">Time to create and share your</string>
+    <string name="help_and_motivate_you">HELP AND MOTIVATE YOU.</string>
+    <string name="are_here_to_inspire">ARE HERE TO INSPIRE,</string>
+    <string name="always_remenber_we">ALWAYS REMENBER WE</string>
+    <string name="workout_with_friends_and_family">workout with friends and family.</string>
+    <string name="under_devlopment_mode">Under Devlopment mode</string>
+
+
+    <!--Login String-->
+    <string name="sign_in">Sign in</string>
+    <string name="or_sign_in_with">or sign in with:</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="not_member">Not a member?</string>
+    <string name="join_us">Join Us</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="firstNameLengthError">first name is too short (minimum 3 characters)</string>
+    <string name="passEmptyError">Please enter password</string>
+    <string name="firstNameEmptyError">Please enter User name</string>
+
+    <!--Reset Password-->
+    <string name="reset">reset</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="enter_your_email_to_receive_instuctions_on_how_to_reset_your_password">Enter your email to receive
+        instuctions on how to reset your password.
+    </string>
+    <string name="password_reset">PASSWORD RESET</string>
+    <string name="you_should_receive_a_link_few_moments_please_open_that_link_to_reset_your_password">You should receive
+        a link few moments. Please open that link to reset your password.
+    </string>
+    <string name="back_to_login">back to login</string>
+
+
+    <!--Home tab-->
+    <string name="home">Home</string>
+    <string name="diet_plan">Diet Plan</string>
+    <string name="workout">Workout</string>
+    <string name="workout_plan">Workout Plan</string>
+    <string name="my_profile">My Profile</string>
+    <string name="feed">FEED</string>
+    <string name="by_creating_an_account_you_agree_to_doviesfitness">By creating an account, you agree to
+        Doviesfitness
+    </string>
+    <string name="by_login_an_account_you_agree_to_doviesfitness">By logging in, you agree to
+        Doviesfitness\'s
+    </string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="and">and</string>
+    <string name="terms_of_use">Terms Of Use.</string>
+    <string name="or_return_to">Or return to</string>
+    <string name="log_in_">Log In.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update_to_premium">UPDATE TO PREMIUM</string>
+    <string name="upgrade_to_play">UPGRADE TO PLAY</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="app_faq">App FAQ</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+
+    <!--Comment Activity-->
+    <string name="comments">COMMENTS</string>
+    <string name="write_a_comment">Write a comment…</string>
+    <string name="likes">likes</string>
+    <string name="like">like</string>
+    <string name="delete">Delete</string>
+    <string name="report_comment">Report Comment</string>
+    <string name="photo">PHOTO</string>
+
+
+    <!--UserListWorkoutPlan Activity-->
+    <string name="userlistworkoutplan">UserListWorkoutPlan</string>
+    <string name="good_for">GOOD FOR</string>
+    <string name="equipments">EQUIPMENTS</string>
+    <string name="overview">OVERVIEW</string>
+    <string name="add_to_my_plan">Add to my plan</string>
+
+
+    <string name="video">Video</string>
+    <string name="video_loading">Video Loading</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="use_camera">Use Camera</string>
+    <string name="choose_existing">Choose existing</string>
+
+
+    <!--WORKOUT DETAIL-->
+    <string name="clear_filter">Clear Filter</string>
+    <string name="clear_date_filter">CLEAR DATE FILTER</string>
+    <string name="edit_workout">Edit workout</string>
+    <string name="save_to_my_workout">Save to my workout</string>
+    <string name="reps">Reps</string>
+    <string name="equipment">Equipment</string>
+    <string name="workout_created_by">Workout Created by</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="add_to_my_diet_plan">Add to my diet plan</string>
+    <string name="minutes">Minutes</string>
+    <string name="exercises">Exercises</string>
+    <string name="secs">secs</string>
+    <string name="level">Level</string>
+    <string name="all_workout_collection">All Workout Collections</string>
+    <string name="trainer_choice">Trainers choice</string>
+    <string name="exercises_library">Exercise Library</string>
+    <string name="workout_collection">Workout Collections</string>
+    <string name="create_workout">Create Workout</string>
+    <string name="create_workout_log">Create workout log</string>
+    <string name="no_record_found">No record found</string>
+    <string name="no_exercise_found">No Exercise found. Coming Soon</string>
+    <string name="no_fav_exercise_found">No Favorite Exercise</string>
+    <string name="filter">Filter</string>
+    <string name="apply">APPLY</string>
+    <string name="view_all">View All</string>
+    <string name="rest_time">Rest Time</string>
+    <string name="music">MUSIC</string>
+    <string name="share">SHARE</string>
+    <string name="search">Search</string>
+    <string name="downloading">Downloading..</string>
+    <string name="end_workout">End Workout</string>
+    <string name="workout_complete">WORKOUT COMPLETE</string>
+    <string name="workout_complete_small">Workout Complete</string>
+
+
+    <string name="log_workout">Do you want to log your workout so you can track your progress?</string>
+    <string name="stream_log_workout">You can log your workout and track your daily progress by taking a picture or upload one from your gallary,
+    you can add your current weight, calories burn during this workout, and you can add personal note as well.</string>
+    <string name="no">NO</string>
+    <string name="No">No</string>
+    <string name="yes">YES</string>
+    <string name="rest">REST</string>
+    <string name="no_workout_found">Create your own workout here for easy access. You can select the level of the
+        workout. You can write what the workout is good for and also add additional information in the overview section
+        if you choose to share the workout with friends and family or clients.
+    </string>
+    <string name="no_workout_log">No workout log found. You must complete a workout and log it first to see your workout log history.
+</string>
+    <string name="are_you_sure_you_want_to_delete_this_workout_log">Are you sure you want to delete this Workout Log?</string>
+    <string name="are_you_sure_you_want_to_delete_this_workout_history">Are you sure you want to delete this Workout History?</string>
+    <string name="workout_log">Workout Log</string>
+    <string name="how_do_you_like">How do you like the workout?</string>
+    <string name="add_progress_picture">Add Progress Picture (you can take up to 4 pictures)</string>
+    <string name="submit">Submit</string>
+    <string name="save_log">SAVE LOG</string>
+    <string name="my_plan">You can create your plan by selecting (create a plan), or you can choose from our workout
+        plan menu. Creating your plan allows you to choose your workouts you have created or select a workout from our
+        workout collection list. And, you get to choose the days of the week you want to workout and also select the day
+        you want to rest. You have full access to everything. All you have to do is click on the days you want to do
+        specific workout and select the workout and click add. After that, you can add all additional information like
+        equipment, diet plan, and notes or other information in case you want to share your plan with your friends,
+        family or clients. Creating a plan takes a few minutes, and it is effortless to do as well. You can also choose
+        a plan from our workout plan menu and edit them according to your needs. Always remember, you can modify any
+        workout plan on this app and even any workout from our workout collections. You have the freedom to customise a
+        workout or a full workout plan according to your level. If you have any question or concern contact us right
+        away. We are here to inspire and motivate you.
+    </string>
+
+    <string name="overview_str">Overview</string>
+    <string name="good_for_str">
+        <![CDATA[<font color=\'#C7C7C7\'>Good For </font>]]></string><!--<font color=\'#FF0000\'>*</font>-->
+    <string name="equipments_str">
+        <![CDATA[<font color=\'#C7C7C7\'>Equipments </font>]]></string><!--<font color=\'#FF0000\'>*</font>-->
+    <string name="created_by">
+        <![CDATA[<font color=\'#C7C7C7\'>Created By </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="access_level">
+        <![CDATA[<font color=\'#C7C7C7\'>Access Level </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="show_in_App">
+        <![CDATA[<font color=\'#C7C7C7\'>Show Name In App? </font>]]></string>
+
+    <string name="display_in_newsfeed">
+        <![CDATA[<font color=\'#C7C7C7\'>Display in Newsfeed? </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="allow_notification">
+        <![CDATA[<font color=\'#C7C7C7\'>Allow Notification? </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="amount"><![CDATA[<font color=\'#C7C7C7\'>Amount </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="workout_name">
+        <![CDATA[<font color=\'#C7C7C7\'>Workout Name </font>]]></string>
+    <!--        <![CDATA[<font color=\'#C7C7C7\'>Workout Name </font><font color=\'#FF0000\'>*</font>]]></string>-->
+    <string name="Diet_workout_name">
+        <![CDATA[<font color=\'#C7C7C7\'>Name </font>]]></string>
+    <string name="Diet_workout_sub_title">
+        <![CDATA[<font color=\'#C7C7C7\'>SubTitle </font>]]></string>
+    <string name="level_str"><![CDATA[<font color=\'#C7C7C7\'>Level </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="allowed_users">Allowed users</string>
+    <string name="add_exercises">ADD Exercises</string>
+    <string name="default_setting_for_time_and_reps">Default setting for Follow along workout</string>
+    <string name="select_time_for_all_timer_exercise">Select Time For All Timer Exercise</string>
+    <string name="select_number_of_repetetion_for_reps_exercises">Select number of repetetion for Reps exercises
+    </string>
+    <string name="select_time_you_want_to_finish_each_reps_exercises">Select time you want to finish each Reps
+        exercises
+    </string>
+    <string name="favorite_exercises">Favorite Exercises</string>
+    <string name="your_total_workout_time_will_display_here">Your total workout time will display here when you start
+        adding exercise time
+    </string>
+
+    <string name="st_my_workout"> You haven\'t created or added any workout yet. You can create your own workout or add a workout from <b> WORKOUT COLLECTION</b> under <b>WORKOUT </b>Menu for easy access. Creating your own workout gives you more control. You get to select the level of the workout you are creating and add additional information in the overview section if you chose to share the workout with friends, family or clients if you are a trainer. For more info about how to create a workout contact us.</string>
+
+    <string name="create_information"><![CDATA[<html><body style:"font-size: 11.0pt !important; font-family: TamilSangamMN !important;line-height:10.0pt;"><p>Welcome to workout creation.<br>This page is going to explain how to create a workout.</br>
+    <p>Every star sign ( * ) needs to be filled.</p></p><p><strong><font color="#ffffff">PHOTO</font>  </strong><br>You add a picture to give the workout details nice look.</br></p><p><strong><font color="#ffffff">WORKOUT NAME</font></strong><br>You add the name so you can differentiate between other workouts.</br></p><p><strong><font color="#ffffff">LEVEL</font></strong><br>Select the type of level you are creating. So if you send it to someone, they will
+            know how challenging or easy the workout is.</br></p><p><strong><font color="#ffffff">OVERVIEW</font></strong><br>This field is where you
+            can write more information about the workout you are creating. You can add in additional details regarding
+            equipment and even writing a personal message if you are sending this to someone. For personal trainers, this field is good to
+            add any other suggestions and alternative equipment for clients. Also, you can write your weights you going to use in this field as well.
+            So you can track your equipment weights during lifting.</br></p><p><strong><font color="#ffffff">GOOD FOR</font></strong><br>There is a list of what most workouts
+            are good for. You can select what the workout you are creating is good for so that if you share it with your friends, family or clients,
+            they will have an idea right away what the workout is going to do for them.  For example if your workout is good for abs just select abs.</br></p><p><strong><font color="#ffffff">EQUIPMENT</font></strong><br>There is a list of workout equipment listed. Select which one you are going to create the workout with. For example,
+            if you have a dumbbell and you want to create a workout with it you can select that and then when you go to the exercise library
+            you can filter the library with all dumbbell workouts. If you don\'t know the equipment you can leave this part and add all
+            your exercise and then after that you can check the exercise demonstration you have added to your workout to see what equipment
+            is involved and then you can add them to the <strong><font color="#ffffff">EQUIPMENT</font></strong> section. This is to help others get an idea of what
+                equipment they are going to need for the workout you created.</br></p><p><strong><font color="#ffffff">DEFAULT SETTING FOR TIME AND REPS</font></strong><br> The default settings are there to make it easier for you to create your workout faster. We have currently put in a default timer and Reps settings for you.
+            We have set 30 seconds for <strong><font color="#ffffff">TIMER</font></strong> exercises, 10 reps for <strong><font color="#ffffff">REPETITION</font></strong> exercise and 30 seconds for the
+            <strong><font color="#ffffff">TIME</font></strong> to finish that <strong><font color="#ffffff">10 REPS</font></strong> exercise. Each rep number you chose needs time you going to use to finish
+                it so chose the right time for reps exercises.</br><br>You can change the settings if you don\'t like the default setting.
+            If you want to do 1 min for your timer exercise or 12 reps for repetition, you can set it as your default settings.
+            Our setting is set up in a way to help you if you forget to set your own time or reps.  If you don’t change
+            this setting before you add your exercises, you will have our default settings, that means every exercise you
+                add will have 30 seconds for Timer or 10 reps for reps exercises and 30 second time to finish that reps.</br><br>If you make a mistake in your default settings before you add your exercise don\'t panic you can go back to the
+            <strong><font color="#ffffff">DEFAULT SETTINGS</font></strong> and change it then go to the exercise and select <strong><font color="#ffffff">REPS</font></strong> and then switch it back to
+            <strong><font color="#ffffff">TIME</font></strong>, the new setting will auto-fill for that exercise. But in this case, you will have to do it manually by selection
+            one exercise at a time. If you add your exercises and you decide to change the default settings, the new setting is
+            <strong><font color="#ffffff">NOT</font></strong> going to change all the already added exercises automatically. But any new exercise you add will pick the
+                current settings. All previous exercises you have already added must be changed manually.</br></p><p>Note that once you add your exercise after setting default time and reps. All the exercises will be select as
+            <strong><font color="#ffffff">TIME</font></strong>. So if you want to do <strong><font color="#ffffff">REPS</font></strong>, then you have to select the
+            <strong><font color="#ffffff">REPS.</font></strong></p><p><strong><font color="#ffffff">REST TIME:</font></strong><br>Any time you add an exercise, you will see a rest time.
+            If you decide you want to add a rest time after every exercise then you have to add the time manually. You can\'t set default rest time.
+            </br></p><p><strong><font color="#ffffff">DELETING AND DUPLICATION</font></strong><br> Once you add an exercise, you will see a red icon on the thumbnail image.
+            That is the delete icon, and the green icon is for Duplication. If you want to repeat the same exercise you can click the duplication icon,
+            and it will copy the time or reps, and you can move it around.  During workout creation, you can also preview the video as well in case you
+            want to double check the exercise to give it a correct time or reps. You can also press and hold on exercise to move it up or down.</br></p><p><strong><font color="#ffffff">UNDERSTANDING  REP TIME</font></strong><br>Each rep time you set will still play as a timer during the player mode, and after
+            the time you set to finish the reps chosen is done, it will go to next exercise. So make sure you set a time you believe you can
+            complete the specific exercise. If you think you can do 10 reps of squats in 30 seconds, then select 30 seconds.
+            Every workout on the app is an interval timer workout. When the time reach, it goes to next automatically.
+            Unless you pause or go back to previews exercise.</br></p><p><strong><font color="#ffffff">TOTAL WORKOUT TIME</font></strong><br>All the time you put in your exercise is going to add up to get the total time for the workout you are creating.
+            So if you add 5 exercises without rest time and each exercise is 1 min, your entire workout time will be 5 minutes.
+            You can check your total workout time with the time icon on your right before you save your workout.
+            That will help you know the duration of the workout you are creating. Workout time doesn\'t add seconds when you save it.
+            So if you create for example 1min 10 seconds, it will save as 1min, but when you are playing your workout,
+            it will play all 1min 10 seconds. We did this to give the <strong><font color="#ffffff">TOTAL TIME</font></strong> in workout details simple look.
+            You can check the workout collection and see how the workouts have been created to provide you with an understanding of how to
+                create your own.</br></p><p>For more information, you can also go to our website
+            <a href="http://www.doviesfitness.com\"><strong><font color="#ffffff">www.doviesfitness.com></font></strong></a> .</p><p>Tutorial videos will be uploaded on our feed, and also our Instagram page
+        <a href="https://www.instagram.com/Doviesfitness\"><strong><font color="#ffffff">@doviesfitness</font></strong></a>
+    and  @doviesworkout will show lots of live streaming sections on how to create workouts, plans, and more.
+    You can also contact our support for additional information at <a href="mailto:support@doviesfitness.com\"><strong><font color="#ffffff"> support@doviesfitness.com</font></strong></a></p><body></html>]]></string>
+    <string name="start_saving_fav">Start saving your top exercise for quick access, any time.</string>
+    <string name="select_time">Select Time</string>
+    <string name="select_time_error">
+        <![CDATA[<font color=\'#C7C7C7\'>Select Time </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="select_number_of_reps_error">
+        <![CDATA[<font color=\'#C7C7C7\'>Select number of Reps</font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="time_to_finish_reps_error">
+        <![CDATA[<font color=\'#C7C7C7\'>Time to finish reps </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="select_number_of_reps">Select number of Reps</string>
+    <string name="time_to_finish_reps">Time to finish reps</string>
+    <string name="save_as_new_workout">Save as new workout</string>
+    <string name="overwite_current_workout">Overwrite current workout</string>
+    <string name="publish_to_app">Publish to app</string>
+    <string name="publish">PUBLISH</string>
+    <string name="unlock_proworkout_plan">Unlock pro workout plans</string>
+    <string name="upgrade_to_premium">UPGRADE TO PREMIUM</string>
+    <string name="success_stories">Success Stories</string>
+    <string name="term_and_condition">Terms And Conditions</string>
+    <string name="my_workout_log">MY WORKOUT LOG</string>
+    <string name="name"><![CDATA[<font color=\'#FFFFFF\'>Name </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="email_address"><![CDATA[<font color=\'#FFFFFF\'>Email Address </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="subject_feedback"><![CDATA[<font color=\'#FFFFFF\'>Subject / Feedback Type </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="message_feedback"><![CDATA[<font color=\'#FFFFFF\'>Message / Feedbacks </font><font color=\'#FF0000\'>*</font>]]></string>
+    <string name="you_can_also_reach_us_on">You can also reach us on</string>
+    <string name="share_the_love_with_your_friends_and_family">Share the love with your friends and family.Inspire them to start working out.</string>
+    <string name="we_would_love_to_here_from_you">We would love to hear from you.</string>
+    <string name="have_a_question_or_enqueries">Have a question or enquiries about Doviesfitness?Have a great idea or how to improve our app?
+    Or you are having any issues? send us a message and we will get back to you as soon as possible.</string>
+    <string name="premium_account">PREMIUM ACCOUNT</string>
+
+    <string name="favorite">Favorites</string>
+    <string name="more_collection">More Collection</string>
+    <string name="plans">Plans</string>
+    <string name="new_release">New Releases</string>
+    <string name="dovies_tv">Dovies TV</string>
+    <string name="most_recent">Most Recent</string>
+    <!--
+    <string name="movies_and_tv">Stream workout that you download appear here.</string>
+-->
+    <string name="movies_and_tv">All download videos will appear here for offline access.</string>
+    <string name="movies_and_tv1">All your downloaded videos will be available here - even when you\'re offline.</string>
+
+    <string name="add_movies_and_tv">Add Videos to your list so you can easily find them later.</string>
+    <string name="add_movies_and_tv1">Start saving your favorite videos here for quick access.</string>
+    <string name="your_search_has_no_result">Your search did not have any results.</string>
+    <string name="see_what_you_can_download">SEE WHAT YOU CAN DOWNLOAD</string>
+    <string name="explore_video">EXPLORE VIDEOS</string>
+    ////exoplayer demo strings
+
+    <string name="application_name">ExoPlayer</string>
+
+    <string name="track_selection_title">Select tracks</string>
+
+    <!--
+    <string name="unexpected_intent_action">Unexpected intent action: <xliff:g id="action">%1$s</xliff:g></string>
+-->
+    <string name="unexpected_intent_action">Unexpected intent action:</string>
+
+    <string name="error_cleartext_not_permitted">Cleartext traffic not permitted</string>
+
+    <string name="error_generic">Playback failed</string>
+
+    <string name="error_drm_unsupported_before_api_18">DRM content not supported on API levels below 18</string>
+
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+
+    <!--
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+-->
+    <string name="error_no_decoder">This device does not provide a decoder for </string>
+
+    <!--
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+-->
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for </string>
+
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+
+    <!--
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+-->
+    <string name="error_instantiating_decoder">Unable to instantiate decoder</string>
+
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+
+    <string name="sample_list_load_error">One or more sample lists failed to load</string>
+
+    <string name="unsupported_ads_in_playlist">Playing without ads, as ads are not supported in playlists</string>
+
+    <string name="download_start_error">Failed to start download</string>
+
+    <string name="download_start_error_offline_license">Failed to obtain offline license</string>
+
+    <string name="download_playlist_unsupported">This demo app does not support downloading playlists</string>
+
+    <string name="download_scheme_unsupported">This demo app only supports downloading http streams</string>
+
+    <string name="download_live_unsupported">This demo app does not support downloading live content</string>
+
+    <string name="download_ads_unsupported">IMA does not support offline ads</string>
+
+    <string name="prefer_extension_decoders">Prefer extension decoders</string>
+    <string name="exo_download_description">exo_download_description</string>
+    <string name="exo_track_selection_title_video">exo_track_selection_title_video</string>
+    <string name="exo_track_selection_title_audio">exo_track_selection_title_audio</string>
+    <string name="exo_track_selection_title_text">exo_track_selection_title_text</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="resource_not_found">Resource not found</string>
+    <string name="cannot_retrieve_cropped_image">cannot retrieve cropped image</string>
+    <string name="weight">Weight</string>
+    <string name="change_password">Change password</string>
+    <string name="old_password">Old Password</string>
+    <string name="please_enter_old_password">Please enter old password.</string>
+    <string name="new_password">New Password</string>
+    <string name="please_enter_you_new_password">Please enter you new password.</string>
+    <string name="retype_password">Retype New Password</string>
+    <string name="update">Update</string>
+    <string name="password_does_not_match_with_confirm_password">Password does not match the confirm password.</string>
+    <string name="edit">Edit</string>
+    <string name="add_calori_burn">Add calories burn</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="stream_log">Stream Log</string>
+    <string name="played_history">Played History</string>
+    <string name="if_you_do_not_want_to_create_log_now_you_can_do_it_from_history">(If you do not want to create log now you can do it from history)</string>
+    <string name="if_you_decide_not_to_create_log_now_you_can_do_it_from_history">If you decide not to log this workout right now, you can do it from your played history later</string>
+    <string name="log_later">Log Later</string>
+    <string name="log_now">Log Now</string>
+
+    ////////////<!--chrome cast-->
+    <string name="app_id">C0868879</string>
+    <string name="action_settings">Settings</string>
+    <string name="cast_app_name">GoogleCastPlayer</string>
+    <string name="media_route_menu_title">Play on&#8230;</string>
+    <string name="list_of_videos">Select a Video Clip</string>
+    <string name="ok">OK</string>
+    <string name="no_device">(No Device Selected)</string>
+    <string name="error">Error</string>
+    <string name="stop">Stop</string>
+    <string name="mute">Mute</string>
+    <string name="unmute">Unmute</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="no_video_found">No video was found</string>
+    <string name="about_app">About Cast Videos</string>
+    <string name="version">CastVideos: %1$s</string>
+    <string name="session_reconnection_attempt">Attempting to recover previous
+        session&#8230;</string>
+    <string name="introducing_cast">Introducting Cast</string>
+
+    <!-- Error messages -->
+    <!-- onApplicationConnectionFailed() errors -->
+    <string name="error_view_type">You can not download this video,\nonly for watch</string>
+    <string name="error_download_type">This video require download before it can be played.</string>
+    <string name="failed_to_set_volume">Failed to set the volume</string>
+    <string name="failed_to_launch_app">Failed to launch application</string>
+    <string name="failed_to_set_mute">Failed to adjust the volume mute</string>
+    <string name="failed_to_find_app">The application you are trying to launch is not available on
+        your Google Cast device
+    </string>
+    <string name="failed_app_launch_timeout">The request to launch the application has timed out!
+    </string>
+    <string name="failed_to_play">Failed to start the playback of media</string>
+    <string name="failed_to_pause">Failed to pause the playback of media</string>
+    <string name="failed_to_connect">Could not connect to the device</string>
+    <string name="failed_to_seek">Failed to seek to the specified position on the remote device
+    </string>
+    <string name="video_error_media_load_timeout">Media loading timed out</string>
+    <string name="video_error_server_unaccessible">Media server was not reachable</string>
+    <string name="video_error_unknown_error">Failed to load video</string>
+    <string name="connection_temp_lost">Connection to the cast device is temporarily lost</string>
+    <string name="connection_recovered">Connection to the cast device is recovered</string>
+    <string name="connection_lost_retry">Connection to the cast device has been temporarily lost.
+        Application is trying to recover connection, please try again later
+    </string>
+    <string name="connection_lost">No connection to the cast device exist</string>
+    <string name="failed_to_perform_action">Sorry, ran into issues performing the task you wanted
+    </string>
+    <string name="oops">Oops</string>
+
+    <!-- Preferences -->
+    <string name="prefs_header_application">Application Behavior</string>
+    <string name="prefs_header_application_summary">Control how the application behaves on the TV
+    </string>
+    <string name="prefs_termination_policy_default">0</string>
+    <string name="prefs_termination_policy_dialog_title">When Disconnecting</string>
+    <string name="prefs_volume_title">Volume Assignment</string>
+    <string name="prefs_volume_title_summary">Controls %1$s</string>
+    <string name="prefs_volume_dialog_title">Volume Assignment</string>
+    <string name="prefs_volume_default">device</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <!-- Tabs -->
+    <string name="tab_videos_title">Videos</string>
+    <string name="tab_music_title">Songs</string>
+    <string name="tab_photos_title">Photos</string>
+
+    <!-- ShowCaseView -->
+    <string name="touch_to_cast">Touch to cast videos to your TV</string>
+
+    <!-- Captions -->
+    <string name="captions_settings">Captions Settings</string>
+    <string name="captions">Captions</string>
+
+    <!-- Queue -->
+    <string name="show_queue">Show Queue</string>
+    <string name="queue_list">Queue</string>
+    <string name="transition_image">transition-image</string>
+    <string name="queue_empty">Queue is empty!</string>
+    <string name="queue_tag_item">queue-tag-item</string>
+    <string name="play_now">Play Now</string>
+    <string name="play_next">Play Next</string>
+    <string name="add_to_queue">Add to Queue</string>
+    <string name="action_clear_queue">Clear Queue</string>
+    <string name="queue_item_added_to_play_next">An item was added to play next</string>
+    <string name="queue_item_added_to_queue">An item was added to the queue</string>
+    <string name="make_sure_you_are_connected_to_device">Make sure your smart TV, streaming device, and iPhone or iPad are all on the same WiFi network. If you need help, please visit our Dovies Help Center</string>
+    <string name="stop_casting">Stop Casting</string>
+    <string name="title_activity_keyboardcolor">Keyboardcolor</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="delete_account">Delete Account</string>
+    <!--<string name="delete_account_txt">Your profile, progress photos, saved workouts, workout plans, and your saved diet plans will be permanently removed when you delete your account. You can\'t log in again or sign up with the same username or email address after.</string>-->
+    <!--
+   <string name="delete_account_txt">Your profile, progress photos,\nsaved workouts, workout plans,\nand your saved diet plans will be\npermanently removed when you\ndelete your account. You can\'t log\nin again or sign up with the same\nusername or email address after.</string>
+-->
+
+    <!--Without new line-->
+    <string name="delete_account_txt">Your profile, progress photos, saved workouts, workout plans, and your saved diet plans will be permanently removed when you delete your account. You can\'t login again or sign up with the same username or email address after.</string>
+    <string name="conformation_delete_account_txt">Are you sure you want to delete \nyour account? </string>
+    <string name="default_setting_for_sets_and_reps_workout">Default setting for Sets and reps workout</string>
+
+    <string name="exclusive_workout_dialog">This is an exclusive workout paln.\nYou need to purchase it before you \ncan access it. Click below to \nparchase now.</string>
+    <string name="purchase_now">PURCHASE NOW</string>
+    <string name="exclusive_plan_purchase_to_view">EXCLUSIVE PLAN - PURCHASE TO VIEW</string>
+</resources>

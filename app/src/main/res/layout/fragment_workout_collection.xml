@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/colorBlack" android:clickable="true" android:focusable="true" android:focusableInTouchMode="true">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_refresh" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/colorBlack" android:fillViewport="true">
+                <LinearLayout android:id="@+id/ll_worket" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone">
+                    <TextView android:id="@+id/first_collection_name" style="@style/mediumProductBoldStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_15sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginBottom="@dimen/_5sdp" android:textColor="@color/title_color" android:textSize="@dimen/_11sdp"/>
+                    <TextView android:id="@+id/level_name" style="@style/SmallProductRegularStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_15sdp" android:layout_marginBottom="@dimen/_13sdp" android:text="" android:textColor="@color/description_color" android:textSize="@dimen/_10sdp"/>
+                    <RelativeLayout android:id="@+id/rl_featured" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_featured" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/right_arrow" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_50sdp" android:layout_alignParentEnd="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_4sdp" android:visibility="gone" app:srcCompat="@drawable/ic_right_chevron"/>
+                    </RelativeLayout>
+                    <TextView android:id="@+id/txt_all_workout_collection" style="@style/mediumProductBoldStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_16sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="@string/all_workout_collection" android:textColor="@color/title_color" android:textSize="@dimen/_11sdp" android:visibility="gone"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_workout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_featured" android:layout_marginStart="2.4dp" android:layout_marginEnd="7dp" android:layout_marginBottom="70dp"/>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</layout>
+<!--
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:clickable="true">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_worket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/first_collection_name"
+                        style="@style/mediumProductBoldStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/title_color"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:id="@+id/level_name"
+                        style="@style/SmallProductRegularStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_13sdp"
+                        android:text=""
+                        android:textColor="@color/description_color"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_featured"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_featured"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:overScrollMode="never" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/right_arrow"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_right_chevron" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_all_workout_collection"
+                        style="@style/mediumProductBoldStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:text="@string/all_workout_collection"
+                        android:textColor="@color/title_color"
+                        android:visibility="gone"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_workout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/rl_featured"/>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</layout>
+-->

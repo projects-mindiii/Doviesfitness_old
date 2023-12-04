@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/colorBlack"
+        android:id="@+id/item_view"
+        android:layout_height="@dimen/_125sdp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/exercise_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/_16sdp"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+            android:src="@drawable/black_wokout_collection_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:scaleType="centerCrop"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"
+            app:riv_corner_radius="@dimen/_16sdp">
+    </com.makeramen.roundedimageview.RoundedImageView>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/exercise_name"
+            android:layout_height="wrap_content"
+            android:text="Exercise"
+            android:gravity="center"
+            android:layout_above="@+id/level_name"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_5sdp"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/futura_bold_regular_tracing"
+            android:textColor="@color/colorWhite"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/level_name"
+            android:layout_height="wrap_content"
+            android:text="Exercise"
+            android:gravity="center"
+            android:textSize="@dimen/_9sdp"
+            android:fontFamily="@font/product_sans_regular"
+            android:letterSpacing="0.04"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/colorWhite1"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+    <ImageView
+        android:id="@+id/lock_img"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:src="@drawable/lock_ico_bg"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_50sdp"/>
+
+
+</RelativeLayout>

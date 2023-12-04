@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/colorBlack"
+        android:id="@+id/diet_container"
+        android:layout_height="match_parent">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/dietPlan_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            app:riv_corner_radius="@dimen/_16sdp"/>
+
+    <ImageView
+            android:id="@+id/setting_img"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            app:srcCompat="@drawable/new_dots_ico"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/_25sdp"
+            tools:ignore="RtlHardcoded"/>
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+            android:src="@drawable/black_wokout_collection_img"
+            android:scaleType="fitXY"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:riv_corner_radius="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_alignParentBottom="true"/>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/diet_plan_name"
+                android:layout_height="wrap_content"
+                android:text="MINDIII Test weight loss diet plans"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:maxLines="2"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:fontFamily="@font/futura_bold_regular_tracing"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_20sdp"
+                android:letterSpacing="0.04"
+                android:textColor="@color/colorWhite"/>
+
+        <!--style="@style/ExtralargeProductBoldtyle"-->
+
+        <TextView
+                android:layout_width="@dimen/_200sdp"
+                android:id="@+id/txt_week_count"
+                android:layout_height="wrap_content"
+                android:text="I WEEK PLAN"
+                android:layout_below="@+id/diet_plan_name"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:letterSpacing="0.04"
+                android:fontFamily="@font/product_sans_regular"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/black_wokout_collection_img">
+    </RelativeLayout>
+
+</RelativeLayout>

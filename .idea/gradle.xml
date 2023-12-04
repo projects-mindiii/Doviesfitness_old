@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="zulu-11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/appbarspring" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/cronet" />
+            <option value="$PROJECT_DIR$/dash" />
+            <option value="$PROJECT_DIR$/extensions/av1" />
+            <option value="$PROJECT_DIR$/extensions/cast" />
+            <option value="$PROJECT_DIR$/extensions/cronet" />
+            <option value="$PROJECT_DIR$/extensions/ffmpeg" />
+            <option value="$PROJECT_DIR$/extensions/flac" />
+            <option value="$PROJECT_DIR$/extensions/gvr" />
+            <option value="$PROJECT_DIR$/extensions/ima" />
+            <option value="$PROJECT_DIR$/extensions/jobdispatcher" />
+            <option value="$PROJECT_DIR$/extensions/leanback" />
+            <option value="$PROJECT_DIR$/extensions/media2" />
+            <option value="$PROJECT_DIR$/extensions/mediasession" />
+            <option value="$PROJECT_DIR$/extensions/okhttp" />
+            <option value="$PROJECT_DIR$/extensions/opus" />
+            <option value="$PROJECT_DIR$/extensions/rtmp" />
+            <option value="$PROJECT_DIR$/extensions/vp9" />
+            <option value="$PROJECT_DIR$/extensions/workmanager" />
+            <option value="$PROJECT_DIR$/extractor" />
+            <option value="$PROJECT_DIR$/hls" />
+            <option value="$PROJECT_DIR$/ima" />
+            <option value="$PROJECT_DIR$/library/all" />
+            <option value="$PROJECT_DIR$/library/common" />
+            <option value="$PROJECT_DIR$/library/core" />
+            <option value="$PROJECT_DIR$/library/dash" />
+            <option value="$PROJECT_DIR$/library/extractor" />
+            <option value="$PROJECT_DIR$/library/hls" />
+            <option value="$PROJECT_DIR$/library/smoothstreaming" />
+            <option value="$PROJECT_DIR$/library/ui" />
+            <option value="$PROJECT_DIR$/smoothstreaming" />
+            <option value="$PROJECT_DIR$/testdata" />
+            <option value="$PROJECT_DIR$/testutils" />
+            <option value="$PROJECT_DIR$/ui" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/item_layout"
+        android:layout_width="@dimen/_84sdp"
+        android:layout_height="@dimen/_123sdp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_4sdp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_featured"
+            android:layout_width="@dimen/_84sdp"
+            android:layout_height="@dimen/_112sdp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/_4sdp" />
+
+        <TextView
+            android:id="@+id/tv_new"
+            style="@style/ExtraProductRegularStyle"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:background="@drawable/feed_new_bg"
+            android:gravity="center"
+            android:text="New"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_black_opacity_bg">
+
+            <TextView
+                android:id="@+id/tv_featured"
+                style="@style/ExtraSmallProductBoldStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_level"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:text=""
+                 android:fontFamily="@font/tamil_sangam"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:id="@+id/tv_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_17sdp"
+                android:fontFamily="@font/netflix_sans_regular"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/subtitle_workkout_collections"
+                android:textSize="@dimen/_8sdp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/lock_icon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_11sdp"
+            android:background="@drawable/circle_orange_bg"
+            android:padding="@dimen/_3sdp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/lock_ico" />
+    </FrameLayout>
+</RelativeLayout>

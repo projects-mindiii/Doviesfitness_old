@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/container_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        tools:context=".ui.bottom_tabbar.diet_plan.fragment.MyDietPlanFragment">
+
+       <!-- <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:padding="@dimen/_2sdp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/ic_back_arrow_ico" />
+
+            <TextView
+                android:id="@+id/dp_title_name"
+                style="@style/ForHeadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="MY DIET PLAN"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite" />
+
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"
+                android:tint="@color/colorWhite"
+                android:visibility="gone"
+                app:srcCompat="@drawable/add_icon_b" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/devider_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/toolbar_layout"
+            android:background="@color/colorGray1" />-->
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <com.doviesfitness.utils.CustomNestedScrollView
+                android:id="@+id/my_dp_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/my_dp_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_80sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp" />
+
+
+            </com.doviesfitness.utils.CustomNestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <include
+            android:id="@+id/no_record_found"
+            layout="@layout/gride_view"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:id="@+id/no_dietPlan_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/dumble"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:padding="@dimen/_5sdp"
+                android:tint="@color/colorGray"
+                app:srcCompat="@drawable/ic_inactive_diet_plan"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/txt_add_plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dumble"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/product_sans_bold"
+                android:letterSpacing="0.04"
+                android:text="Add Diet Plan"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_add_plan"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:fontFamily="@font/product_sans_regular"
+                android:gravity="center"
+                android:letterSpacing="0.04"
+                android:lineSpacingExtra="@dimen/_4sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:text="Start saving your top Diet for quick access, any time"
+                android:textColor="@color/colorGray13"
+                android:textSize="@dimen/_11sdp" />
+
+            <Button
+                android:id="@+id/btn_add_dietPlan"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_65sdp"
+                android:background="@drawable/create_account_btn_bg"
+                android:backgroundTint="@color/colorBlack3"
+                android:fontFamily="@font/product_sans_bold"
+                android:letterSpacing="0.04"
+                android:text="ADD Diet Plan"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/action_bar_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.mmin18.widget.RealtimeBlurView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:realtimeBlurRadius="20dp"
+                android:visibility="gone"
+                app:realtimeOverlayColor="#99030202" />
+
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blurView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                app:blurOverlayColor="#99030202">
+
+                <!--Any child View here, TabLayout for example-->
+
+            </eightbitlab.com.blurview.BlurView>
+
+            <RelativeLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:padding="@dimen/_2sdp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:tint="@color/colorWhite"
+                    app:srcCompat="@drawable/ic_back_arrow_ico" />
+
+                <TextView
+                    android:id="@+id/dp_title_name"
+                    style="@style/ForHeadingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:text="MY DIET PLAN"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite" />
+
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:tint="@color/colorWhite"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/add_icon_b" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/action_bar_header"
+            android:background="#991d1d1d" />
+
+
+    </RelativeLayout>
+</layout>
+

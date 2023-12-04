@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black_bg"
+        >
+        <RelativeLayout
+            android:id="@+id/llAllTopbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/llTopBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/rl_playerNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/noteIcon"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        app:srcCompat="@drawable/add_notes_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular_0"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_gravity="center"
+                        android:text="Notes"
+                        android:textColor="@color/exo_white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/futura_bold_new_downloaded"
+                        android:text="00:00"
+                        android:gravity="center"
+                        android:textSize="@dimen/_23sdp"
+                        android:textColor="@color/exo_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular_0"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_gravity="center"
+                        android:text="Duration"
+                        android:textColor="@color/exo_white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rl_music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/musicIcon"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+
+                        android:padding="@dimen/_2sdp"
+                        app:srcCompat="@drawable/music_ico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular_0"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_gravity="center"
+                        android:text="Music"
+                        android:textAllCaps="false"
+                        android:textColor="@color/exo_white" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+            <!--select all view-->
+            <eightbitlab.com.blurview.BlurView
+                android:id="@+id/ll_selectAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:outlineProvider="bounds"
+                android:visibility="gone"
+                app:blurOverlayColor="@color/colorBlack">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlack">
+                    <RelativeLayout
+                        android:id="@+id/header_layout_select_deselect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/colorBlack"
+                        android:layout_marginTop="@dimen/_30sdp"
+
+                        >
+                        <LinearLayout
+                            android:id="@+id/ll_icon_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:id="@+id/select_select_deselect_all"
+                                android:layout_width="@dimen/_28sdp"
+                                android:layout_height="@dimen/_28sdp"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/_7sdp"
+                                app:srcCompat="@drawable/ic_circle_img" />
+                            <TextView
+                                android:id="@+id/cancel_button_select_deselect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_4sdp"
+                                android:fontFamily="@font/product_sans_bold"
+                                android:text="All"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/Done_create_workoutt"
+                            android:layout_toEndOf="@+id/ll_icon_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/product_sans_bold"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:text="Done"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/done_blue_color"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <TextView
+                            android:id="@+id/selected_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:fontFamily="@font/product_sans_bold"
+                            android:text="0 Selected"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </eightbitlab.com.blurview.BlurView>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/llAllTopbar"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/bottom_seperate_line_color"
+            android:alpha=".4"
+            />
+        <com.doviesfitness.utils.CustomNestedScrollView
+            android:id="@+id/sv_main"
+            android:layout_below="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+              android:visibility="visible"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_new_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55sdp"/>
+            </LinearLayout>
+
+        </com.doviesfitness.utils.CustomNestedScrollView>
+
+        <!--mark as  ungroup delete functionality UI for set and reps-->
+        <LinearLayout
+            android:id="@+id/ll_mark_as_ungroup_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/create_account_btn_bg_grey"
+            android:gravity="center"
+            android:visibility="gone"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+
+                <TextView
+                    android:id="@+id/tv_mark_as"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="MARK AS"
+                    android:textAllCaps="true"
+                    android:textColor="@color/deselect_color"
+                    android:textSize="@dimen/_9sdp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:background="#39393B" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_ungroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="UNGROUP"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/deselect_color"
+                    android:textSize="@dimen/_9sdp" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:background="#39393B" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_delete_from_rounds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="DELETE"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorpickerRed"
+                    android:textSize="@dimen/_9sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--mark as  ungroup delete functionality UI for set and reps-->
+        <LinearLayout
+            android:id="@+id/ll_end_workout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/create_account_btn_bg_grey"
+            android:gravity="center"
+            android:visibility="gone"
+            android:weightSum="2">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_endworkout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="End workout"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorpickerRed"
+                    android:textSize="@dimen/_9sdp" />
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center_vertical"
+                android:background="#39393B" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/iv_play_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/play_ico"
+                    android:padding="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--forword previous playpause and add button ui-->
+        <RelativeLayout
+            android:id="@+id/forword_previous_play_pause"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/music_layout_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/music_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/_25sdp"
+                android:paddingStart="@dimen/_25sdp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:id="@+id/previous_buton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                         android:padding="@dimen/_2sdp"
+                        android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/ic_gray_left_arrow" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/vertical_seperator" />
+
+                <LinearLayout
+                    android:id="@+id/play_pause_music"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                         android:padding="@dimen/_2sdp"
+                        android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/ic_pause_ico" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/vertical_seperator" />
+                <LinearLayout
+                    android:id="@+id/forword_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_gravity="center"
+                         android:padding="@dimen/_2sdp"
+                        android:tint="@color/colorWhite"
+                        app:srcCompat="@drawable/ic_gray_right_arrow" />
+
+
+                      </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/add_exercise_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+              >
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:padding="@dimen/_2sdp"
+                    app:srcCompat="@drawable/ico_pr_plus" />
+
+            </LinearLayout>
+         </RelativeLayout>
+    </RelativeLayout>
+</layout>
+
