@@ -565,4 +565,5 @@
     <string name="exclusive_workout_dialog">This is an exclusive workout paln.\nYou need to purchase it before you \ncan access it. Click below to \nparchase now.</string>
     <string name="purchase_now">PURCHASE NOW</string>
     <string name="exclusive_plan_purchase_to_view">EXCLUSIVE PLAN - PURCHASE TO VIEW</string>
+    <string name="cancel_don_t_save_or_overwrite">Cancel, don\'t save, or overwrite</string>
 </resources>

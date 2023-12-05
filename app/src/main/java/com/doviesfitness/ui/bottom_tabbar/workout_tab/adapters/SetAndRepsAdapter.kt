@@ -60,6 +60,7 @@ class SetAndRepsAdapter(
     init {
         setHasStableIds(true)
     }
+
     private var selectedPosition = -1
     var exerciseListing = java.util.ArrayList<ExerciseListingResponse.Data>()
     lateinit var mItemTouchHelper: ItemTouchHelper
@@ -584,8 +585,8 @@ class SetAndRepsAdapter(
                     str.add(SetsAndRepsRoundList.get(adapterPosition).strTargetReps)
                     str.add(SetsAndRepsRoundList.get(adapterPosition).strTargetReps)
                 }
-                WrapsDialog.newInstance1(
-                    CommanUtils.getValue(), object : WrapsDialog.HeightWeightCallBack {
+                WrapsDialog.newInstance1(CommanUtils.getValue(),
+                    object : WrapsDialog.HeightWeightCallBack {
                         override fun timeOnClick(
                             index: Int, value: String, index1: Int, value1: String
                         ) {
@@ -600,7 +601,12 @@ class SetAndRepsAdapter(
                             }
 
                         }
-                    }, context, str[0], str[1], "repsInSetAndReps"
+                    },
+                    context,
+                    str[0],
+                    str[1],
+                    "repsInSetAndReps",
+                    "Target Reps"
                 ).show(supportFragmentManager)
 
             }
@@ -654,8 +660,8 @@ class SetAndRepsAdapter(
             arrow_icon_sets.setOnClickListener {
                 var reps = tv_sets_text.text.toString().trim().split(" ")[0]
 
-                WorkoutLevelDialog.newInstance(
-                    getRepValue1(), object : WorkoutLevelDialog.HeightWeightCallBack {
+                WorkoutLevelDialog.newInstance(getRepValue1(),
+                    object : WorkoutLevelDialog.HeightWeightCallBack {
                         override fun levelOnClick(index: Int, str: String) {
 
                             SetsAndRepsRoundList[adapterPosition].strTargetSets = str.toString()
@@ -692,7 +698,10 @@ class SetAndRepsAdapter(
                             }
                             notifyDataSetChanged()
                         }
-                    }, context, reps.toInt()
+                    },
+                    context,
+                    reps.toInt(),
+                    "Sets"
                 ).show(supportFragmentManager)
             }/* iv_nextSetIcon.setOnClickListener {
                  Toast.makeText(context, "iv_nextSetIcon", Toast.LENGTH_SHORT).show()

@@ -333,6 +333,11 @@
                     </RelativeLayout>
                 </RelativeLayout>
 
+                <FrameLayout
+                    android:id="@+id/frame_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
                 <RelativeLayout
                     android:id="@+id/reps_number_layout"
                     android:layout_width="match_parent"
@@ -599,8 +604,4 @@
             android:visibility="gone" />
     </RelativeLayout>
 
-    <FrameLayout
-        android:id="@+id/frame_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 </FrameLayout>

@@ -30,9 +30,9 @@
             android:layout_weight="1"
             android:gravity="center"
             android:padding="@dimen/_6sdp"
-            android:text="Weight"
+
             android:textColor="@color/colorWhite"
-            android:visibility="gone" />
+            android:visibility="visible" />
 
 
         <TextView

@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.dialog_timer.tv_cancel
 import kotlinx.android.synthetic.main.dialog_timer.tv_done
 import kotlinx.android.synthetic.main.dialog_timer.tv_minutes
 import kotlinx.android.synthetic.main.dialog_timer.tv_seconds
+import kotlinx.android.synthetic.main.dialog_timer.weight
 
 open class WrapsDialog() : BaseBottomSheetDialog(), View.OnClickListener {
     val TAG = WrapsDialog::class.java.name
@@ -22,6 +23,8 @@ open class WrapsDialog() : BaseBottomSheetDialog(), View.OnClickListener {
     var Min = ""
     var Sec = ""
     var callFor = ""
+
+    var mTitleDialog = ""
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -56,7 +59,8 @@ open class WrapsDialog() : BaseBottomSheetDialog(), View.OnClickListener {
             mContext: Context,
             min: String,
             sec: String,
-            pourpose: String
+            pourpose: String,
+            mTitle: String = ""
         ) =
             WrapsDialog().apply {
                 arguments = Bundle().apply {
@@ -65,6 +69,7 @@ open class WrapsDialog() : BaseBottomSheetDialog(), View.OnClickListener {
                     Min = min
                     Sec = sec
                     callFor = pourpose
+                    mTitleDialog = mTitle
                 }
             }
     }
@@ -166,6 +171,15 @@ open class WrapsDialog() : BaseBottomSheetDialog(), View.OnClickListener {
 
 
         no_picker1.setOnValueChangedListener { numberPicker, i, i1 -> println("onValueChange: ") }
+
+
+        weight.text = mTitleDialog
+
+        if (mTitleDialog.isEmpty()) {
+            weight.visibility = View.GONE
+        } else {
+            weight.visibility = View.VISIBLE
+        }
 
         tv_done.setOnClickListener(this)
         tv_cancel.setOnClickListener(this)

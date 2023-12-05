@@ -343,7 +343,7 @@ class NewPlayerExerciseSetAndRepsAdapter(
                         },
                         context,
                         selectedReps.toInt()
-                    ).show(supportFragmentManager)
+                    ,"Reps").show(supportFragmentManager)
 
                 }
 
@@ -380,7 +380,7 @@ class NewPlayerExerciseSetAndRepsAdapter(
                                 "$index $unite"
                             repetetionTxt.text = "$index $unite"
                         }
-                    }, context, sendingWeightToPopup, untie)
+                    }, context, sendingWeightToPopup, untie,"Weight")
                         .show(supportFragmentManager)
                 }
 

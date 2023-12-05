@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-v25/values-v25.xml",
+            "outputFile": "/Users/mspc-64/StudioProjects/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-v25/values-v25.xml",
             "map": [
                 {
-                    "source": "/Users/ios-asr110-12/.gradle/caches/transforms-3/1e0bc7f7ae4ebfc57842b3cab1d1b001/transformed/appcompat-1.1.0/res/values-v25/values-v25.xml",
+                    "source": "/Users/mspc-64/.gradle/caches/transforms-3/1e0bc7f7ae4ebfc57842b3cab1d1b001/transformed/appcompat-1.1.0/res/values-v25/values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

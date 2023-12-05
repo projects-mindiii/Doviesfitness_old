@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/Users/mspc-64/StudioProjects/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/ios-asr110-12/.gradle/caches/transforms-3/fb3cdf6d1113586c69afe06ac47debd1/transformed/mediarouter-1.0.0/res/values-land/values-land.xml",
+                    "source": "/Users/mspc-64/.gradle/caches/transforms-3/fb3cdf6d1113586c69afe06ac47debd1/transformed/mediarouter-1.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/ios-asr110-12/.gradle/caches/transforms-3/d159bbcd4d768dbab6c82c2d597c4b10/transformed/material-1.2.1/res/values-land/values-land.xml",
+                    "source": "/Users/mspc-64/.gradle/caches/transforms-3/d159bbcd4d768dbab6c82c2d597c4b10/transformed/material-1.2.1/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,24,30",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +40,17 @@
                     }
                 },
                 {
-                    "source": "/Users/ios-asr110-12/.gradle/caches/transforms-3/acdcb53cbb426abcdbff0ae73d317462/transformed/jetified-play-services-cast-framework-19.0.0/res/values-land/values.xml",
+                    "source": "/Users/mspc-64/.gradle/caches/transforms-3/1e0bc7f7ae4ebfc57842b3cab1d1b001/transformed/appcompat-1.1.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                },
+                {
+                    "source": "/Users/mspc-64/.gradle/caches/transforms-3/acdcb53cbb426abcdbff0ae73d317462/transformed/jetified-play-services-cast-framework-19.0.0/res/values-land/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9",
                         "startColumns": "0,0,0,0,0,0",
@@ -54,16 +64,6 @@
                         "startOffsets": "264,349,433,507,580,679",
                         "endColumns": "84,83,73,72,98,94",
                         "endOffsets": "344,428,502,575,674,769"
-                    }
-                },
-                {
-                    "source": "/Users/ios-asr110-12/.gradle/caches/transforms-3/1e0bc7f7ae4ebfc57842b3cab1d1b001/transformed/appcompat-1.1.0/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
                     }
                 }
             ]

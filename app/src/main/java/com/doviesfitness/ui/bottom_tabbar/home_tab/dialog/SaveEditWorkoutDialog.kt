@@ -102,6 +102,7 @@ class SaveEditWorkoutDialog : BaseBottomSheetDialog(), View.OnClickListener {
         else {
             tv_editworkout.text = getString(R.string.save_as_new_workout)
             tv_saveworkout.text = getString(R.string.overwite_current_workout)
+            tv_cancel.text= getString(R.string.cancel_don_t_save_or_overwrite)
             Glide.with(mActivity).load(R.drawable.dumble_dor).into(edit_publish_icon)
             Glide.with(mActivity).load(R.drawable.ic_edit_workout).into(delete_icon)
         }

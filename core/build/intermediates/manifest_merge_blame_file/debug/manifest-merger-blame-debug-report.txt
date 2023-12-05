@@ -19,12 +19,12 @@
 19
 20    <uses-sdk
 21        android:minSdkVersion="16"
-21-->/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/core/src/main/AndroidManifest.xml
+21-->/Users/mspc-64/StudioProjects/Doviesfitness_old/core/src/main/AndroidManifest.xml
 22        android:targetSdkVersion="28" />
-22-->/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/core/src/main/AndroidManifest.xml
+22-->/Users/mspc-64/StudioProjects/Doviesfitness_old/core/src/main/AndroidManifest.xml
 23
 24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-24-->/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/core/src/main/AndroidManifest.xml:19:3-76
-24-->/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/core/src/main/AndroidManifest.xml:19:20-74
+24-->/Users/mspc-64/StudioProjects/Doviesfitness_old/core/src/main/AndroidManifest.xml:19:3-76
+24-->/Users/mspc-64/StudioProjects/Doviesfitness_old/core/src/main/AndroidManifest.xml:19:20-74
 25
 26</manifest>

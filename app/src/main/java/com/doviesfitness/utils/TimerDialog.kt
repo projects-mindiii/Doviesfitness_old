@@ -2,36 +2,55 @@ package com.doviesfitness.utils
 
 import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.FragmentManager
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.doviesfitness.R
-import com.doviesfitness.ui.authentication.signup.activity.HeightAndWeightActivity
 import com.doviesfitness.ui.base.BaseBottomSheetDialog
-import kotlinx.android.synthetic.main.dialog_timer.*
+import kotlinx.android.synthetic.main.dialog_timer.no_picker
+import kotlinx.android.synthetic.main.dialog_timer.no_picker1
+import kotlinx.android.synthetic.main.dialog_timer.tv_cancel
+import kotlinx.android.synthetic.main.dialog_timer.tv_done
+import kotlinx.android.synthetic.main.dialog_timer.tv_minutes
+import kotlinx.android.synthetic.main.dialog_timer.tv_seconds
+import kotlinx.android.synthetic.main.dialog_timer.weight
 
-open class TimerDialog() : BaseBottomSheetDialog(), View.OnClickListener {
+open class TimerDialog : BaseBottomSheetDialog(), View.OnClickListener {
     val TAG = TimerDialog::class.java.name
     var callBack: HeightWeightCallBack? = null
     var strList = ArrayList<String>()
-    var Min=""
-    var Sec=""
+    var Min = ""
+    var Sec = ""
+    var mTitleDialog = ""
+    var mExerciseTypeDialog = ""
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         return inflater.inflate(R.layout.dialog_timer, container, false)
     }
 
     companion object {
         @JvmStatic
-        fun newInstance(list:ArrayList<String> , callBack: HeightWeightCallBack,mContext: Context,min:String,sec:String) =
+        fun newInstance(
+            list: ArrayList<String>,
+            callBack: HeightWeightCallBack,
+            mContext: Context,
+            min: String,
+            sec: String,
+            mTitle: String = "",mExerciseType:String=""
+
+        ) =
             TimerDialog().apply {
                 arguments = Bundle().apply {
                     setOnCalvingAddEditListener(callBack)
-                    strList=list
-                    Min=min
-                    Sec=sec
+                    strList = list
+                    Min = min
+                    Sec = sec
+                    mTitleDialog = mTitle
+                    mExerciseTypeDialog=mExerciseType
                 }
             }
     }
@@ -42,19 +61,35 @@ open class TimerDialog() : BaseBottomSheetDialog(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        no_picker.maxValue = strList.size-1
+        no_picker.maxValue = strList.size - 1
         no_picker.minValue = 0
-        no_picker.value=Min.toInt()
+        no_picker.value = Min.toInt()
         no_picker.wrapSelectorWheel = true
-        no_picker.setDisplayedValues(strList.toTypedArray())
+        no_picker.displayedValues = strList.toTypedArray()
         no_picker.setOnValueChangedListener { numberPicker, i, i1 -> println("onValueChange: ") }
 
-        no_picker1.maxValue = strList.size-1
+        no_picker1.maxValue = strList.size - 1
         no_picker1.minValue = 0
-        no_picker1.value=Sec.toInt()
+        no_picker1.value = Sec.toInt()
         no_picker1.wrapSelectorWheel = false
-        no_picker1.setDisplayedValues(strList.toTypedArray())
+        no_picker1.displayedValues = strList.toTypedArray()
         no_picker1.setOnValueChangedListener { numberPicker, i, i1 -> println("onValueChange: ") }
+
+        weight.text = mTitleDialog
+
+        if (mTitleDialog.isEmpty()) {
+            weight.visibility = View.GONE
+        } else {
+            weight.visibility = View.VISIBLE
+        }
+
+        if ("SetAndReps"==mExerciseTypeDialog){
+            tv_minutes.text="Hour"
+            tv_seconds.text="Min"
+        }else{
+            tv_minutes.text="Min"
+            tv_seconds.text="Sec"
+        }
 
         tv_done.setOnClickListener(this)
         tv_cancel.setOnClickListener(this)
@@ -65,9 +100,15 @@ open class TimerDialog() : BaseBottomSheetDialog(), View.OnClickListener {
         when (v?.id) {
             R.id.tv_done -> {
 
-                callBack?.timeOnClick(no_picker.value,strList[no_picker.value],no_picker1.value,strList[no_picker1.value])
+                callBack?.timeOnClick(
+                    no_picker.value,
+                    strList[no_picker.value],
+                    no_picker1.value,
+                    strList[no_picker1.value]
+                )
                 dismiss()
             }
+
             R.id.tv_cancel -> {
                 dismiss()
             }
@@ -80,6 +121,6 @@ open class TimerDialog() : BaseBottomSheetDialog(), View.OnClickListener {
     }
 
     interface HeightWeightCallBack {
-        fun timeOnClick(index: Int, value: String,index1: Int, value1: String)
+        fun timeOnClick(index: Int, value: String, index1: Int, value1: String)
     }
 }

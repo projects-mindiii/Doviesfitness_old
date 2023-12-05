@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-v19/values-v19.xml",
+            "outputFile": "/Users/mspc-64/StudioProjects/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-v19/values-v19.xml",
             "map": [
                 {
-                    "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/values-v19/styles.xml",
+                    "source": "/Users/mspc-64/StudioProjects/Doviesfitness_old/app/src/main/res/values-v19/booleans.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "53",
+                        "endOffsets": "104"
+                    }
+                },
+                {
+                    "source": "/Users/mspc-64/StudioProjects/Doviesfitness_old/app/src/main/res/values-v19/styles.xml",
                     "from": {
                         "startLines": "6,2",
                         "startColumns": "4,4",
@@ -20,16 +30,6 @@
                         "endLines": "7,11",
                         "endColumns": "12,12",
                         "endOffsets": "319,580"
-                    }
-                },
-                {
-                    "source": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/src/main/res/values-v19/booleans.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "53",
-                        "endOffsets": "104"
                     }
                 }
             ]

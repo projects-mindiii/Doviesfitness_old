@@ -257,7 +257,7 @@ class SelectedExerciseAdapterSetAndReps(
                     },
                     context,
                     selectedReps.toInt()
-                ).show(supportFragmentManager)
+                ,"Reps").show(supportFragmentManager)
 
 
             }
@@ -285,7 +285,8 @@ class SelectedExerciseAdapterSetAndReps(
                         exerciseListing[adapterPosition].selected_exercise_weight_number = "$index $unite"
                         repetetionTxt.text="$index $unite"
                     }
-                }, context, sendingWeightToPopup, untie)
+                }, context, sendingWeightToPopup, untie,
+                    "Weight")
                     .show(supportFragmentManager)
             }
 

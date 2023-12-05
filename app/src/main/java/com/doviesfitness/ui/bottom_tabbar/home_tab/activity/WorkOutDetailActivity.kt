@@ -376,7 +376,6 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
     }
 
     override fun textOnClick1(type: String) {
-
         if (type.equals(
                 "edit", true
             ) && getDataManager().getUserStringData(AppPreferencesHelper.PREF_KEY_APP_IS_ADMIN)!!
@@ -395,7 +394,7 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                     }
                 }
 
-                if (this::workerDetail.isInitialized) workerDetail.data.workout_exercise_list.get(0).exercise_access_level
+                //if (this::workerDetail.isInitialized) workerDetail.data.workout_exercise_list.get(0).exercise_access_level
 
                 if (isLock) {
                     var intent = Intent(getActivity(), SubscriptionActivity::class.java).putExtra(
@@ -416,8 +415,6 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                     {
                         intent.putExtra("workoutExerciseList", exerciseList)
                     }
-
-
                     startActivityForResult(intent, 12345)
                 }
 

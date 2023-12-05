@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:1-62
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:1-62
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:1-62
+ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:1-62
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:1-62
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:1-62
 	package
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:11-60
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:11-60
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:1-62
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml:17:1-62
 uses-sdk
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/extractor/src/main/AndroidManifest.xml

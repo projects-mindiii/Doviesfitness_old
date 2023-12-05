@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+            "outputFile": "/Users/mspc-64/StudioProjects/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "/Users/ios-asr110-12/.gradle/caches/transforms-3/d159bbcd4d768dbab6c82c2d597c4b10/transformed/material-1.2.1/res/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+                    "source": "/Users/mspc-64/.gradle/caches/transforms-3/d159bbcd4d768dbab6c82c2d597c4b10/transformed/material-1.2.1/res/values-w360dp-port-v13/values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

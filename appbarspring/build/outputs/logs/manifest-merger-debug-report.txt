@@ -1,39 +1,39 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
 	package
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:11-55
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:11-55
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
 	android:versionCode
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
 application
-ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:3:5-19
+ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:3:5-19
 uses-sdk
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml

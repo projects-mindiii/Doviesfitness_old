@@ -1,39 +1,39 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:16:1-24:12
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:16:1-24:12
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:16:1-24:12
+ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:16:1-24:12
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:16:1-24:12
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:16:1-24:12
 	package
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:17:5-52
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:17:5-52
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:16:11-69
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:16:11-69
 application
-ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:18:3-23:17
+ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:18:3-23:17
 meta-data#com.google.android.gms.ads.AD_MANAGER_APP
-ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:19:5-20:31
+ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:19:5-20:31
 	android:value
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:20:9-29
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:20:9-29
 	android:name
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:19:16-72
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:19:16-72
 meta-data#com.google.android.gms.version
-ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:21:5-22:64
+ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:21:5-22:64
 	android:value
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:22:9-62
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:22:9-62
 	android:name
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml:21:16-61
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml:21:16-61
 uses-sdk
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
-INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
-		ADDED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
-		INJECTED from /Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+		ADDED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml
+		INJECTED from /Users/mspc-64/StudioProjects/Doviesfitness_old/ima/src/main/AndroidManifest.xml

@@ -1458,10 +1458,10 @@
                     android:id="@+id/view"
                     android:layout_width="match_parent"
                     android:layout_height=".7dp"
-
                     android:layout_below="@+id/header_layout"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:background="@color/line_seperator" />
+                    android:background="@color/line_seperator"
+                    android:visibility="gone"/>
 
             </RelativeLayout>
         </eightbitlab.com.blurview.BlurView>

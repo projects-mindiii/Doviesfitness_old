@@ -139,7 +139,7 @@ data class WorkoutExercise(
     val workout_exercise_break_time: String,
     val workout_exercise_description: String,
     val workout_exercise_detail: String,
-    val workout_exercise_equipments: String,
+    val workout_exercise_equipments: String?,
     val workout_exercise_equipments_id: String,
     val workout_exercise_image: String,
     var workout_exercise_is_favourite: String,

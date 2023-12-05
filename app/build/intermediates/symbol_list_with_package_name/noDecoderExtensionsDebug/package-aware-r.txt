@@ -6119,6 +6119,7 @@ string cameraview_filter_temperature
 string cameraview_filter_tint
 string cameraview_filter_vignette
 string cancel
+string cancel_don_t_save_or_overwrite
 string cannot_retrieve_cropped_image
 string captions
 string captions_settings

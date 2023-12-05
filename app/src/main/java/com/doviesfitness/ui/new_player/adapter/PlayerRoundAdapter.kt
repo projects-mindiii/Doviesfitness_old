@@ -763,7 +763,7 @@ class PlayerRoundAdapter(
                         str[0],
                         str[1],
                         "repsInSetAndReps"
-                    ).show(supportFragmentManager)
+                    ,"Target Reps").show(supportFragmentManager)
                 }
 
             }
@@ -846,8 +846,8 @@ class PlayerRoundAdapter(
                             }
                         },
                         context,
-                        reps.toInt()
-                    ).show(supportFragmentManager)
+                        reps.toInt(),
+                    "Sets").show(supportFragmentManager)
                 }
 
             }

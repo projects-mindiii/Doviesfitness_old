@@ -6,11 +6,11 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="15"
-8-->/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+8-->/Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
+9-->/Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml
 10
 11    <application />
-11-->/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:3:5-19
+11-->/Users/mspc-64/StudioProjects/Doviesfitness_old/appbarspring/src/main/AndroidManifest.xml:3:5-19
 12
 13</manifest>

@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.dialog_timer.tv_cancel
 import kotlinx.android.synthetic.main.dialog_timer.tv_done
 import kotlinx.android.synthetic.main.dialog_timer.tv_minutes
 import kotlinx.android.synthetic.main.dialog_timer.tv_seconds
+import kotlinx.android.synthetic.main.weight_dialog_ui.weight
 
 open class WeightInKgOrLbsDialog() : BaseBottomSheetDialog(), View.OnClickListener {
     private var selected = 12
@@ -23,7 +24,7 @@ open class WeightInKgOrLbsDialog() : BaseBottomSheetDialog(), View.OnClickListen
     var Min = ""
     var Sec = ""
     var callFor = ""
-
+    var mTitleDialog = ""
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -39,7 +40,7 @@ open class WeightInKgOrLbsDialog() : BaseBottomSheetDialog(), View.OnClickListen
             callBack: WeightInKgOrLbsDialogCallBack,
             mContext: Context,
             min: String,
-            sec: String
+            sec: String,mTitle: String = ""
         ) =
             WeightInKgOrLbsDialog().apply {
                 arguments = Bundle().apply {
@@ -47,6 +48,7 @@ open class WeightInKgOrLbsDialog() : BaseBottomSheetDialog(), View.OnClickListen
                     strList = list
                     Min = min
                     Sec = sec
+                    mTitleDialog = mTitle
                 }
             }
 
@@ -112,6 +114,14 @@ open class WeightInKgOrLbsDialog() : BaseBottomSheetDialog(), View.OnClickListen
         }
 
         no_picker1.displayedValues = arrayOf<String>("lbs", "kg")
+
+        weight.text = mTitleDialog
+
+        if (mTitleDialog.isEmpty()) {
+            weight.visibility = View.GONE
+        } else {
+            weight.visibility = View.VISIBLE
+        }
 
         tv_done.setOnClickListener(this)
         tv_cancel.setOnClickListener(this)

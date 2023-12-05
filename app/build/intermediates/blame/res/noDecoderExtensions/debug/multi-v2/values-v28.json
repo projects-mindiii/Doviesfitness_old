@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-v28/values-v28.xml",
+            "outputFile": "/Users/mspc-64/StudioProjects/Doviesfitness_old/app/build/intermediates/incremental/mergeNoDecoderExtensionsDebugResources/merged.dir/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/Users/ios-asr110-12/.gradle/caches/transforms-3/1e0bc7f7ae4ebfc57842b3cab1d1b001/transformed/appcompat-1.1.0/res/values-v28/values-v28.xml",
+                    "source": "/Users/mspc-64/.gradle/caches/transforms-3/d159bbcd4d768dbab6c82c2d597c4b10/transformed/material-1.2.1/res/values-v28/values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,143,231,319,407,494,581,668",
+                        "endColumns": "87,87,87,87,86,86,86,86",
+                        "endOffsets": "138,226,314,402,489,576,663,750"
+                    }
+                },
+                {
+                    "source": "/Users/mspc-64/.gradle/caches/transforms-3/1e0bc7f7ae4ebfc57842b3cab1d1b001/transformed/appcompat-1.1.0/res/values-v28/values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
@@ -20,16 +30,6 @@
                         "endLines": "10,11,15,19",
                         "endColumns": "74,86,12,12",
                         "endOffsets": "825,912,1142,1384"
-                    }
-                },
-                {
-                    "source": "/Users/ios-asr110-12/.gradle/caches/transforms-3/d159bbcd4d768dbab6c82c2d597c4b10/transformed/material-1.2.1/res/values-v28/values-v28.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,143,231,319,407,494,581,668",
-                        "endColumns": "87,87,87,87,86,86,86,86",
-                        "endOffsets": "138,226,314,402,489,576,663,750"
                     }
                 }
             ]

@@ -647,7 +647,7 @@
 
 
     <style name="BlurredDialog" parent="Theme.AppCompat.Dialog">
-        <item name="android:windowBackground">#111111</item>
+        <item name="android:windowBackground">#80111111</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowCloseOnTouchOutside">true</item>

@@ -19,8 +19,8 @@
 19
 20    <uses-sdk
 21        android:minSdkVersion="16"
-21-->/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/dash/src/main/AndroidManifest.xml
+21-->/Users/mspc-64/StudioProjects/Doviesfitness_old/dash/src/main/AndroidManifest.xml
 22        android:targetSdkVersion="28" />
-22-->/Users/ios-asr110-12/Documents/doviesworkoutupdatedvishal/Doviesfitness_old/dash/src/main/AndroidManifest.xml
+22-->/Users/mspc-64/StudioProjects/Doviesfitness_old/dash/src/main/AndroidManifest.xml
 23
 24</manifest>
