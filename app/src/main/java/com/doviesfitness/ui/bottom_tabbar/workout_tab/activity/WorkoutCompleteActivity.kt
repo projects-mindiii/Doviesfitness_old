@@ -47,6 +47,7 @@ class WorkoutCompleteActivity : BaseActivity(), View.OnClickListener,
     lateinit var exerciseList: ArrayList<WorkoutExercise>
     var workout_name = ""
     var duration = ""
+    var durationNewPlayer = ""
     lateinit var WDetail: WorkoutDetail
     var orientation: Int = -10
     var isAdmin = "No"
@@ -71,6 +72,8 @@ class WorkoutCompleteActivity : BaseActivity(), View.OnClickListener,
 
         WDetail = intent.getSerializableExtra("WDetail") as WorkoutDetail
 
+        if (intent.getStringExtra("duration")!=null)
+            durationNewPlayer=intent.getStringExtra("duration")!!
 
         if (intent.getSerializableExtra("complete_workoutDetail") != null)
             complete_workoutDetail =

@@ -262,7 +262,7 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
             //  mCountDownTimer!!.cancel()
             // if (restTimeCountDownTimer != null)
             //     restTimeCountDownTimer!!.cancel()
-
+var duration=binding.timer.text.toString()
             startActivity(
                 Intent(getActivity(), WorkoutCompleteActivity::class.java)
                     .putExtra(
@@ -273,7 +273,8 @@ class NewPlayerView : BaseActivity(), OnStartDragListener,
                         complete_workoutDetail
                     )
                      .putParcelableArrayListExtra("RoundsList", roundList)
-                    .putExtra("from_ProgramPlan", program_plan_id)
+                    .putExtra("from_ProgramPlan", program_plan_id).
+                        putExtra("duration",duration)
              )
             finish()
         }

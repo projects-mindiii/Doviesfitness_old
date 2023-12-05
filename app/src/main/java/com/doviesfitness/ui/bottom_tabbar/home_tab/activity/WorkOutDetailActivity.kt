@@ -1,6 +1,5 @@
 package com.doviesfitness.ui.bottom_tabbar.home_tab.activity
 
-import android.app.Activity
 import android.app.Dialog
 import android.app.DownloadManager
 import android.content.BroadcastReceiver
@@ -389,7 +388,7 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
         ) {
             if (isMyWorkout.equals("yes")) {
                 var isLock = false
-                for (i in 0..exerciseList.size - 1) {
+                for (i in 0 until exerciseList.size) {
                     if (exerciseList.get(i).exercise_access_level.equals("LOCK", true)) {
                         isLock = true
                     }
@@ -403,17 +402,48 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                     ).putExtra("exercise", "yes")
                     startActivityForResult(intent, 2)
                 } else {
+
+                    var listOfExercises = ArrayList<SetAndRepsModel>()
+
+                    var workoutType = ""
+                    if (WDetail.workout_type == "1") {
+                        workoutType = "Set & Reps"
+                        setAndRepsExerciseList.forEach { setAndRepModel ->
+                            var roundName = ""
+                            if (setAndRepModel.iGroupType == "2") roundName = "Left & Right"
+                            else if (setAndRepModel.iGroupType == "1") roundName = "Superset"
+                            else roundName = ""
+                            listOfExercises.add(
+                                SetAndRepsModel(
+                                    strExerciseType = "",
+                                    strRoundCounts = "",
+                                    strRoundName = roundName,
+                                    strTargetSets = setAndRepModel.iTargetSets,
+                                    strTargetReps = setAndRepModel.iTargetReps,
+                                    strSetsCounts = "",
+                                    arrSets = getSetModel(setAndRepModel),
+                                    isRoundPositionPopupOIsVisible = false,
+                                    noteForExerciseInRound = "",
+                                    isPostnotifiedExerciseAdapter = false
+                                )
+                            )
+                        }
+
+                    } else {
+                        workoutType = "Follow Along"
+                    }
+
+
                     val intent = Intent(getActivity(), CreateWorkoutActivity::class.java)
                     intent.putExtra("workoutDetail", WDetail)
-                       // .putExtra("workoutExerciseList", exerciseList)
+                        // .putExtra("workoutExerciseList", exerciseList)
                         .putExtra("edit", "edit")
                         .putExtra("isMyWorkout", isMyWorkout)
                         .putExtra("fromDeepLinking", fromDeepLinking)
-
-                    if ( workerDetail.data.workout_detail[0].workout_type == "1"){
-                        intent.putExtra("setAndRepsExerciseList", setAndRepsExerciseList)
-                    }else
-                    {
+                        .putExtra("workoutType", workoutType)
+                    if (workerDetail.data.workout_detail[0].workout_type == "1") {
+                        intent.putExtra("setAndRepsExerciseList", listOfExercises)
+                    } else {
                         intent.putExtra("workoutExerciseList", exerciseList)
                     }
 
@@ -437,12 +467,46 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                     startActivityForResult(intent, 2)
 
                 } else {
+                    var listOfExercises = ArrayList<SetAndRepsModel>()
+
+                    var workoutType = ""
+                    if (WDetail.workout_type == "1") {
+                        workoutType = "Set & Reps"
+                        setAndRepsExerciseList.forEach { setAndRepModel ->
+                            var roundName = ""
+                            if (setAndRepModel.iGroupType == "2") roundName = "Left & Right"
+                            else if (setAndRepModel.iGroupType == "1") roundName = "Superset"
+                            else roundName = ""
+                            listOfExercises.add(
+                                SetAndRepsModel(
+                                    strExerciseType = "",
+                                    strRoundCounts = "",
+                                    strRoundName = roundName,
+                                    strTargetSets = setAndRepModel.iTargetSets,
+                                    strTargetReps = setAndRepModel.iTargetReps,
+                                    strSetsCounts = "",
+                                    arrSets = getSetModel(setAndRepModel),
+                                    isRoundPositionPopupOIsVisible = false,
+                                    noteForExerciseInRound = "",
+                                    isPostnotifiedExerciseAdapter = false
+                                )
+                            )
+                        }
+
+                    } else {
+                        workoutType = "Follow Along"
+                    }
                     val intent = Intent(getActivity(), CreateWorkoutActivity::class.java)
                     intent.putExtra("workoutDetail", WDetail)
-                        .putExtra("workoutExerciseList", exerciseList)
-                        .putExtra("edit", "edit")
-                        .putExtra("isMyWorkout", isMyWorkout)
-                        .putExtra("fromDeepLinking", fromDeepLinking)
+
+                    if (WDetail.workout_type == "1")
+                        intent.putExtra("setAndRepsExerciseList", listOfExercises)
+                    else
+                        intent.putExtra("workoutExerciseList", exerciseList)
+                    intent.putExtra("edit", "edit")
+                    intent.putExtra("isMyWorkout", isMyWorkout)
+                    intent.putExtra("fromDeepLinking", fromDeepLinking)
+                    intent.putExtra("workoutType", workoutType)
                     startActivityForResult(intent, 12345)
                 }
 
@@ -473,8 +537,6 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                             isPostnotifiedExerciseAdapter = false
                         )
                     )
-
-
                 }
 
             } else {
@@ -484,8 +546,13 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
 
             val intent = Intent(getActivity(), CreateWorkoutActivity::class.java)
             intent.putExtra("workoutDetail", WDetail)
-            intent.putExtra("workoutExerciseList", exerciseList)
-            intent.putExtra("setAndRepsExerciseList", listOfExercises).putExtra("edit", "edit")
+            if (WDetail.workout_type == "1")
+                intent.putExtra("setAndRepsExerciseList", listOfExercises)
+            else
+                intent.putExtra("workoutExerciseList", exerciseList)
+
+
+            intent.putExtra("edit", "edit")
             intent.putExtra("isMyWorkout", isMyWorkout)
             intent.putExtra("creator_name", workerDetail.data.created_by.creator_name)
             intent.putExtra("dg_devios_guest_id", workerDetail.data.created_by.dg_devios_guest_id)
@@ -580,7 +647,7 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
             getDataManager().workoutDetailApi(param, header)
                 ?.getAsJSONObject(object : JSONObjectRequestListener {
                     override fun onResponse(response: JSONObject?) {
-                         val jsonObject: JSONObject? =
+                        val jsonObject: JSONObject? =
                             response?.getJSONObject(StringConstant.settings)
                         val success: String? = jsonObject?.getString(StringConstant.success)
                         val message: String? = jsonObject?.getString(StringConstant.message)
@@ -654,11 +721,12 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                                         .load(R.drawable.inter_ico_client_givne).fitCenter()
                                         .into(binding.ivExerciseLevel)
                                     binding.tvWorkoutLevel.text = WDetail.workout_level
-                                } else if (WDetail.workout_level == "All" || WDetail.workout_level=="ALL") {
+                                } else if (WDetail.workout_level == "All" || WDetail.workout_level == "ALL") {
                                     Glide.with(this@WorkOutDetailActivity)
                                         .load(R.drawable.all_label_ico_other_client).fitCenter()
                                         .into(binding.ivExerciseLevel)
-                                    binding.tvWorkoutLevel.text ="All Levels" //WDetail.workout_level
+                                    binding.tvWorkoutLevel.text =
+                                        "All Levels" //WDetail.workout_level
                                 } else {
                                     Glide.with(this@WorkOutDetailActivity)
                                         .load(R.drawable.advance_ico_client_givne).fitCenter()
@@ -714,8 +782,8 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                                 if (workerDetail.data.workout_detail.get(0).workout_created_by == "Admin" || getDataManager().getUserStringData(
                                         AppPreferencesHelper.PREF_KEY_APP_IS_ADMIN
                                     )!!.equals(
-                                            "Yes", true
-                                        )
+                                        "Yes", true
+                                    )
                                 ) {
 
                                     // if it is empty then this workout is created by Admin otherwise this workout is created by simple user
@@ -723,10 +791,10 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                                     binding.tvCreatorName.text = model.creator_name
                                     binding.tvWorkoutCreatorType.text = model.sub_title
                                     if (WDetail.workout_description.isNotEmpty()) {
-                                        binding.llOverView.visibility=View.VISIBLE
+                                        binding.llOverView.visibility = View.VISIBLE
                                         binding.tvOverview.text = WDetail.workout_description
-                                    }else{
-                                        binding.llOverView.visibility=View.GONE
+                                    } else {
+                                        binding.llOverView.visibility = View.GONE
                                     }
 
                                     //binding.ivExerciseLevel
@@ -834,11 +902,11 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
 
                                             if (!this@WorkOutDetailActivity.isDestroyed) {
                                                 Glide.with(getActivity()).load(
-                                                        ContextCompat.getDrawable(
-                                                            getActivity(),
-                                                            R.drawable.ic_download_circle_svg
-                                                        )
-                                                    ).into(binding.playVideo)
+                                                    ContextCompat.getDrawable(
+                                                        getActivity(),
+                                                        R.drawable.ic_download_circle_svg
+                                                    )
+                                                ).into(binding.playVideo)
                                             }
 
                                             // binding.loader.visibility = VISIBLE
@@ -847,18 +915,18 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
 
                                         if (isAllDownload()) {
                                             Glide.with(getActivity()).load(
-                                                    ContextCompat.getDrawable(
-                                                        getActivity(), R.drawable.new_play_icon
-                                                    )
-                                                ).into(binding.playVideo)
+                                                ContextCompat.getDrawable(
+                                                    getActivity(), R.drawable.new_play_icon
+                                                )
+                                            ).into(binding.playVideo)
                                             binding.loader.visibility = GONE
                                         } else {
                                             Glide.with(getActivity()).load(
-                                                    ContextCompat.getDrawable(
-                                                        getActivity(),
-                                                        R.drawable.ic_download_circle_svg
-                                                    )
-                                                ).into(binding.playVideo)
+                                                ContextCompat.getDrawable(
+                                                    getActivity(),
+                                                    R.drawable.ic_download_circle_svg
+                                                )
+                                            ).into(binding.playVideo)
                                             // binding.loader.visibility = VISIBLE
                                         }
                                     } else {
@@ -869,19 +937,19 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
 
                                                 if (isAllDownload()) {
                                                     Glide.with(getActivity()).load(
-                                                            ContextCompat.getDrawable(
-                                                                getActivity(),
-                                                                R.drawable.new_play_icon
-                                                            )
-                                                        ).into(binding.playVideo)
+                                                        ContextCompat.getDrawable(
+                                                            getActivity(),
+                                                            R.drawable.new_play_icon
+                                                        )
+                                                    ).into(binding.playVideo)
                                                     binding.loader.visibility = GONE
                                                 } else {
                                                     Glide.with(getActivity()).load(
-                                                            ContextCompat.getDrawable(
-                                                                getActivity(),
-                                                                R.drawable.ic_download_circle_svg
-                                                            )
-                                                        ).into(binding.playVideo)
+                                                        ContextCompat.getDrawable(
+                                                            getActivity(),
+                                                            R.drawable.ic_download_circle_svg
+                                                        )
+                                                    ).into(binding.playVideo)
                                                     // binding.loader.visibility = VISIBLE
                                                 }
 
@@ -889,11 +957,11 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                                         } else {
                                             if (!this@WorkOutDetailActivity.isDestroyed) {
                                                 Glide.with(getActivity()).load(
-                                                        ContextCompat.getDrawable(
-                                                            getActivity(),
-                                                            R.drawable.ic_lock_incircle_ico
-                                                        )
-                                                    ).into(binding.playVideo)
+                                                    ContextCompat.getDrawable(
+                                                        getActivity(),
+                                                        R.drawable.ic_lock_incircle_ico
+                                                    )
+                                                ).into(binding.playVideo)
                                             }
 
                                             binding.musicLayout1.visibility = GONE
@@ -975,9 +1043,9 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
             R.id.overView_layout -> {
                 //CommanUtils.lastClick()
                 playAndStartworkoutButtonCLick()
-              /*  filter_WorkOut_and_doviesFitness_dialog(
-                    create_name_as_dialog_heading, dialog_overView_heading
-                )*/
+                /*  filter_WorkOut_and_doviesFitness_dialog(
+                      create_name_as_dialog_heading, dialog_overView_heading
+                  )*/
             }
 
             R.id.sharing_layout -> {
@@ -1039,50 +1107,50 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
 
             R.id.play_video -> {
                 playAndStartworkoutButtonCLick()
-         /*       CommanUtils.lastClick()
-                if (CommanUtils.isNetworkAvailable(this)) {
-                    if (getDataManager().getUserStringData(AppPreferencesHelper.PREF_KEY_APP_IS_ADMIN)!!
-                            .equals(
-                                "Yes", true
-                            )
-                    ) {
-                        downloadOrPlayVideo()
-                    } else if (WDetail.workout_access_level == "OPEN") {
-                        downloadOrPlayVideo()
-                    } else if (isMyWorkout != null && isMyWorkout == "yes") {
+                /*       CommanUtils.lastClick()
+                       if (CommanUtils.isNetworkAvailable(this)) {
+                           if (getDataManager().getUserStringData(AppPreferencesHelper.PREF_KEY_APP_IS_ADMIN)!!
+                                   .equals(
+                                       "Yes", true
+                                   )
+                           ) {
+                               downloadOrPlayVideo()
+                           } else if (WDetail.workout_access_level == "OPEN") {
+                               downloadOrPlayVideo()
+                           } else if (isMyWorkout != null && isMyWorkout == "yes") {
 
 
-                        var isLock = false
-                        for (i in 0 until exerciseList.size) {
-                            if (exerciseList.get(i).exercise_access_level.equals("LOCK", true)) {
-                                isLock = true
-                            }
-                        }
+                               var isLock = false
+                               for (i in 0 until exerciseList.size) {
+                                   if (exerciseList.get(i).exercise_access_level.equals("LOCK", true)) {
+                                       isLock = true
+                                   }
+                               }
 
-                        if (isLock) {
-                            var intent = Intent(
-                                getActivity(), SubscriptionActivity::class.java
-                            ).putExtra("home", "no").putExtra("exercise", "yes")
-                            startActivityForResult(intent, 2)
-                        } else {
-                            downloadOrPlayVideo()
-                        }
+                               if (isLock) {
+                                   var intent = Intent(
+                                       getActivity(), SubscriptionActivity::class.java
+                                   ).putExtra("home", "no").putExtra("exercise", "yes")
+                                   startActivityForResult(intent, 2)
+                               } else {
+                                   downloadOrPlayVideo()
+                               }
 
-                    } else {
-                        if (Parentisalloweduser) {
-                            downloadOrPlayVideo()
-                        } else {
-                            var intent =
-                                Intent(getActivity(), SubscriptionActivity::class.java).putExtra(
-                                    "home", "no"
-                                ).putExtra("exercise", "yes")
-                            startActivityForResult(intent, 2)
-                        }
-                    }
-                } else {
-                    Constant.showInternetConnectionDialog(this)
-                }
-*/
+                           } else {
+                               if (Parentisalloweduser) {
+                                   downloadOrPlayVideo()
+                               } else {
+                                   var intent =
+                                       Intent(getActivity(), SubscriptionActivity::class.java).putExtra(
+                                           "home", "no"
+                                       ).putExtra("exercise", "yes")
+                                   startActivityForResult(intent, 2)
+                               }
+                           }
+                       } else {
+                           Constant.showInternetConnectionDialog(this)
+                       }
+       */
             }
 
             R.id.iv_fav -> {
@@ -1126,7 +1194,8 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
             }
         }
     }
-    fun playAndStartworkoutButtonCLick(){
+
+    fun playAndStartworkoutButtonCLick() {
         CommanUtils.lastClick()
         if (CommanUtils.isNetworkAvailable(this)) {
             if (getDataManager().getUserStringData(AppPreferencesHelper.PREF_KEY_APP_IS_ADMIN)!!
@@ -1172,7 +1241,6 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
         }
 
     }
-
 
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -1670,10 +1738,10 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                     binding.playVideo.isEnabled = true
                     if (isAllDownload()) {
                         Glide.with(getActivity()).load(
-                                ContextCompat.getDrawable(
-                                    getActivity(), R.drawable.new_play_icon
-                                )
-                            ).into(binding.playVideo)
+                            ContextCompat.getDrawable(
+                                getActivity(), R.drawable.new_play_icon
+                            )
+                        ).into(binding.playVideo)
                         binding.loader.visibility = GONE
                         binding.downloadingTxt.visibility = GONE
 
@@ -1775,10 +1843,10 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                 if (percentage == 100) {
                     binding.playVideo.isEnabled = true
                     Glide.with(getActivity()).load(
-                            ContextCompat.getDrawable(
-                                getActivity(), R.drawable.new_play_icon
-                            )
-                        ).into(binding.playVideo)
+                        ContextCompat.getDrawable(
+                            getActivity(), R.drawable.new_play_icon
+                        )
+                    ).into(binding.playVideo)
                     Log.d("showPlay", "showPlay....$percentage")
                     binding.loader.visibility = GONE
                     binding.downloadingTxt.visibility = GONE
@@ -1816,10 +1884,6 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                         //  val intent = Intent(getActivity(), WorkoutVideoPlayActivity::class.java)
 
 
-
-
-
-
                         if (WDetail.workout_type == "1") {
                             exerciseList.clear()
                             setAndRepsExerciseList.forEach { model ->
@@ -1835,7 +1899,8 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                                 setAndRepsExerciseList.forEach { setAndRepModel ->
                                     var roundName = ""
                                     if (setAndRepModel.iGroupType == "2") roundName = "Left & Right"
-                                    else if (setAndRepModel.iGroupType == "1") roundName = "Superset"
+                                    else if (setAndRepModel.iGroupType == "1") roundName =
+                                        "Superset"
                                     else roundName = ""
                                     listOfExercises.add(
                                         SetAndRepsModel(
@@ -1857,7 +1922,8 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
 
                                 workoutType = "Follow Along"
                             }
-                            val intent = Intent(this@WorkOutDetailActivity, NewPlayerView::class.java)
+                            val intent =
+                                Intent(this@WorkOutDetailActivity, NewPlayerView::class.java)
                             intent.putExtra("WDetail", WDetail)
                             intent.putExtra("complete_workoutDetail", workerDetail)
                             intent.putExtra("workoutExerciseList", exerciseList)
@@ -1868,10 +1934,11 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                             startActivity(intent)
                             window.clearFlags(WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE)
 
-                        }else{
+                        } else {
                             exerciseList.clear()
                             exerciseList.addAll(workerDetail.data.workout_exercise_list)
-                            val intent = Intent(getActivity(), WorkoutVideoPlayActivityNew::class.java)
+                            val intent =
+                                Intent(getActivity(), WorkoutVideoPlayActivityNew::class.java)
                             intent.putExtra("exerciseList", exerciseList)
                             intent.putExtra("WDetail", WDetail)
                             intent.putExtra("from_ProgramPlan", program_plan_id)
@@ -1881,15 +1948,7 @@ class WorkOutDetailActivity : BaseActivity(), View.OnClickListener,
                         }
 
 
-
-
-
-
-
-
-
-                    }
-                    else {
+                    } else {
                         binding.rlHeader1.visibility = GONE
                         binding.img.visibility = GONE
                         binding.countDownTxt.visibility = GONE

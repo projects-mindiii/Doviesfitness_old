@@ -14,7 +14,6 @@ import com.doviesfitness.subscription.IsSubscribed
 import com.doviesfitness.ui.bottom_tabbar.home_tab.activity.WorkOutDetailActivity
 import com.doviesfitness.ui.bottom_tabbar.home_tab.model.ExerciseTransData
 import com.doviesfitness.ui.bottom_tabbar.home_tab.model.WorkoutGroupsData
-import com.doviesfitness.ui.bottom_tabbar.workout_tab.model.ExerciseListingResponse
 import com.google.android.exoplayer2.ExoPlayerFactory
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.Renderer
@@ -29,7 +28,12 @@ import com.google.android.exoplayer2.ui.PlayerView
 import com.google.android.exoplayer2.upstream.DataSource
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
 import com.google.android.exoplayer2.util.Util
-import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.*
+import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.iv_bottom_curv
+import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.iv_right_curv_icon
+import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.rv_exercises
+import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.tv_roundName
+import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.tv_set_and_reps_count
+import kotlinx.android.synthetic.main.workout_details_exercise_itemview.view.tv_title_roundNumber
 import java.io.File
 
 class workoutDetailsSetRepsadapter(
@@ -111,12 +115,12 @@ class workoutDetailsSetRepsadapter(
 
         var list = roundData.groupSetsData[0].exerciseTransData
 
-        if (roundData.groupSetsData[0].exerciseTransData.size==2){
-holder.iv_bottom_curv.visibility=View.VISIBLE
-holder.iv_right_curv_icon.visibility=View.VISIBLE
-        }else{
-            holder.iv_bottom_curv.visibility=View.GONE
-            holder.iv_right_curv_icon.visibility=View.GONE
+        if (roundData.groupSetsData[0].exerciseTransData.size == 2) {
+            holder.iv_bottom_curv.visibility = View.VISIBLE
+            holder.iv_right_curv_icon.visibility = View.VISIBLE
+        } else {
+            holder.iv_bottom_curv.visibility = View.GONE
+            holder.iv_right_curv_icon.visibility = View.INVISIBLE
         }
         setExerciseAdapter(holder, list, position)
     }
@@ -174,24 +178,24 @@ holder.iv_right_curv_icon.visibility=View.VISIBLE
                     player: Player?
                 ) {
 
-/*
-                    if (position != tempPos || position != tempRoundPos) {
-                        if (tempPos != -1 || tempRoundPos != -1) {
-                            if (tempExerciseItem != null) {
-                                if (tempPos != -1 && tempExerciseItem!!.isPlaying || tempRoundPos != -1) {
-                                    //try {
-                                    removeVideoView(tempPos, tempHolder)
+                    /*
+                                        if (position != tempPos || position != tempRoundPos) {
+                                            if (tempPos != -1 || tempRoundPos != -1) {
+                                                if (tempExerciseItem != null) {
+                                                    if (tempPos != -1 && tempExerciseItem!!.isPlaying || tempRoundPos != -1) {
+                                                        //try {
+                                                        removeVideoView(tempPos, tempHolder)
 
-                                    //For Open new Video Cell
-                                    tempPos = position
-                                    tempHolder = view
-                                    tempRoundPos = position
-                                    tempExerciseItem = data
-                                }
-                            }
-                        }
-                    }
-*/
+                                                        //For Open new Video Cell
+                                                        tempPos = position
+                                                        tempHolder = view
+                                                        tempRoundPos = position
+                                                        tempExerciseItem = data
+                                                    }
+                                                }
+                                            }
+                                        }
+                    */
 
                     /*                    try {
                                             var flag =
@@ -236,41 +240,59 @@ holder.iv_right_curv_icon.visibility=View.VISIBLE
                                     tempPos = childPosition
                                     tempHolder = holder
                                     tempRoundPos = parentPosition
-                                    tempExerciseItem = workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(childPosition)//data
-                                }else{
+                                    tempExerciseItem =
+                                        workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(
+                                            childPosition
+                                        )//data
+                                } else {
                                     //For Open new Video Cell
                                     tempPos = childPosition
                                     tempHolder = holder
                                     tempRoundPos = parentPosition
-                                    tempExerciseItem = workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(childPosition)//data
+                                    tempExerciseItem =
+                                        workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(
+                                            childPosition
+                                        )//data
 
                                 }
-                            }else{
+                            } else {
                                 //For Open new Video Cell
                                 tempPos = childPosition
                                 tempHolder = holder
                                 tempRoundPos = parentPosition
-                                tempExerciseItem = workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(childPosition)//data
+                                tempExerciseItem =
+                                    workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(
+                                        childPosition
+                                    )//data
 
                             }
-                        }else{
+                        } else {
                             //For Open new Video Cell
                             tempPos = childPosition
                             tempHolder = holder
                             tempRoundPos = parentPosition
-                            tempExerciseItem = workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(childPosition)//data
+                            tempExerciseItem =
+                                workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(
+                                    childPosition
+                                )//data
 
                         }
-                    }else{
+                    } else {
                         //For Open new Video Cell
                         tempPos = childPosition
                         tempHolder = holder
                         tempRoundPos = parentPosition
-                        tempExerciseItem = workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(childPosition)//data
+                        tempExerciseItem =
+                            workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(
+                                childPosition
+                            )//data
 
                     }
-                    if (tempExerciseItem==null){
-                        tempExerciseItem = workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(childPosition)//data
+                    if (tempExerciseItem == null) {
+                        tempExerciseItem =
+                            workoutList.get(parentPosition).groupSetsData[0].exerciseTransData.get(
+                                childPosition
+                            )//data
                     }
 
 
@@ -321,7 +343,7 @@ holder.iv_right_curv_icon.visibility=View.VISIBLE
             holder.iv_lock.rotation = 0f
             holder.fl_vv.removeAllViews()
 
-            if (this::exerciseAdapter.isInitialized){
+            if (this::exerciseAdapter.isInitialized) {
                 exerciseAdapter.notifyDataSetChanged()
             }
 
@@ -470,8 +492,7 @@ holder.iv_right_curv_icon.visibility=View.VISIBLE
             )
 
 
-        }
-        else {
+        } else {
             holder.fl_vv.visibility = View.GONE
             listener.videoPlayClick(
                 false,
@@ -487,7 +508,8 @@ holder.iv_right_curv_icon.visibility=View.VISIBLE
             holder.fl_vv.removeAllViews()
 
         }
-        workoutList[parentPosition].groupSetsData[0].exerciseTransData.get(childPosition).isPlaying = !workoutList[parentPosition].groupSetsData[0].exerciseTransData.get(childPosition).isPlaying
+        workoutList[parentPosition].groupSetsData[0].exerciseTransData.get(childPosition).isPlaying =
+            !workoutList[parentPosition].groupSetsData[0].exerciseTransData.get(childPosition).isPlaying
 
         //listener.hidePlayer( workoutList[position], position, holder, false, player!!)
 

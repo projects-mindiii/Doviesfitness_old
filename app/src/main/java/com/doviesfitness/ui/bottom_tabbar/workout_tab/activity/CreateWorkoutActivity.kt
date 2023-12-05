@@ -229,16 +229,16 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
 
     @SuppressLint("ClickableViewAccessibility")
     private fun initialization() {
-        if (getDataManager().getStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS)!!.isEmpty()) {
-            getDataManager().setStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS, "10")
-            binding.repetetionTxt1.text = "10"
+        if (getDataManager().getStringData(PREF_KEY_REPS_FINISH_TIME)!!.isEmpty()) {
+            getDataManager().setStringData(PREF_KEY_REPS_FINISH_TIME, "00:30")
+            binding.repsTimerTxt.text = "00:30"
         } else {
-            binding.repetetionTxt1.text =
-                getDataManager().getStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS)
-
+            binding.repsTimerTxt.text =
+                getDataManager().getStringData(PREF_KEY_REPS_FINISH_TIME)
         }
-
-        if (getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)!!.isEmpty()) {
+        if (getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)!!
+                .isEmpty()
+        ) {
             getDataManager().setStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS, "10 To 12")
             binding.repsTimerTxt1.text = "10 To 12"
         } else if (getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)!!
@@ -250,6 +250,75 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
             binding.repsTimerTxt1.text =
                 getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)
         }
+
+        if (getDataManager().getStringData(PREF_KEY_EXERCISE_TIME)!!.isEmpty()) {
+            getDataManager().setStringData(PREF_KEY_EXERCISE_TIME, "00:30")
+            binding.timeExerciseTxt.text = "00:30"
+        } else {
+            binding.timeExerciseTxt.text =
+                getDataManager().getStringData(PREF_KEY_EXERCISE_TIME)
+        }
+
+        if (getDataManager().getStringData(PREF_KEY_EXERCISE_TIME_SETANDREPS)!!.isEmpty()) {
+            getDataManager().setStringData(PREF_KEY_EXERCISE_TIME_SETANDREPS, "00:30")
+            binding.timeExerciseTxt1.text = "00:30"
+        } else {
+            binding.timeExerciseTxt1.text =
+                getDataManager().getStringData(PREF_KEY_EXERCISE_TIME_SETANDREPS)
+        }
+
+        if (getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME)!!.isEmpty()) {
+            getDataManager().setStringData(PREF_KEY_EXERCISE_REST_TIME, "00:30")
+        } else {
+        }
+
+        if (getDataManager().getStringData(PREF_KEY_NUMBER_OF_REPS)!!.isEmpty()) {
+            getDataManager().setStringData(PREF_KEY_NUMBER_OF_REPS, "10")
+            binding.repetetionTxt.text = "10"
+        } else {
+            binding.repetetionTxt.text = getDataManager().getStringData(PREF_KEY_NUMBER_OF_REPS)
+
+        }
+        if (getDataManager().getStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS)!!.isEmpty()) {
+            getDataManager().setStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS, "10")
+            binding.repetetionTxt1.text = "10"
+        } else {
+            binding.repetetionTxt1.text =
+                getDataManager().getStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS)
+
+        }
+
+        /*    if (getDataManager().getStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS)!!.isEmpty()) {
+                getDataManager().setStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS, "10")
+                binding.repetetionTxt1.text = "10"
+            } else {
+                binding.repetetionTxt1.text =
+                    getDataManager().getStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS)
+
+            }
+
+            if (getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)!!.isEmpty()) {
+                getDataManager().setStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS, "10 To 12")
+                binding.repsTimerTxt1.text = "10 To 12"
+            } else if (getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)!!
+                    .contains(" Reps")
+            ) {
+                binding.repsTimerTxt1.text =
+                    getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)
+            } else {
+                binding.repsTimerTxt1.text =
+                    getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)
+            }
+
+
+            if (getDataManager().getStringData(PREF_KEY_EXERCISE_TIME_SETANDREPS)!!.isEmpty()) {
+                getDataManager().setStringData(PREF_KEY_EXERCISE_TIME_SETANDREPS, "00:30")
+                binding.timeExerciseTxt1.text = "00:30"
+            } else {
+                binding.timeExerciseTxt1.text =
+                    getDataManager().getStringData(PREF_KEY_EXERCISE_TIME_SETANDREPS)
+            }*/
+
         hideNavigationBar()
         // SetsAndRepsList = ArrayList()
         val windowBackground = window.decorView.background
@@ -360,6 +429,8 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
 
         if (isEdit.equals("edit")) {
             //  binding.progressLayout.visibility = View.VISIBLE
+            binding.workoutName.isFocusable = true
+            binding.workoutName.isFocusableInTouchMode = true
             isMyWorkout = intent.getStringExtra("isMyWorkout")!!
             WDetail = intent.getSerializableExtra("workoutDetail") as WorkoutDetail
 
@@ -413,11 +484,10 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
                         repsText,
                         "" + restTimetoken[1] + ":" + restTimetoken[2],
                         "",
-                        "",
+                        workoutExercise.workout_exercise_break_time.takeLast(5),
                         true
                     )
                     selectedExerciseList.add(copyItem)
-
                 }
                 follow_along_icon.setImageDrawable(
                     ContextCompat.getDrawable(
@@ -425,7 +495,7 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
                     )
                 )
                 isAlongSelected = true
-                binding.exerciseRv.visibility=View.VISIBLE
+                binding.exerciseRv.visibility = View.VISIBLE
                 adapter = AddedExerciseAdapter(
                     this@CreateWorkoutActivity,
                     selectedExerciseList,
@@ -441,11 +511,13 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
                             Handler().postDelayed({
                                 if (((y * 100) / mainViewTotalHeight) >= 80) {
                                     binding.svMain.smoothScrollBy(
-                                        0, ((position + (((y * 100) / mainViewTotalHeight) * 2)).toInt())
+                                        0,
+                                        ((position + (((y * 100) / mainViewTotalHeight) * 2)).toInt())
                                     )
                                 } else if (((y * 100) / mainViewTotalHeight) >= 75) {
                                     binding.svMain.smoothScrollBy(
-                                        0, ((position + (((y * 100) / mainViewTotalHeight) * 1.2)).toInt())
+                                        0,
+                                        ((position + (((y * 100) / mainViewTotalHeight) * 1.2)).toInt())
                                     )
                                 } else if (((y * 100) / mainViewTotalHeight) <= 75 && ((y * 100) / mainViewTotalHeight) >= 55) {
                                     binding.svMain.smoothScrollBy(
@@ -453,30 +525,31 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
 //                                ((position + (((y  100) / mainViewTotalHeight)  0.5)).toInt())
                                     )
                                 }
-                                Log.d("TAG", "scrollToPosition: ${((y * 100) / mainViewTotalHeight)}")
+                                Log.d(
+                                    "TAG",
+                                    "scrollToPosition: ${((y * 100) / mainViewTotalHeight)}"
+                                )
                             }, 1000)
                         }
                     },
                     this
                 )
-
                 val callback = SimpleItemTouchHelperCallbackForWorkout(adapter, binding.svMain)
                 mItemTouchHelper = ItemTouchHelper(callback)
                 val layoutManager = androidx.recyclerview.widget.LinearLayoutManager(getActivity())
                 binding.exerciseRv.layoutManager = layoutManager
                 mItemTouchHelper.attachToRecyclerView(binding.exerciseRv)
                 binding.exerciseRv.adapter = adapter
-
                 //adapter set follow along
-
             }
 
             //setAndRepsExerciseList
-            if (intent.getSerializableExtra("setAndRepsExerciseList") != null) {
+          else  if (intent.getSerializableExtra("setAndRepsExerciseList") != null) {
                 try {
                     var localList =
-                        intent.getSerializableExtra("setAndRepsExerciseList") as ArrayList<WorkoutGroupsData>
-                    localList.forEach {
+                        intent.getSerializableExtra("setAndRepsExerciseList") as ArrayList<SetAndRepsModel>
+                    SetsAndRepsList.addAll(localList)
+                    /*  localList.forEach {
                         var roundName = ""
                         if (it.iGroupType == "2") roundName = "Left & Right"
                         else if (it.iGroupType == "1") roundName = "Superset"
@@ -497,7 +570,7 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
                                 isPostnotifiedExerciseAdapter = false
                             )
                         )
-                    }
+                    }*/
 
                     SetsAndRepsList.forEach {
                         it.arrSets[0].isSelected = true
@@ -654,11 +727,13 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
             binding.allowNotification.hint = (Html.fromHtml(getString(R.string.allow_notification)))
 
 
-            val layoutManager = androidx.recyclerview.widget.LinearLayoutManager(getActivity())
-            binding.exerciseRv.layoutManager = layoutManager
+
+
             if (selectedExerciseList.isEmpty()) binding.seperatorLine.visibility = View.VISIBLE
             else binding.seperatorLine.visibility = View.GONE
 
+            val layoutManager = androidx.recyclerview.widget.LinearLayoutManager(getActivity())
+            binding.exerciseRv.layoutManager = layoutManager
             adapter = AddedExerciseAdapter(
                 getActivity(),
                 selectedExerciseList,
@@ -674,11 +749,13 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
                         Handler().postDelayed({
                             if (((y * 100) / mainViewTotalHeight) >= 80) {
                                 binding.svMain.smoothScrollBy(
-                                    0, ((position + (((y * 100) / mainViewTotalHeight) * 2)).toInt())
+                                    0,
+                                    ((position + (((y * 100) / mainViewTotalHeight) * 2)).toInt())
                                 )
                             } else if (((y * 100) / mainViewTotalHeight) >= 75) {
                                 binding.svMain.smoothScrollBy(
-                                    0, ((position + (((y * 100) / mainViewTotalHeight) * 1.2)).toInt())
+                                    0,
+                                    ((position + (((y * 100) / mainViewTotalHeight) * 1.2)).toInt())
                                 )
                             } else if (((y * 100) / mainViewTotalHeight) <= 75 && ((y * 100) / mainViewTotalHeight) >= 55) {
                                 binding.svMain.smoothScrollBy(
@@ -707,60 +784,6 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
             defaultExerciseTypeSelection()
 
 
-            if (getDataManager().getStringData(PREF_KEY_REPS_FINISH_TIME)!!.isEmpty()) {
-                getDataManager().setStringData(PREF_KEY_REPS_FINISH_TIME, "00:30")
-                binding.repsTimerTxt.text = "00:30"
-            } else {
-                binding.repsTimerTxt.text = getDataManager().getStringData(PREF_KEY_REPS_FINISH_TIME)
-            }
-            if (getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)!!.isEmpty()) {
-                getDataManager().setStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS, "10 To 12")
-                binding.repsTimerTxt1.text = "10 To 12"
-            } else if (getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)!!
-                    .contains(" Reps")
-            ) {
-                binding.repsTimerTxt1.text =
-                    getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)
-            } else {
-                binding.repsTimerTxt1.text =
-                    getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME_SETANDREPS)
-            }
-
-            if (getDataManager().getStringData(PREF_KEY_EXERCISE_TIME)!!.isEmpty()) {
-                getDataManager().setStringData(PREF_KEY_EXERCISE_TIME, "00:30")
-                binding.timeExerciseTxt.text = "00:30"
-            } else {
-                binding.timeExerciseTxt.text = getDataManager().getStringData(PREF_KEY_EXERCISE_TIME)
-            }
-
-            if (getDataManager().getStringData(PREF_KEY_EXERCISE_TIME_SETANDREPS)!!.isEmpty()) {
-                getDataManager().setStringData(PREF_KEY_EXERCISE_TIME_SETANDREPS, "00:30")
-                binding.timeExerciseTxt1.text = "00:30"
-            } else {
-                binding.timeExerciseTxt1.text =
-                    getDataManager().getStringData(PREF_KEY_EXERCISE_TIME_SETANDREPS)
-            }
-
-            if (getDataManager().getStringData(PREF_KEY_EXERCISE_REST_TIME)!!.isEmpty()) {
-                getDataManager().setStringData(PREF_KEY_EXERCISE_REST_TIME, "00:30")
-            } else {
-            }
-
-            if (getDataManager().getStringData(PREF_KEY_NUMBER_OF_REPS)!!.isEmpty()) {
-                getDataManager().setStringData(PREF_KEY_NUMBER_OF_REPS, "10")
-                binding.repetetionTxt.text = "10"
-            } else {
-                binding.repetetionTxt.text = getDataManager().getStringData(PREF_KEY_NUMBER_OF_REPS)
-
-            }
-            if (getDataManager().getStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS)!!.isEmpty()) {
-                getDataManager().setStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS, "10")
-                binding.repetetionTxt1.text = "10"
-            } else {
-                binding.repetetionTxt1.text =
-                    getDataManager().getStringData(PREF_KEY_NUMBER_OF_SETS_SETANDREPS)
-
-            }
 
             /* val textSize = getResources().getDimensionPixelSize(R.dimen._9sdp);
              textView.setTextSize(textSize)*/
@@ -771,7 +794,6 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
             hideViewWhenClickOutOfView(exercise_rv)
         }
     }
-
 
 
     private fun getSetModel(setAndRepModel: WorkoutGroupsData): ArrayList<SetSModel> {
@@ -2137,8 +2159,77 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
         }
         selectedExerciseList.clear()
         selectedExerciseList.addAll(mFollowAlongList)
-        binding.exerciseRv.adapter = adapter/*-------------------------*/
-        adapter.notifyDataSetChanged()
+        selectedExerciseList.forEachIndexed { index, data ->
+
+            if (data.exercise_timer_time!!.isEmpty()|| data.exercise_timer_time=="0")
+            data.exercise_timer_time= Doviesfitness.getDataManager().getStringData(PREF_KEY_EXERCISE_TIME)
+
+            if (data.exercise_rest_time!!.isEmpty()|| data.exercise_rest_time=="0")
+            data.exercise_rest_time= "00:00"
+        }
+
+
+
+
+        if (this::adapter.isInitialized) {
+            binding.exerciseRv.adapter = adapter
+            adapter.notifyDataSetChanged()
+        } else {
+
+            val display = windowManager.defaultDisplay
+            val size = Point()
+            display.getSize(size)
+            val width = size.x
+            val height = size.y
+            Doviesfitness.height = size.y
+            Doviesfitness.weight = size.x
+
+            val screenWidth = size.x / 320
+            val videowidth = 120 + (160 * screenWidth)
+
+            val layoutManager = androidx.recyclerview.widget.LinearLayoutManager(getActivity())
+            binding.exerciseRv.layoutManager = layoutManager
+            adapter = AddedExerciseAdapter(
+                getActivity(),
+                selectedExerciseList,
+                this,
+                videowidth,
+                this,
+                object : AddedExerciseAdapter.StopScroll {
+                    override fun stopScrolling(isScroll: Boolean) {
+
+                    }
+
+                    override fun scrollToPosition(position: Int, y: Float) {
+                        Handler().postDelayed({
+                            if (((y * 100) / mainViewTotalHeight) >= 80) {
+                                binding.svMain.smoothScrollBy(
+                                    0,
+                                    ((position + (((y * 100) / mainViewTotalHeight) * 2)).toInt())
+                                )
+                            } else if (((y * 100) / mainViewTotalHeight) >= 75) {
+                                binding.svMain.smoothScrollBy(
+                                    0,
+                                    ((position + (((y * 100) / mainViewTotalHeight) * 1.2)).toInt())
+                                )
+                            } else if (((y * 100) / mainViewTotalHeight) <= 75 && ((y * 100) / mainViewTotalHeight) >= 55) {
+                                binding.svMain.smoothScrollBy(
+                                    0, position
+//                                ((position + (((y  100) / mainViewTotalHeight)  0.5)).toInt())
+                                )
+                            }
+                            Log.d("TAG", "scrollToPosition: ${((y * 100) / mainViewTotalHeight)}")
+                        }, 1000)
+                    }
+                },
+                this
+            )
+
+            val callback = SimpleItemTouchHelperCallbackForWorkout(adapter, binding.svMain)
+            mItemTouchHelper = ItemTouchHelper(callback)
+            mItemTouchHelper.attachToRecyclerView(binding.exerciseRv)
+            binding.exerciseRv.adapter = adapter
+        }
         isAlongSelected = true
         setPadding(total_exercise_time, 1, 1, 1, 1)
         tv_add_note_total_time.text = "Total Time"/*along view*/
@@ -4128,7 +4219,6 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
             "workout_level", binding.levelName.text.toString().trim()
         )
 
-
         if (isAdmin.equals("Yes", true)) {
             multiPartBuilder.addMultipartParameter("createdById", createById)
             multiPartBuilder.addMultipartParameter("addedBy", createByStr)
@@ -4140,8 +4230,6 @@ class CreateWorkoutActivity : BaseActivity(), View.OnClickListener,
             )
 
         }
-
-
 
         multiPartBuilder.addMultipartParameter("workout_id", "" + WDetail.workout_id)
         multiPartBuilder.addMultipartParameter("parent_workout_id", "" + WDetail.workout_id)

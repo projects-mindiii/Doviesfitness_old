@@ -361,8 +361,8 @@ class WorkoutVideoPlayActivityNew : BaseActivity(), View.OnClickListener,
         countdownhandler.postDelayed(countdownRunnable!!, 0);
 
         animation = TranslateAnimation(0f, 0f, 300f, 0f);
-        animation.setInterpolator(AccelerateInterpolator());
-        animation.setDuration(1000)
+        animation.interpolator = AccelerateInterpolator();
+        animation.duration = 1000
 
         // binding.videoView.startAnimation(animation)
     }
